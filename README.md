@@ -1,15 +1,15 @@
 # politize-se
 
-#**Descrição**:
+#**DescriÃ§Ã£o**:
 
-Desenvolver aplicativo web que permitirá ao usuário criar seu perfil eleitoral e conhecer mais sobre o tema política. 
-Será mostrado termos de cunho político por meio de lições. Em cada etapa é apresentado um tema e suas variações, dentro de cada variação: descrição, significado e exemplificação. Ao final de toda lição o usuário identifica o que melhor representa ou que mais se identifica, através disso será construído seu perfil. 
-Como finalidade o projeto tem o objetivo de apresentar de forma didática ao usuário informações para que ele mesmo possa desenvolver uma ideologia política, preparando-o melhor para as próximas eleições.
+Desenvolver aplicativo web que permitirÃ¡ ao usuÃ¡rio criar seu perfil eleitoral e conhecer mais sobre o tema polÃ­tica. 
+SerÃ¡ mostrado termos de cunho polÃ­tico por meio de liÃ§Ãµes. Em cada etapa Ã© apresentado um tema e suas variaÃ§Ãµes, dentro de cada variaÃ§Ã£o: descriÃ§Ã£o, significado e exemplificaÃ§Ã£o. Ao final de toda liÃ§Ã£o o usuÃ¡rio identifica o que melhor representa ou que mais se identifica, atravÃ©s disso serÃ¡ construÃ­do seu perfil. 
+Como finalidade o projeto tem o objetivo de apresentar de forma didÃ¡tica ao usuÃ¡rio informaÃ§Ãµes para que ele mesmo possa desenvolver uma ideologia polÃ­tica, preparando-o melhor para as prÃ³ximas eleiÃ§Ãµes.
 
 #**Cronograma**: 
 
-Setembro: Pesquisa de termos e definições (esquerda, direita, centro e extremos, tipos de sistema eleitoral, tipos de sistemas econômicos, convergência entre ideologias políticas e cristianismo, partidos políticos e suas origens, possíveis candidatos, o que é política, a importância do jovem na política, corrupção atualmente), começo do site no html.
+Setembro : Pesquisa de termos e definiÃ§Ãµes (esquerda, direita, centro e extremos, tipos de sistema eleitoral, tipos de sistemas econÃ´micos, convergÃªncia entre ideologias polÃ­ticas e cristianismo, partidos polÃ­ticos e suas origens, possÃ­veis candidatos, o que Ã© polÃ­tica, a importÃ¢ncia do jovem na polÃ­tica, corrupÃ§Ã£o atualmente), comeÃ§o do site no html.
 
 Outubro: Desenvolvimento do projeto web: estilo css, php, banco de dados.
 
-Novembro: Recolher informações do banco de dados para criação de gráficos e infográficos, correção de erros caso necessário e a apresentação do projeto finalizado.
+Novembro: Recolher informaÃ§Ãµes do banco de dados para criaÃ§Ã£o de grÃ¡ficos e infogrÃ¡ficos, correÃ§Ã£o de erros caso necessÃ¡rio e a apresentaÃ§Ã£o do projeto finalizado.
