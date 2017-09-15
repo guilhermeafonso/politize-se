@@ -1,4 +1,14 @@
-﻿# politize-se
+﻿# POLITIZE-SE
+
+* ## **Integrantes:**
+
+#### *Guilherme Afonso de Oliveira.*
+
+#### *Rafaela Maria de Oliveira.*
+
+#### *Lêda Taís Silva.*
+
+#### *Philipe Bessa de Carvalho.*
 
 * ## **Descrição**:
 
