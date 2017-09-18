@@ -20,8 +20,10 @@ Como finalidade o projeto tem o objetivo de apresentar de forma didática ao usu
 
 * ## **Cronograma**: 
 
-**Setembro:** Pesquisa em HTML com formatção simples(sem css) de termos e definições (esquerda, direita, centro e extremos, tipos de sistema eleitoral, tipos de sistemas econômicos, convergência entre ideologias políticas e cristianismo, partidos políticos e suas origens, possíveis candidatos, o que é política, a importância do jovem na política, corrupção atualmente).
+**Setembro:** Pesquisa em HTML com formatção simples (sem css) de termos e definições (esquerda, direita, centro, extrema esquerda, extrema direita, sistema político-econômico capitalismo, sistema político-econômico socialismo, influência religiosa na política, sistema eleitoral majoritário ou distrital, sistema eleitoral proporcional, sistema eleitoral misto, voto obrigatório e não-obrigatório, principais partidos políticos e seus perfis, possíveis candidatos para presidência e seus perfis.
+).
 
 **Outubro:** Desenvolvimento do projeto web: estilo css, php, banco de dados.
 
-**Novembro:** Recolher informações do banco de dados para criação de gráficos e infográficos, correção de erros caso necessário e a apresentação do projeto finalizado.
+**Novembro:** Montagem dos perfis e criação de gráficos e infográficos por base nos resultados no banco de dados, correção de erros caso necessário e a apresentação do projeto finalizado.
+
