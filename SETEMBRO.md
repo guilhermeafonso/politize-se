@@ -6,7 +6,7 @@ Cole aqui os tópicos da sua pesquisa.
 
 * ## **Rafaela**:
 
-Cole aqui os tópicos da sua pesquisa.
+Voto Obrigatório e não Obrigatorio. Possiveis 9 políticos para as eleições em 2018.
 
 * ## **Lêda**:
 
