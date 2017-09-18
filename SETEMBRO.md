@@ -43,11 +43,18 @@ Espectro político: Centro.
 Ideologias: Sincretismo Político.
 
 2- PT (Partido dos Trabalhadores)
+
+
 Número eleitoral: 13. 
+
 Data de criação: 10/02/1980.
+
 Data do registro definitivo: 11/02/1982. 
+
 Quantidade de afiliados: 1 582 646.
+
 Espectro político: Esquerda, a centro-esquerda.
+
 Ideologias: Socialismo democrático, reformismo, desenvolvimentismo, lulismo, progressismo, trotskismo.
 
 3- PSDB (Partido da Social Democracia Brasileira)
