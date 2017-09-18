@@ -12,6 +12,7 @@ Voto Obrigatório e não Obrigatorio. Possiveis 9 políticos para as eleições 
 
 Sistema Eleitoral Majoritário:
 
+
 O sistema eleitoral proporcional é responsável por eleger os cargos de presidente da república, governador de estado e do distrito federal, senador e prefeito.Nesse sistema é eleito o candidato que obter a maior quantidade de votos.
 
 Esse sistema pode ser dividido em de duas maneiras, sendo o sistema simples ou relativo, onde é eleito aquele que obtiver o maior número dos votos apurados; 
@@ -20,10 +21,16 @@ com maior número de votos não obtenha a maioria absoluta, deverá ser realizad
 
 Sistema Eleitoral Proporcional:
 
+
 O sistema eleitoral proporcional é responsável por eleger os cargos de deputado federal, deputado estadual, deputado distrital e vereador.
 
 Esse sistema tem como objetivo garantir a representação de minorias. O artigo 5º da lei 9.504 da Constituição Federal fala que nas eleições proporcionais são válidos aqueles votos direcionados ao candidato ou a legenda, ou seja, ao partido.Nesse sistema é utilizado
 o cálculo do quociente eleitoral, que é obtido pela divisão da quantidade de votos válidos pelo número de vagas a serem preenchidas.
+
+Sistema Eleitoral Misto:
+
+
+O Sistema Eleitoral Misto combina regras de votos do sistema majoritário e do voto proporcional. O objetivo de um sistema misto é garantir que haja uma boa relação entre eleitor e eleito, o vinculo que é maior no sistema majoritário, mas ao mesmo tempo assegurar a representatividade de minorias politicas e pequenos partidos uma característica de um sistema proporcional. O eleitor vota duas vezes. Uma para candidatos no distrito e outra para a lista dos partidos (legenda). A metade das vagas vai para os candidatos eleitos por maioria simples. A outra metade é preenchida conforme o quociente eleitoral pelos candidatos da lista. 
 
 12 partidos mais populares /influentes /importantes
 
@@ -209,6 +216,45 @@ Espectro político: Esquerda a extrema-esquerda.
 
 Ideologias: Socialismo democrático, comunismo, marxismo-leninismo, maoísmo, desenvolvimentismo.
 
+Esquerda:
+
+
+A visão esquerdista possui foco na sociedade, na influencia do estado sobre o mercado, na racionalização da economia e intervencionismo. A esquerda defende que há a necessidade de uma intervenção do governo na economia e na vida do indivíduo para a diminuição da pobreza e das injustiças. O estado controla em parte ou todo o capital (dinheiro, mercadorias, serviços) para garantir o bem estar geral.  O estado também tem a função de criar um comércio justo. 
+
+Direita:
+
+
+Estes são os chamados conservadores ou nacionalistas. Acreditam em verdades permanentes e em uma cultura de valor superior, sendo esta associada diretamente a igreja e a “valores familiares” imutáveis. Tem um conceito de cultura superior. Geralmente tem influências militares e autoritárias. Veem a hierarquia como uma Lei Natural: a hierarquia é a ordem da natureza e o privilégio é a recompensa do serviço honroso — RJ White.
+
+Extrema-direita: 
+
+
+São os reacionários e fascistas. Estes trazem o conceito de uma cultura superior ao seu extremo. Prezam pela supremacia de uma cultura branca, heterossexual, patriarcal e religiosa. Buscam um estado autoritário que preze por uma etnia e religião dominante que mantenha o status, e são usualmente simpatizantes do modelo monárquico. Partidos Políticos e Imprensa: Não há qualquer partido ou grupo de extrema-direita amparado por lei no Brasil. Qualquer forma de discriminação é proibida por lei dentro do território nacional brasileiro , incluindo xenofobia, racismo, misoginia, homofobia e discriminação por religião.
+
+Extrema-esquerda:
+
+
+Tem várias ideologias, mas entre suas principais características está a veemente rejeição ao sistema capitalista e a globalização financeira. Lutam por uma distribuição igual de renda para todos abolindo todas as formas de hierarquia. Acreditam na mudança através da revolução e radicalismo, incluindo confisco de terra. São compostos por radicais, anarquistas e socialistas revolucionários. Tendem ao antiamericanismo, antinacionalíssimo e ao ateísmo extremo.
+
+Centro:
+
+
+Visão política que acredita em aspectos da direita e da esquerda. São contra todos os extremos e não se consideram capitalistas nem comunistas. Buscam um equilíbrio para a desigualdade social, mas não contrários à hierarquia. O centro pode ser dividido também em Centro-esquerda: Acreditam nos ideais do socialismo, mas são mais favoráveis a uma economia de mercado, sendo complacentes ao sistema capitalista. E  Centro-direita: Surgem de uma direita moderada com ênfase na democracia cristã. Tem os mesmos ideais da direita, mas são mais complacentes em questões relacionadas aos direitos sociais e a igualdade de oportunidades.
+
+Monarquia:
+
+
+A Monarquia é um tipo de governo em que o poder está nas mãos do monarca regente ou outra definição para o Chefe de Estado. O governo é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária. Há alguns séculos, a monarquia era absolutista. O Rei mandava e assim se fazia. Hoje em dia, nas monarquias remanescentes, a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro.
+
+Democracia:
+
+
+Esse regime foi criado na antiga Atenas. Neste modelo, os responsáveis por decidirem os governantes são a população, por meio de eleições. Costuma contar com os poderes Executivo, Legislativo e Judiciário, normalmente sob o comando do ou da Presidente da República. Neste regime não há poder hereditário, e sim poder outorgado pela escolha popular, que também é “a dona” de todos os bens do Estado, considerando que são propriedade pública.
+
+Ditadura:
+
+
+Um governo ditatorial é aquele em que um pequeno grupo de pessoas comanda um país de forma arbitrária e normalmente com tirania ou violência a opositores. Em uma ditadura o governante não respeita a democracia, governa de acordo com suas próprias vontades e não respeita as vontades e direitos da população e não respeita a divisão de poderes. A diferença da Ditadura para a Monarquia é que normalmente governos ditatoriais assumem o poder através de Golpes de Estado ou situações de guerra, enquanto que na monarquia existe a legitimação do governo através da Família Real.
 
 * ## **Philipe**:
 
