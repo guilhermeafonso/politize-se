@@ -126,4 +126,4 @@ Ideologias: Socialismo democrático, comunismo, marxismo-leninismo, maoísmo, de
 
 * ## **Philipe**:
 
-Cole aqui os tópicos da sua pesquisa.
+Cole aqui os tópicos da sua pesquisa
