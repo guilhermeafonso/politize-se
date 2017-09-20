@@ -52,11 +52,17 @@ O Sistema Eleitoral Misto combina regras de votos do sistema majoritário e do v
 * 12 partidos mais populares /influentes /importantes
 
 1- PMDB (Partido do Movimento Democrático Brasileiro)
+
 Número eleitoral: 15.
+
 Data de criação: 04/12/1965.
+
 Data do registro definitivo: 30/06/1981. 
+
 Quantidade de afiliados: 2 400 703.
+
 Espectro político: Centro.
+
 Ideologias: Sincretismo Político.
 
 2- PT (Partido dos Trabalhadores)
