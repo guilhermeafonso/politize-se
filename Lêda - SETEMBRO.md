@@ -1,4 +1,4 @@
-﻿* ## **Lêda**:
+﻿## **Lêda**:
 
 * Esquerda:
 
@@ -35,7 +35,6 @@ Um governo ditatorial é aquele em que um pequeno grupo de pessoas comanda um pa
 * Sistema Eleitoral Majoritário:
 
 O sistema eleitoral proporcional é responsável por eleger os cargos de presidente da república, governador de estado e do distrito federal, senador e prefeito.Nesse sistema é eleito o candidato que obter a maior quantidade de votos.
-
 Esse sistema pode ser dividido em de duas maneiras, sendo o sistema simples ou relativo, onde é eleito aquele que obtiver o maior número dos votos apurados; 
 ou o sistema absoluto, onde é eleito aquele que obtiver mais da metade dos votos apurados, excluídos os votos em branco e os nulos. No qual, caso o candidato 
 com maior número de votos não obtenha a maioria absoluta, deverá ser realizado segundo turno entre os dois candidatos mais votados, em razão do disposto nos artigos 29,inciso II, e 77 da Constituição Federal.
@@ -43,7 +42,6 @@ com maior número de votos não obtenha a maioria absoluta, deverá ser realizad
 * Sistema Eleitoral Proporcional:
 
 O sistema eleitoral proporcional é responsável por eleger os cargos de deputado federal, deputado estadual, deputado distrital e vereador.
-
 Esse sistema tem como objetivo garantir a representação de minorias. O artigo 5º da lei 9.504 da Constituição Federal fala que nas eleições proporcionais são válidos aqueles votos direcionados ao candidato ou a legenda, ou seja, ao partido.Nesse sistema é utilizado
 o cálculo do quociente eleitoral, que é obtido pela divisão da quantidade de votos válidos pelo número de vagas a serem preenchidas.
 
@@ -54,18 +52,11 @@ O Sistema Eleitoral Misto combina regras de votos do sistema majoritário e do v
 * 12 partidos mais populares /influentes /importantes
 
 1- PMDB (Partido do Movimento Democrático Brasileiro)
-
-
 Número eleitoral: 15.
-
 Data de criação: 04/12/1965.
-
 Data do registro definitivo: 30/06/1981. 
-
 Quantidade de afiliados: 2 400 703.
-
 Espectro político: Centro.
-
 Ideologias: Sincretismo Político.
 
 2- PT (Partido dos Trabalhadores)
