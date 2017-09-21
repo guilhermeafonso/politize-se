@@ -16,14 +16,11 @@
 
 * Ditadura:
 
-* Voto obrigatório:
-
 * Pesquisar 7 possíveis candidatos as eleições 2018 (perfil completo do candidato):
 
 **Luiz Inácio Lula da Silva:** nasceu em Caetés, a 27 de outubro de 1945, exerceu um papel de suma importância na fundação e consolidação do PT (Partido dos Trabalhadores), do qual atualmente é presidente de honra. Em 2002 foi eleito, a posse se deu em 1º de janeiro de 2003, e permaneceu no poder até 1 de janeiro de 2011. Seu mandato caracterizou-se pelas intensas negociações com a Organização Mundial do Comércio (OMC) e obteve êxito com a diminuição, em cerca de 168 bilhões de reais, da dívida externa.
 No campo da política fiscal e monetária, no entanto, o governo se mostrou relutante em fazer grandes transformações, optando pela manutenção do estado tradiciona, permitiu o Banco Central a autonomia política para manter a taxa de inflação sob controle, seguindo o objetivo determinado pelo governo.
 O governo Lula empregou programas de caráter social como:
-
 - Bolsa Família: instituído no ano de 2004, É um programa de transferência direta de renda, direcionado às famílias em situação de pobreza e de extrema pobreza em todo o País, de modo que consigam superar a situação de vulnerabilidade. O programa busca garantir a essas famílias o direito à alimentação e o acesso à educação e à saúde. 
 - Programa de Erradicação do Trabalho Infantil (Peti): Tem como principal meta retirar as crianças e adolescentes de faixa etária entre 07 e 15 anos do trabalho infantil. O projeto cede bolsas mensais com o intuito de manter estas crianças e adolescentes na escola e proporcionar-lhes atividades culturais, esportivas, artísticas e de lazer.
 - Luz para todos: Criado no mês de novembro de 2003 com o objetivo de proporcionar energia elétrica a 10 milhões de brasileiros moradores de áreas rurais, até o ano de 2008, concedendo a todos os brasileiros o direito à luz.
@@ -31,13 +28,11 @@ O governo Lula empregou programas de caráter social como:
 - ProUni: Instituído também durante o ano de 2004, o Programa Universidade para Todos tem como meta possibilitar a admissão de jovens (com baixa renda) no ensino superior, por meio de bolsas de estudo integrais ou parciais. São contemplados os estudantes que cursam a graduação em escolas privadas de nível superior. A seleção é feita levando-se em consideração o resultado final dos estudantes no Exame Nacional do ensino Médio e a situação sócio-econômica.
 Porém durante o governo petista, várias crises surgiram em decorrência de denúncias de corrupção em empresas do Estado, como por exemplo, o mensalão, o escândalo dos Correios e vários outros, a mais conhecida atualmente a Lava Jato, que derrubaram diversos ministros, entre eles José Dirceu e Antônio Palocci, entre outras personalidades de peso dentro do PT.
 
-
 **Jair Messias Bolsonaro** nasceu em Campinas, 21 de março de 1955. Cumpre atualmente o seu sexto mandato na Câmara dos Deputados do Brasil, eleito pelo Partido Progressista (PP). Tornou-se conhecido nacionalmente por suas posições nacionalistas e conservadoras e por suas críticas ao comunismo e à esquerda.Também é conhecido por defender a ditadura militar e por ter considerado a tortura uma prática legítima. Suas posições políticas geralmente são classificadas como alinhadas aos discursos da extrema-direita.
 Bolsonaro, em cerca de 25 anos interruptos de Congresso conseguiu aprovar uma única emenda: uma PEC que prevê emissão de "recibos" junto ao voto nas urnas eletrônica ao insinuar que a mesma não é confiável. De acordo com o Tribunal Superior Eleitoral (TSE), isto geraria custos adicionais de cerca de 1,8 bilhão de reais aos cofres públicos.
 O parlamentar defende a revogação do Estatuto do Desarmamento. Além disto, também apresentou um projeto de lei que estabelece a castração química voluntária como condição para que uma pessoa condenada por estupro possa progredir o regime de pena.
 Bolsonaro condena publicamente a homossexualidade e se opõe à aplicação de leis que garantam direitos LGBT, além da alteração no registro civil para transexuais.
 Ele se posiciona de forma contrária à legalização das drogas e se posicionou favoravelmente à instituição da pena de morte no Brasil para casos de crimes premeditados.O parlamentar também discorda da aplicação de ações afirmativas, como cotas raciais para afro-brasileiros. 
-
 
 **Maria Osmarina Marina Silva Vaz de Lima** nascida Rio Branco, 8 de fevereiro de 1958.Iniciou sua carreira política em 1984 como vice-coordenadora da Central Única dos Trabalhadores no Acre. Filiou-se ao Partido dos Trabalhadores (PT). Nomeada Ministra do Meio Ambiente no governo de Luiz Inácio Lula da Silva em 1 de janeiro de 2003, ficou no cargo até 13 de maio de 2008.
 No dia 16 de fevereiro de 2013, foi lançado a "Rede Sustentabilidade", projeto para um novo partido liderado por Marina Silva. Somente em 22 de Setembro de 2015, a Rede Sustentabilidade obtém seu registro definitivo no TSE.
@@ -56,3 +51,11 @@ Em 1988, foi um dos fundadores do PSDB. Entre 1991 a 1994, presidiu o PSDB-SP.
 Com a morte do governador Mário Covas, Geraldo foi confirmado no posto, para o qual se reelegeu na eleição para governador do estado em 2002, para o mandato de 2003 até 2007. Neste primeiro momento ele governou até 31 de março de 2006 quando renunciou para se candidatar a Presidente da República, já que no momento, como ele havia tido dois mandatos como governador, logo não poderia ser candidato. Durante o seu mandato o governador investiu principalmente em Infraestrutura, Economia, Burocracia e Social como saude e educação.
 Já podendo se candidatar novamente ao cargo de Governador de São Paulo, ele venceu a eleição para governador de São Paulo em 2010, e tomando posse ao seu terceiro mandato em 1 de janeiro de 2011. 
 O governador de São Paulo, Geraldo Alckmin do PSDB, foi citado em delação premiada por executivos do grupo Odebrecht, segundo os delatores, Alckmin recebeu mais de R$ 10 milhões de reais da empreiteira via caixa dois, para as suas campanhas ao Governo do Estado de 2010 e 2014, segundo a delação homologada pelo Supremo Tribunal Federal.
+
+**João Agripino da Costa Doria Junior**, mais conhecido como João Doria nascido em São Paulo, 16 de dezembro de 1957, é um empresário, político brasileiro, filiado ao Partido da Social Democracia Brasileira (PSDB). É o atual prefeito da cidade de São Paulo. Ficou conhecido como entrevistador de talk-shows, palestrante e organizador de eventos empresariais. 
+É criador e presidente licenciado do Grupo Doria, que reúne seis organizações, dentre as quais o Lide — Grupo de Líderes Empresariais, uma associação que promove eventos pagos, tendo em sua mala-direta 1700 empresas nacionais e multinacionais cadastradas que, segundo o site do Grupo Doria, respondem por 52% do PIB privado brasileiro.
+Entre 1986 e 1988, tornou-se presidente da EMBRATUR e do Conselho Nacional de Turismo. Em sua gestão criou inúmeras campanhas como "Respeite o Turista" e “O Rio continua lindo”. 
+Nomeou Pelé como “Embaixador do Turismo Brasileiro", percorrendo diversos países junto ao atleta com o objetivo de promover o Brasil e suas atrações turísticas e culturais. Os críticos, porém, acusam as campanhas publicitárias da EMBRATUR de promover o turismo sexual no Brasil, mediante a intensificação da exposição do corpo feminino, durante a passagem de Doria pela presidência da empresa. Em 2001 Doria filiou-se ao Partido da Social Democracia Brasileira (PSDB), partido fundado em 1988 e com o qual afirma sempre ter tido identificação ideológica e política.
+Algumas das principais visões políticas de João Doria: Apoio união de pessoas do mesmo sexo, reforma tributária, redução da maioridade penal e desamarmento e se mantendo contra o aborto e a liberação das drogas.
+
+**Ciro Ferreira Gomes** é de Pindamonhangaba, 6 de novembro de 1957, é um advogado e político brasileiro que está filiado ao PDT, partido do qual é vice-presidente. 
