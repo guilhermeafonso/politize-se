@@ -34,7 +34,7 @@ Um governo ditatorial é aquele em que um pequeno grupo de pessoas comanda um pa
 
 * Sistema Eleitoral Majoritário:
 
-O sistema eleitoral proporcional é responsável por eleger os cargos de presidente da república, governador de estado e do distrito federal, senador e prefeito.Nesse sistema é eleito o candidato que obter a maior quantidade de votos.
+O sistema eleitoral marjoritário é responsável por eleger os cargos de presidente da república, governador de estado e do distrito federal, senador e prefeito.Nesse sistema é eleito o candidato que obter a maior quantidade de votos.
 Esse sistema pode ser dividido em de duas maneiras, sendo o sistema simples ou relativo, onde é eleito aquele que obtiver o maior número dos votos apurados; 
 ou o sistema absoluto, onde é eleito aquele que obtiver mais da metade dos votos apurados, excluídos os votos em branco e os nulos. No qual, caso o candidato 
 com maior número de votos não obtenha a maioria absoluta, deverá ser realizado segundo turno entre os dois candidatos mais votados, em razão do disposto nos artigos 29,inciso II, e 77 da Constituição Federal.
