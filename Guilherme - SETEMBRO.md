@@ -20,6 +20,24 @@ Democracia, monarquia e ditadura:
 
 * Ditadura: Devo abrir mão dos meus direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, normalmente com tirania ou violência a opositores. O governante deve atuar de acordo com suas próprias vontades, sem que respeite meus direitos humanos fundamentais ou os da população e não respeitar a divisão de poderes. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra.
 
-* Com base em pesquisas disserte se existe ou não influência por grupos religiosos na política, questione o usuário se ele concorda ou não:
+* Religião e política: Em épocas passadas a Igreja Católica exercia forte poder em decisões políticas, agora os evangélicos são a força da vez. Justificada pelo crescimento das frentes mais conservadoras, o pensamento e ideologia religiosa têm se mostrado cada vez mais fortes no âmbito político. Apesar de não serem maioria, são grupos que possuem grande influência na tomada de decisões, onde temas são aprovados ou não (como: descriminalização do aborto, casamento homoafetivo, adoção por casais homossexuais, legalização da maconha), com base no que diz a bíblia. 
+
+Na sua opinião o Brasil, um país laico (quando é imparcial em relação às questões gerais, não apoiando nem se opondo a nenhuma religião) ocorre esse tipo de influência religiosa na política?
+
+SIM 
+
+Caso escolha “SIM” = 
+
+Você concorda na interferência de grupos religiosos em temas sociais de interesse público da sociedade?
+
+CONCORDO - DISCORDO
+
+NÃO
+
+Caso escolha “NÃO”
+
+Grupos religiosos deviam ter mais ter mais influência na tomada de decisões de interesse público?
+
+CONCORDO - DISCORDO
 
 * Pesquisar 9 possíveis candidatos as eleições 2018 (perfil completo do candidato):
