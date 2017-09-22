@@ -14,7 +14,7 @@ Espectro social:
 
 Democracia, monarquia e ditadura: 
 
-* Democracia: Ser responsável por decidir os governantes, por meio do voto eleitoral. Acredito e defendo direitos humanos fundamentais como: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na minha participação na vida política, econômica e cultural da sociedade. Esse modelo costuma contar com os poderes Executivo, Legislativo e Judiciário, normalmente sob o comando do ou da Presidente da República. 
+* Democracia: Sou responsável por decidir os governantes, por meio do voto eleitoral. Acredito e defendo direitos humanos fundamentais como: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na minha participação na vida política, econômica e cultural da sociedade. Esse modelo costuma contar com os poderes Executivo, Legislativo e Judiciário, normalmente sob o comando do ou da Presidente da República. 
 
 * Monarquia: O poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte, como o monarca não depende de aceitação popular para permanecer no poder, não há garantias que seus interesses coincidirão com os meus. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária. 
 
