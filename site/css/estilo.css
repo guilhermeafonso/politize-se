@@ -1,0 +1,39 @@
+.navbar{
+	background: #CCCCCC;
+	padding: 5px 0px;
+}
+.nav > li > a{
+	color: black;
+	font-weight: bold;
+	border-radius: 3px;
+}
+.navbar-brand{
+	padding: 0px;
+}
+
+.icon-bar{
+	background: black;
+}
+
+.navbar-toggle{
+	border-color: black;
+}
+.img-menu{
+	width: 100%;
+	margin: auto;
+	display: block;
+} 
+.noticia > h2{
+	text-align: center;
+	color: #2c7873;
+}
+.noticia > p{
+	text-align: center;
+}
+.copyright{
+	background: black;
+	color: #ffffff;
+	padding: 10px 0px;
+	text-align: center;
+	text-shadow: 2px 2px #000000;
+}
