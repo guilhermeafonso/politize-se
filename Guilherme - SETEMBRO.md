@@ -41,5 +41,3 @@ Caso escolha “NÃO”
 Grupos religiosos deviam ter mais ter mais influência na tomada de decisões de interesse público?
 
 CONCORDO - DISCORDO
-
-* Pesquisar 9 possíveis candidatos as eleições 2018 (perfil completo do candidato):
