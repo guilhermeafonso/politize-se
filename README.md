@@ -3,8 +3,11 @@
 * ## **Integrantes:**
 
 _Guilherme Afonso de Oliveira._
+
 _Rafaela Maria de Oliveira._
+
 _Lêda Taís Silva._
+
 _Philipe Bessa de Carvalho._
 
 * ## **Descrição**:
