@@ -20,7 +20,7 @@ Como finalidade o projeto tem o objetivo de apresentar de forma didática ao usu
 **Setembro:** Pesquisa em HTML com formatção simples (sem css) de termos e definições (esquerda, direita, centro, extrema esquerda, extrema direita, sistema político-econômico capitalismo, sistema político-econômico socialismo, influência religiosa na política, sistema eleitoral majoritário ou distrital, sistema eleitoral proporcional, sistema eleitoral misto, voto obrigatório e não-obrigatório, principais partidos políticos e seus perfis, possíveis candidatos para presidência e seus perfis.
 ).
 
-**Outubro:** Desenvolvimento do projeto (HTML, CSS, PHP, Banco de dados) e todas as funcionalidades, de uma "versão beta".
+**Outubro:** Desenvolvimento do projeto (HTML, CSS, PHP, Banco de dados) e todas as funcionalidades, em uma "versão beta".
 
-**Novembro:** Apresentação do projeto totalmente finalizado, pode ser chamado de "versão alfa".
+**Novembro:** Correção de eventuais erros e apresentação do projeto totalmente finalizado, sendo chamado de "versão alfa".
 
