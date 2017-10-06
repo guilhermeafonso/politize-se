@@ -27,10 +27,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `bd` (
-  `Nome` text NOT NULL,
-  `Idade` int(2) NOT NULL,
-  `Sexo` varchar(10) NOT NULL,
-  `Cor/raça` varchar(10) NOT NULL,
+  `Nome` varchar(50) NOT NULL,
+  `Idade` varchar(50) NOT NULL,
+  `Sexo` varchar(50) NOT NULL,
+  `CorRaça` varchar(50) NOT NULL,
   `Espectro econômico` varchar(50) NOT NULL,
   `Espectro social` varchar(50) NOT NULL,
   `Tipo de governo` varchar(50) NOT NULL,
