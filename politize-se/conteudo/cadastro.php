@@ -12,6 +12,34 @@
 		<script src="../js/jquery-3.2.0.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
 		<title>Identificação</title>
+		<script type="text/javascript">
+		function validaCampo()
+			{
+		if(document.Cadastro.Nome.value=="")
+			{
+			alert("O Campo nome é obrigatório!");
+			return false;
+			}
+		else
+			if(document.Cadastro.Sexo.value=="")
+			{
+			alert("O Campo sexo é obrigatório!");
+			return false;
+			}
+		else
+			if(document.Cadastro.Idade.value=="")
+			{
+			alert("O Campo idade é obrigatório!");
+			return false;
+			}
+		else
+			if(document.Cadastro.CorRaca.value=="")
+			{
+			alert("O Campo Cor/Raça é obrigatório!");
+			return false;
+			}
+		}
+		</script>
 	</head>
 	<body>
 	<div class="container">
@@ -58,13 +86,12 @@
 	<div class="caixainicio">
 		<p><b>Serão 8 lições!</b> Em cada uma é apresentado o tema e suas variações, dentro de cada variação: descrição (e/ou) significado (e/ou) exemplificação, terminando as lições você fará a <b>simulação de voto eleitoral para presidente 2018</b>. É bem simples, você seleciona o que melhor o representa ou o que mais se identifica e com apenas alguns cliques será construído seu perfil e poderá acompanhar gráficos de resultados de outros usuários.</p>
 	</div>
-	<form name="Cadastro" action="cadastrar.php" method="POST">
-		<input type="text" name="Nome" placeholder="Nome:">
-		<select id="Sexo" name="Sexo">
-			<option value="">Sexo</option>
-			<option value="Masculino">Masculino</option>
-			<option value="Feminino">Feminino</option>
-		</select>
+	<form name="Cadastro" action="cadastro.php" method="POST" onsubmit="return validaCampo(); return false;">
+		<input type="text" name="Nome" placeholder="Nome:"/>
+		<label for="radio-choice-1">Masculino</label>
+		<input type="radio" name="Sexo" id="radio-choice-1" value="Masculino" />
+		<label for="radio-choice-2">Feminino</label>
+		<input type="radio" name="Sexo" id="radio-choice-2" value="Feminino" /> 
 		<select name="Idade">
 			<option value="">Idade</option>
 			<option value="17">Menor de 17 anos</option>
@@ -74,14 +101,40 @@
 			<option value="35a39">35 a 39 anos</option>
 			<option value="40">Maior de 40 anos</option>
 		</select>
-		<select name="CorRaca">
+			<select name="CorRaca">
 			<option value="">Cor/Raça</option>
 			<option value="Branco">Branco</option>
 			<option value="Pardo">Pardo</option>
 			<option value="Negro">Negro</option>
 		</select>
-		<input class="botao1" type="submit" name="enviar" value="Estou pronto!">
-	</form>
+		<input name="cadastrar" type="submit" id="cadastrar" value="Estou pronto!"/> 
+	</form>  
+<?php
+	$host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "politizese";
+    $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+    @mysql_select_db($db) or die(mysql_error());  
+    if (isset($_POST["cadastrar"])) {
+	$Nome = $_POST['Nome']; 
+	$Sexo = $_POST['Sexo'];
+	$Idade = $_POST['Idade'];
+	$CorRaca = $_POST['CorRaca'];
+	$sql = mysql_query("INSERT INTO bd(Nome,Sexo,Idade,CorRaca) VALUES ('$Nome','$Sexo','$Idade','$CorRaca')");
+}
+?>
+
+
+
+
+
+
+
+
+
+
+		
 	<div class="rodape">
       		<div class="container">      			
       			<b>Copyright© 2017</b>

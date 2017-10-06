@@ -27,6 +27,7 @@ body{
     margin-top: 20px;
     font-family: courier;
     width: 20%;
+    border:none;
     border-radius: 15px;
     box-shadow: 7px 7px 3px #00688B;
     padding: 15px 25px;
@@ -38,7 +39,7 @@ body{
 .botao1:hover{
     text-decoration:none;
 }
-input {
+input{
     border:none;
     font-weight:bold;}
 .rodape{
@@ -236,3 +237,15 @@ input {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+
+
+
+
+
+
+
+
+
+
+
