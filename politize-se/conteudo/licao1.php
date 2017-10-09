@@ -27,11 +27,13 @@
 		    $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 		    @mysql_select_db($db) or die(mysql_error());  
 		    if (isset($_POST["cadastrar"])) {
-			$Nome = $_POST['Nome']; 
-			$Sexo = $_POST['Sexo'];
-			$Idade = $_POST['Idade'];
-			$CorRaca = $_POST['CorRaca'];
-			$sql = mysql_query("INSERT INTO bd(Nome,Sexo,Idade,CorRaca) VALUES ('$Nome','$Sexo','$Idade','$CorRaca')");}
+				$Nome = $_POST['Nome']; 
+				$Sexo = $_POST['Sexo'];
+				$Idade = $_POST['Idade'];
+				$CorRaca = $_POST['CorRaca'];
+				$sql = mysql_query("INSERT INTO bd(Nome,Sexo,Idade,CorRaca,Licao1) VALUES ('$Nome','$Sexo','$Idade','$CorRaca','')");
+				$id = mysql_insert_id();
+			}
 		?>
 		<div class="container">
 			<div class='Cube panelLoad'>
@@ -86,13 +88,16 @@
 				<div class="tema"><b>Esquerda e direita.</b></div>
 				<div class="descricao"><b><i>Espectro econômico:</i></b></div>
 				<div class="row">
+					<form name="Licao1" action="licao2.php" method="POST">
+						<input type="hidden" name="id" value="<?php echo $id ?>">
 					<div class="col-md-6">
-						<button data-hover="Esquerda" onclick="javascript: location.href='../index.php';"><div>Sou conservador em relação a economia, tenho uma ideologia voltada para o coletivo. Defendo que o governo deve: controlar o mercado financeiro do país, participar ativamente na economia. Acredito nas medidas sociais que favoreçam os mais pobres e o trabalhador (programas sociais), e nas propostas que visam uma maior distribuição de renda e melhorias para as classes mais baixas da população, como impostos para financiar serviços públicos amplos e para distribuir renda.<br><br></div></button>
+						<button type="submit" name="licao1" value="Esquerda" data-hover="Esquerda"><div>Sou conservador em relação a economia, tenho uma ideologia voltada para o coletivo. Defendo que o governo deve: controlar o mercado financeiro do país, participar ativamente na economia. Acredito nas medidas sociais que favoreçam os mais pobres e o trabalhador (programas sociais), e nas propostas que visam uma maior distribuição de renda e melhorias para as classes mais baixas da população, como impostos para financiar serviços públicos amplos e para distribuir renda.<br><br></div></button>
 					</div>
 					<div class="col-md-6">
-						<button data-hover="Direita"><div>Sou liberal em relação a economia, tenho uma ideologia voltada para o individual. Acredito que o governo deve: cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos, deixando nas minhas mãos mais recursos e que eu decida sobre seu uso, porém com serviços públicos menos abrangentes.</div></button>
+						<button type="submit" name="licao1" value="direita" data-hover="Direita"><div>Sou liberal em relação a economia, tenho uma ideologia voltada para o individual. Acredito que o governo deve: cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos, deixando nas minhas mãos mais recursos e que eu decida sobre seu uso, porém com serviços públicos menos abrangentes.</div></button>
 					</div>
 				</div>
+			</form>
 			</div>
 		</div>
 	</div>

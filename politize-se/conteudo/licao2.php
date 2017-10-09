@@ -19,6 +19,18 @@
 		<title>Lição 2</title>
 	</head>
 	<body>
+		<?php
+			$host = "localhost";
+		    $user = "root";
+		    $pass = "";
+		    $db = "politizese";
+		    $licao1 = $_POST['licao1'];
+		    $id = $_POST['id'];
+		    $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+		    @mysql_select_db($db) or die(mysql_error());  
+		    $sqrl = mysql_query("UPDATE bd set Licao1 ='$licao1' WHERE id = '$id'");
+		    
+		?>
 		<div class="container">
 			<div class='Cube panelLoad'>
 				<div class='cube-face cube-face-front'>po</div>
@@ -73,6 +85,7 @@
 				<div class="descricao"><b><i>Espectro social:</i></b></div>
 				<div class="row">
 					<div class="col-md-6">
+						<input type="hidden" name="id" value="<?php echo $id ?>">
 						<button data-hover="Esquerda"><div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div></button>
 					</div>
 					<div class="col-md-6">
