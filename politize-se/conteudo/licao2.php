@@ -29,7 +29,6 @@
 		    $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 		    @mysql_select_db($db) or die(mysql_error());  
 		    $sqrl = mysql_query("UPDATE bd set Licao1 ='$licao1' WHERE id = '$id'");
-		    
 		?>
 		<div class="container">
 			<div class='Cube panelLoad'>
@@ -59,22 +58,10 @@
 						<span><b>Lição 4</b></span>
 					</div>
 					<div class="step">
-						<span><b>Lição 5</b></span>
-					</div>
-					<div class="step">
-						<span><b>Lição 6</b></span>
-					</div>
-					<div class="step">
-						<span><b>Lição 7</b></span>
-					</div>
-					<div class="step">
-						<span><b>Lição 8</b></span>
-					</div>
-					<div class="step">
-						<span><b>Simulação de voto</b></span>
-					</div>
-					<div class="step">
 						<span><b>Seu perfil</b></span>
+					</div>
+					<div class="step">
+						<span><b>Resultados</b></span>
 					</div>
 				</div>
 				<div class="line"></div>
@@ -85,12 +72,14 @@
 				<div class="descricao"><b><i>Espectro social:</i></b></div>
 				<div class="row">
 					<div class="col-md-6">
-						<input type="hidden" name="id" value="<?php echo $id ?>">
-						<button data-hover="Esquerda"><div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div></button>
-					</div>
-					<div class="col-md-6">
-						<button data-hover="Direita"><div>Sou conservador em relação aos costumes (que pode ser popularmente expressado com a frase: “retorno à maneira como as coisas eram"), prezo os “valores familiares” ou “valores atemporais”, me identifico e promovo conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</div></button>
-					</div>
+						<form name="Licao2" action="licao3.php" method="POST">
+							<input type="hidden" name="id" value="<?php echo $id ?>">
+							<button class="botao2" type="submit" name="licao2" value="Esquerda" data-hover="Esquerda"><div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div></button>
+						</div>
+						<div class="col-md-6">
+							<button class="botao2" type="submit" name="licao2" value="Direita" data-hover="Direita"><div>Sou conservador em relação aos costumes (que pode ser popularmente expressado com a frase: “retorno à maneira como as coisas eram"), prezo os “valores familiares” ou “valores atemporais”, me identifico e promovo conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</div></button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
