@@ -1,0 +1,229 @@
+*{box-sizing: border-box;}
+body{
+	background-color: #f1f1f1;
+	font-family: Arial, Sans-serif;
+	padding: 10px;
+}
+/*Estilo do inicio*/
+div#inicio{
+	background-color: #23527c;
+	border: none;
+	color: white;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 970px;
+}
+div#inicio h2{
+	display: inline-block;
+	margin: 10px;
+}
+div#inicio button {
+	background-color: white;
+	border: none;
+	box-shadow:0 9px rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 17pt;
+	margin: 10px 0 10px 200px;
+	padding: 10px 20px;
+}
+div#inicio button:hover{opacity: 0.7;}
+div#inicio button:active{
+	box-shadow:0 5px rgba(0, 0, 0, 0.8);
+	transform: translateY(4px);
+}
+div#inicio a{
+	background-color: white;
+	border: none;
+	box-shadow:0 9px rgba(0, 0, 0, 0.8);
+	color: black;
+	font-size: 17pt;
+	margin-left: 20px;
+	padding: 10px;
+	text-decoration: none;
+}
+div#inicio a:hover{opacity: 0.7;}
+div#inicio a:active{
+	box-shadow:0 5px rgba(0, 0, 0, 0.8);
+	transform: translateY(4px);
+}
+/*Lista de candidatos*/
+div#listaCandidatos{
+	background-color: white;
+	border: 1px solid #23527c;
+	float: left;
+	height: 580px;
+	margin-right: 10px;
+	text-align: center;
+	width: 150px;
+}
+div#listaCandidatos h2{
+	background-color: #23527c;
+	color: white;
+	margin: 0px;
+	padding: 10px 0px;
+}
+div#listaCandidatos p{
+	border-top: 1px solid #23527c;
+	font-size: 11pt;
+}
+div#listaCandidatos p:first-child{border-top: none;}
+div#listaCandidatos span{color: #23527c;}
+/*Estilo da Urna EletrÃ´nica*/
+div#urna{
+	background-color: white;
+	border: 1px solid black;
+	height: 520px;
+	left: 180px;
+	position: absolute;
+	width: 807px;
+}
+/*Estilo da Tela da Urna e dos conteudos que serÃ£o apresentados*/
+div#tela{
+	background-color: #d5d5c3;
+	border: 1px solid black;
+	float: left;
+	margin: 10px;
+	height: 400px;
+	position: relative;
+	width: 60%;
+}
+div#tela img#foto{
+	display: none;
+	height: 150px;
+	left: 78%;
+	position: absolute;
+	top: 2%;
+	width: 100px;
+}
+div#tela img#vice{
+	display: none;
+	height: 110px;
+	left: 85%;
+	position: absolute;
+	top: 40%;
+	width: 70px;
+}
+div#tela h1{
+	display: none;
+	font-size: 150pt;
+	margin: 70px 0px 0px 50px;
+}
+div#tela h2#branco, h2#nulo{
+	display: none;
+	font-size: 28pt;
+	margin-top: 45px;
+}
+div#tela h2#num{
+	color: gray;
+	display: none;
+	font-size: 13pt;
+	margin: 80px 0px 10px 20px;
+}
+div#tela h3{
+	color: gray;
+	display:none;
+	font-size: 13pt;
+	margin: 0px 0px 10px 20px;
+}
+div#tela h4{
+	font-size: 18pt;
+	margin: 0px;
+	text-indent: 40px;
+}
+div#tela h5{
+	color: gray;
+	display: none;
+	font-size: 11pt;
+	margin: 20px 0px 10px 20px;
+}
+div#mensagem{
+	border-top: 2px solid black;
+	bottom: 0;
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+div#mensagem p{
+	margin: 0px;
+	margin-left: 10px;
+	padding: 0px;
+}
+div#tela span{
+	color: black;
+	font-size: 17pt;
+	padding-left: 10px;
+}
+/*Estilo da parte do teclado*/
+div#teclado{
+	border: 1px solid black;
+	float: left;
+	margin: 8px;
+	padding: 0px;
+	width: 35%;
+}
+div#teclado h2{
+	text-align: center;
+	width: 100%;
+}
+/*Estilo da parte dos digitos de 0 atÃ© 9*/
+table#digitos{
+	background-color: #2f2f1e;
+	padding: 0px;
+	width: 100%;
+}
+table#digitos input{
+	background-color: black;
+	border: none;
+	box-shadow:0 9px #0f0f0a;
+	color: white;
+	cursor: pointer;
+	font-size: 20pt;
+	height: 40px;
+	margin: 8px;
+	outline: none;
+	text-align: left;
+	width: 67px;
+}
+table#digitos input:hover{opacity: 0.8;}
+table#digitos input:active{
+	box-shadow: 0 4px #0f0f0a;
+	transform: translateY(4px);
+}
+/*Estilo da parte de comandos do teclado*/
+table#comandos{
+	background-color: #2f2f1e;
+	padding: 50px 0px 20px 0px;
+	width: 100%;
+}
+table#comandos input{
+	border: none;
+	box-shadow: 0 9px #0f0f0a;
+	cursor: pointer;
+	font-size: 11pt;
+	height: 50px;
+	outline: none;
+	bottom: 0px;
+}
+table#comandos input:hover{opacity: 0.6;}
+table#comandos input:active{
+	box-shadow: 0 4px #0f0f0a;
+	transform: translateY(4px);
+}
+table#comandos input#branc{background-color: white;}
+table#comandos input#corrige{background-color: orange;}
+table#comandos input#confirma{
+	background-color: green;
+	height: 60px;
+}
+/*Estilo do RodapÃ©*/
+footer{
+	background-color: #23527c;
+	clear: both;
+	color: white;
+	margin-top: 540px;
+	padding: 30px;
+	text-align: center;
+	width: 970px;
+}
+a{color: white;}
