@@ -85,7 +85,6 @@ input{
     border:none;
     font-weight:bold;}
 .rodape{
-    margin-top: 40px;
     position:fixed;
     bottom:0;
     width:100%;
@@ -105,7 +104,7 @@ input{
 }
 .botao2:hover{cursor: pointer}
 .botao2 {
-    margin-top: 40px;
+    margin-top: 30px;
     position: relative;
     background-color: #6CA6CD;
     border: none;
@@ -124,13 +123,51 @@ input{
     letter-spacing: 3px;
     font-weight: 800;
     font-size: 2em;
-    margin-top: 30px;
+    margin-top: 20px;
     opacity: 0;
     transform: translate(-100%,0);
     transition: all .3s ease-in-out;
 }
 .botao2:hover div{opacity: 0; transform: translate(100%,0)}
 .botao2 div{
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #363636;
+    background-color: #6CA6CD;
+    transition: all .4s ease-in-out;
+}
+.botao3:hover{cursor: pointer}
+.botao3 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    background-color: #6CA6CD;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 7px 7px 3px #00688B;
+}
+.botao3:hover:before{opacity: 1; transform: translate(0,0);}
+.botao3:before{
+    font-family:courier;
+    content: attr(data-hover);
+    position: absolute;
+    top: 1.1em; left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 2em;
+    margin-top: 30px;
+    opacity: 0;
+    transform: translate(-100%,0);
+    transition: all .3s ease-in-out;
+}
+.botao3:hover div{opacity: 0; transform: translate(100%,0)}
+.botao3 div{
     width: 100%;
     height: 100%;
     padding: 15px 25px;

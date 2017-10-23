@@ -80,15 +80,176 @@
 				        $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 				        @mysql_select_db($db) or die(mysql_error());
 				        
-				        $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
+				        $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo 'Perfil 1';}
+           					echo ''.$row['Nome'].'Perfil 1';}
         					}
-            			else {
-            				echo 'Não tem Perfil';
-    					}              
+
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 2';}
+        					}
+            			   
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 3';}
+        					}
+            			    
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 4';}
+        					}
+            			 
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 5';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 6';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 7';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 8';}
+        					}
+            			   
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 9';}
+        					}
+            			    
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 10';}
+        					}
+            			 
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 11';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 12';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 13';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 14';}
+        					}
+            			   
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 15';}
+        					}
+            			    
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 16';}
+        					}
+            			 
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 17';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 18';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 19';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 20';}
+        					}
+            			   
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 21';}
+        					}
+            			    
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 22';}
+        					}
+            			 
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 23';}
+        					}
+            			
+    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo ''.$row['Nome'].'Perfil 24';}
+        					}
+            			
+
 				    ?>
 					</div>
 				</div>

@@ -69,12 +69,6 @@
 					<option value="35 a 39 anos">35 a 39 anos</option>
 					<option value="Maior de 40 anos">Maior de 40 anos</option>
 				</select>
-				<select class="campocadastro" name="CorRaca" style="width:130px">
-					<option value="">Cor/Raça</option>
-					<option value="Branco">Branco</option>
-					<option value="Pardo">Pardo</option>
-					<option value="Negro">Negro</option>
-				</select>
 				</div> 
 				<input class="botao1" name="cadastrar" type="submit" id="cadastrar" value="Estou pronto!"/>
 			</form> 

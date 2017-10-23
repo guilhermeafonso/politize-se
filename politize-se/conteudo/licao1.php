@@ -30,8 +30,7 @@
 				$Nome = $_POST['Nome']; 
 				$Sexo = $_POST['Sexo'];
 				$Idade = $_POST['Idade'];
-				$CorRaca = $_POST['CorRaca'];
-				$sql = mysql_query("INSERT INTO bd(Nome,Sexo,Idade,CorRaca,Licao1,Licao2,Licao3,Licao4) VALUES ('$Nome','$Sexo','$Idade','$CorRaca','','','','')");
+				$sql = mysql_query("INSERT INTO bd(Nome,Sexo,Idade,Licao1,Licao2,Licao3,Licao4) VALUES ('$Nome','$Sexo','$Idade','','','','')");
 				$id = mysql_insert_id();
 			}
 		?>
