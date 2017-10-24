@@ -102,6 +102,11 @@ input{
     font-size: 1.2em;
     color: #363636;
 }
+.perfil1{
+    font-size: 1.4em;
+    text-align: center;
+    color: red;
+}
 .botao2:hover{cursor: pointer}
 .botao2 {
     margin-top: 30px;
