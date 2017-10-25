@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Out-2017 às 00:55
+-- Generation Time: 25-Out-2017 às 13:05
 -- Versão do servidor: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `bd_politizese`
+-- Database: `politizese`
 --
 
 -- --------------------------------------------------------
@@ -27,24 +27,35 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `bd` (
+  `ID` int(11) NOT NULL,
   `Nome` varchar(50) NOT NULL,
-  `Idade` varchar(50) NOT NULL,
   `Sexo` varchar(50) NOT NULL,
-  `CorRaça` varchar(50) NOT NULL,
-  `Espectro econômico` varchar(50) NOT NULL,
-  `Espectro social` varchar(50) NOT NULL,
-  `Tipo de governo` varchar(50) NOT NULL,
-  `Sistema pol. econ.` varchar(50) NOT NULL,
-  `Religião e política 1` varchar(50) NOT NULL,
-  `Religião e política 2` varchar(50) NOT NULL,
-  `Sistema eleitoral` varchar(50) NOT NULL,
-  `Voto eleitoral` varchar(50) NOT NULL,
-  `Meu partido` varchar(50) NOT NULL,
-  `Meu candidato` varchar(50) NOT NULL,
-  `Simulação de voto` varchar(50) NOT NULL
- 
+  `Idade` varchar(50) NOT NULL,
+  `Licao1` varchar(50) NOT NULL,
+  `Licao2` varchar(50) NOT NULL,
+  `Licao3` varchar(50) NOT NULL,
+  `Licao4` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `bd`
+--
+ALTER TABLE `bd`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `bd`
+--
+ALTER TABLE `bd`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
