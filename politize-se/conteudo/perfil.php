@@ -67,7 +67,7 @@
 				<div class="line"></div>
 			</div>
 			<div class="row">
-					<div class="col-md-12">	
+				<div class="col-md-12">	
 					<input type="hidden" name="id" value="<?php echo $id ?>">
 					<?php
 				    	$host = "localhost";
@@ -81,184 +81,272 @@
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2>'.$row['Nome'].',</h2><div class="perfil2">
-                    <p>Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, você acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p>No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p>A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p>O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p></div>';}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
         				}
 
-            			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 2';}
-        				}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			   
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 3';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			    
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 4';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			 
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 5';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 6';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 7';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 8';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			   
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 9';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			    
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 10';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p></p>';}
+                        }
             			 
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 11';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 12';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 13';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 14';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			   
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 15';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			    
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 16';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			 
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 17';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 18';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 19';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 20';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			   
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 21';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			    
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 22';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
             			 
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 23';}
-        					}
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
+                        }
             			
     					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
 
 				        if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo ''.$row['Nome'].'Perfil 24';}
-        					}
-            			
+           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
+                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        }
 
 				    ?>
-					</div>
+                    <a href="../conteudo/resultados.php" class="botao1" role="button"><b>Resultados</b></a>
 				</div>
 			</div>
 		</div>
-	</div>
-	</div>
-	<div class="rodape">
+	    <div class="rodape">
 			<div class="green"></div>
 			<div class="blue"></div>
 			<div class="yellow"></div>

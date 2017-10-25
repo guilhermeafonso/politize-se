@@ -65,6 +65,7 @@ body{
 }
 .botao1{
     margin: auto;
+    margin-bottom: 40px;
     display: block;
     margin-top: 20px;
     font-family: courier;
