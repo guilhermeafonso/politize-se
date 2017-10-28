@@ -71,23 +71,23 @@
 				<div class="line"></div>
 			</div>
 			<div class="row">
-			<div class="col-md-12">
-				<div class="tema"><b>Esquerda e direita.</b></div>
-				<div class="descricao"><b><i>Espectro econômico:</i></b></div>
-				<div class="row">
-					<form name="Licao1" action="licao2.php" method="POST">
-					<input type="hidden" name="id" value="<?php echo $id ?>">
-					<div class="col-md-6">
-						<button class="botao2" type="submit" name="licao1" value="Esquerda" data-hover="Esquerda"><div>Sou conservador em relação a economia, tenho uma ideologia voltada para o coletivo. Defendo que o governo deve: controlar o mercado financeiro do país, participar ativamente na economia. Acredito nas medidas sociais que favoreçam os mais pobres e o trabalhador (programas sociais), e nas propostas que visam uma maior distribuição de renda e melhorias para as classes mais baixas da população, como impostos para financiar serviços públicos amplos e para distribuir renda.<br><br></div></button>
-					</div>
-					<div class="col-md-6">
-						<button class="botao2" type="submit" name="licao1" value="direita" data-hover="Direita"><div>Sou liberal em relação a economia, tenho uma ideologia voltada para o individual. Acredito que o governo deve: cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos, deixando nas minhas mãos mais recursos e que eu decida sobre seu uso, porém com serviços públicos menos abrangentes.</div></button>
-					</div>
+				<div class="col-md-12">
+					<div class="tema"><b>Esquerda e direita.</b></div>
+					<div class="descricao"><b><i>Espectro econômico:</i></b></div>
+					<div class="row">
+						<form name="Licao1" action="licao2.php" method="POST">
+							<input type="hidden" name="id" value="<?php echo $id ?>">
+							<div class="col-md-6">
+								<button class="botao2" type="submit" name="licao1" value="Esquerda" data-hover="Esquerda"><div>Sou conservador em relação a economia, tenho uma ideologia voltada para o coletivo. Defendo que o governo deve: controlar o mercado financeiro do país, participar ativamente na economia. Acredito nas medidas sociais que favoreçam os mais pobres e o trabalhador (programas sociais), e nas propostas que visam uma maior distribuição de renda e melhorias para as classes mais baixas da população, como impostos para financiar serviços públicos amplos e para distribuir renda.<br><br></div></button>
+							</div>
+							<div class="col-md-6">
+								<button class="botao2" type="submit" name="licao1" value="Direita" data-hover="Direita"><div>Sou liberal em relação a economia, tenho uma ideologia voltada para o individual. Acredito que o governo deve: cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos, deixando nas minhas mãos mais recursos e que eu decida sobre seu uso, porém com serviços públicos menos abrangentes.</div></button>
+							</div>
+						</div>
+					</form>
 				</div>
-			</form>
 			</div>
 		</div>
-	</div>
 	</div>
 	<div class="rodape">
 			<div class="green"></div>

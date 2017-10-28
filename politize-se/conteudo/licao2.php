@@ -67,25 +67,24 @@
 				<div class="line"></div>
 			</div>
 			<div class="row">
-			<div class="col-md-12">
-				<div class="tema"><b>Esquerda e direita.</b></div>
-				<div class="descricao"><b><i>Espectro social:</i></b></div>
-				<div class="row">
-					<div class="col-md-6">
+				<div class="col-md-12">
+					<div class="tema"><b>Esquerda e direita.</b></div>
+					<div class="descricao"><b><i>Espectro social:</i></b></div>
+					<div class="row">
 						<form name="Licao2" action="licao3.php" method="POST">
 							<input type="hidden" name="id" value="<?php echo $id ?>">
-							<button class="botao2" type="submit" name="licao2" value="Esquerda" data-hover="Esquerda"><div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div></button>
-						</div>
-						<div class="col-md-6">
-							<button class="botao2" type="submit" name="licao2" value="Direita" data-hover="Direita"><div>Sou conservador em relação aos costumes (que pode ser popularmente expressado com a frase: “retorno à maneira como as coisas eram"), prezo os “valores familiares” ou “valores atemporais”, me identifico e promovo conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</div></button>
-						</div>
-					</form>
+							<div class="col-md-6">
+								<button class="botao2" type="submit" name="licao2" value="Esquerda" data-hover="Esquerda"><div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div></button>
+							</div>
+							<div class="col-md-6">
+								<button class="botao2" type="submit" name="licao2" value="Direita" data-hover="Direita"><div>Sou conservador em relação aos costumes (que pode ser popularmente expressado com a frase: “retorno à maneira como as coisas eram"), prezo os “valores familiares” ou “valores atemporais”, me identifico e promovo conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</div></button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	</div>
-	<div class="rodape">
+		<div class="rodape">
 			<div class="green"></div>
 			<div class="blue"></div>
 			<div class="yellow"></div>
