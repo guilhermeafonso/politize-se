@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="urna.css">
+        <script type="text/javascript" src="urna.js"></script>
+        <title>Simulador</title>
+    </head>    
+<body onload="cadastros()">
+    <div id="inicio">
+        <h2>Urna Eletrônica - Simulador</h2>
+        <button onclick="inicio()">Iniciar Votação</button>
+    </div>
+    <div id="listaCandidatos">
+        <h2>Candidatos:</h2>
+        <div id="candidatos"></div>
+    </div>
+    <div id="urna">
+
+    <div id="tela">
+        <img class="informacoesTela" id="foto" src=""/>
+        <img class="informacoesTela" id="vice" src=""/>
+        <h5 class="informacoesTela" id="cargo">Seu voto para</h5>
+        <h4 class="informacoesTela" id="tipo"></h4>
+        <h2 class="informacoesTela" id="branco">VOTO BRANCO!</h2>
+        <h2 class="informacoesTela" id="nulo">VOTO NULO!</h2>
+        <h1 class="informacoesTela" id="fim">FIM</h1>
+        <h2 class="informacoesTela" id="num">Número:<span id="numero"></span></h2>
+        <h3 class="informacoesTela" id="nome"></h3>
+        <h3 class="informacoesTela" id="partido"></h3>
+        <div class="informacoesTela" id="mensagem">
+            <p>Aperte a tecla:</p>
+            <p>VERDE para <b>CONFIRMAR</b> seu voto.<br/>LARANJA para <b>REINICIAR</b> este voto.</p>
+        </div>
+    </div>
+    <div id="teclado">
+        <h2>Justiça<br/>Eleitoral</h2>
+        <table id="digitos">
+            <tr>
+                <td><input type="button" name="bt1" value="1" onclick="digito('1')"/></td>
+                <td><input type="button" name="bt2" value="2" onclick="digito('2')"/></td>
+                <td><input type="button" name="bt3" value="3" onclick="digito('3')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="bt4" value="4" onclick="digito('4')"/></td>
+                <td><input type="button" name="bt5" value="5" onclick="digito('5')"/></td>
+                <td><input type="button" name="bt6" value="6" onclick="digito('6')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="bt7" value="7" onclick="digito('7')"/></td>
+                <td><input type="button" name="bt8" value="8" onclick="digito('8')"/></td>
+                <td><input type="button" name="bt9" value="9" onclick="digito('9')"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" name="bt0" value="0" onclick="digito('0')"/></td>
+                <td></td>
+            </tr>
+        </table>
+        <table id="comandos">
+            <tr>
+                <td><input type="button" id="branc" name="btbranco" value="BRANCO" onclick="votoBranco()"/></td>
+                <td><input type="button" id="corrige" name="btcorrige" value="CORRIGE" onclick="corrige()"/></td>
+                <td><input type="button" id="confirma" name="btconfirma" value="CONFIRMA" onclick="confirma()"/></td>
+            </tr>
+        </table>
+    </div>
+</div>   
+</body>
+</html>   
