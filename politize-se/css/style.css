@@ -186,10 +186,6 @@ input{
 .espacamento{
     margin-top: 230px;
 }
-#piechart{
-    margin: auto;
-    display: block;
-}
 .horizontal.timeline {
     margin-top: 60px;
     display: flex;

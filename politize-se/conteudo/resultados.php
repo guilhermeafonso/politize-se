@@ -22,11 +22,8 @@
 
 			var data = google.visualization.arrayToDataTable([
 			['Task', 'Licao1'],
-			['Esquerda',     15], 
-			['Direita',     10]
-
-
-				/*<?php
+			
+				 <?php
 					$host = "localhost";
 					$user = "root";
 					$pass = "";
@@ -34,14 +31,15 @@
 					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 					@mysql_select_db($db) or die(mysql_error());
 
-					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda'");
 
+					$query = "SELECT Licao1, COUNT(*) as number FROM bd GROUP BY Licao1;";  
+ 					$result = mysql_query($query);  
+					//da maneira que esta aqui vai aparecer na tela como: [Direta, 3],[Esquerda, 3], 
+					//o problema esta na na ultima virgula, que no google charts não pode ter, então precisamos de um código que coloque as virgulas no final de todas as linhas MENOS na ultima.
 					if (mysql_num_rows($result) > 0) {
 					while($row = mysql_fetch_assoc($result)) {
-					echo '["Esquerda",     11], ["Direita",      2]';}}
-				?>*/
-
-
+					echo '['.$row["Licao1"].', '.$row["number"].'],';}}
+				?>
 			]);  
 
 			var options = {
@@ -61,7 +59,7 @@
 			chart.draw(data, options);
 		}
     	</script>
-    	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    	
     	<script type="text/javascript">
 			google.charts.load('current', {'packages':['corechart']});
 			google.charts.setOnLoadCallback(drawChart);
@@ -91,7 +89,7 @@
 			chart.draw(data, options);
 		}
     	</script>
-    	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     	<script type="text/javascript">
 			google.charts.load('current', {'packages':['corechart']});
 			google.charts.setOnLoadCallback(drawChart);
@@ -122,7 +120,7 @@
 			chart.draw(data, options);
 		}
     	</script>
-    	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     	<script type="text/javascript">
 			google.charts.load('current', {'packages':['corechart']});
 			google.charts.setOnLoadCallback(drawChart);
