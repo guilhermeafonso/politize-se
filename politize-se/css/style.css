@@ -84,7 +84,8 @@ body{
 }
 input{
     border:none;
-    font-weight:bold;}
+    font-weight:bold;
+}
 .rodape{
     position:fixed;
     bottom:0;
@@ -101,6 +102,16 @@ input{
 }
 .descricao{
     font-size: 1.2em;
+    color: #363636;
+}
+.descricao2{
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+.descricao3{
+    text-align: justify;
+    font-size: 1.1em;
     color: #363636;
 }
 .perfil1{
@@ -182,6 +193,22 @@ input{
     color: #363636;
     background-color: #6CA6CD;
     transition: all .4s ease-in-out;
+}
+.botao4{
+    margin: auto;
+    margin-bottom: 40px;
+    display: block;
+    margin-top: 20px;
+    font-family: courier;
+    width: 20%;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px #CFB53B;
+    padding: 15px 25px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #363636;
+    background-color: #FEDA59;
 }
 .espacamento{
     margin-top: 230px;
