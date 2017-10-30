@@ -184,6 +184,15 @@
 						<span><b>Lição 4</b></span>
 					</div>
 					<div class="step">
+						<span><b>Lição 5</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 6</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 7</b></span>
+					</div>
+					<div class="step">
 						<span><b>Seu perfil</b></span>
 					</div>
 					<div class="step current">

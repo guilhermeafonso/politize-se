@@ -34,7 +34,10 @@ CREATE TABLE `bd` (
   `Licao1` varchar(50) NOT NULL,
   `Licao2` varchar(50) NOT NULL,
   `Licao3` varchar(50) NOT NULL,
-  `Licao4` varchar(50) NOT NULL
+  `Licao4` varchar(50) NOT NULL,
+  `Licao5` varchar(50) NOT NULL,
+  `Licao6` varchar(50) NOT NULL,
+  `Licao7` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --

@@ -140,7 +140,7 @@ input{
     letter-spacing: 3px;
     font-weight: 800;
     font-size: 2em;
-    margin-top: 20px;
+    margin-top: 15px;
     opacity: 0;
     transform: translate(-100%,0);
     transition: all .3s ease-in-out;
@@ -178,7 +178,7 @@ input{
     letter-spacing: 3px;
     font-weight: 800;
     font-size: 2em;
-    margin-top: 30px;
+    margin-top: 15px;
     opacity: 0;
     transform: translate(-100%,0);
     transition: all .3s ease-in-out;

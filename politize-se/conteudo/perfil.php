@@ -24,11 +24,11 @@
 		    $user = "root";
 		    $pass = "";
 		    $db = "politizese";
-		    $licao4 = $_POST['licao4'];
+		    $licao7 = $_POST['licao7'];
 		    $id = $_POST['id'];
 		    $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 		    @mysql_select_db($db) or die(mysql_error());  
-		    $sqrl = mysql_query("UPDATE bd set Licao4 ='$licao4' WHERE id = '$id'");
+		    $sqrl = mysql_query("UPDATE bd set Licao7 ='$licao7' WHERE id = '$id'");
 		?>
 		<div class="container">
 			<div class='Cube panelLoad'>
@@ -56,6 +56,15 @@
 					</div>
 					<div class="step">
 						<span><b>Lição 4</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 5</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 6</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 7</b></span>
 					</div>
 					<div class="step current">
 						<span><b>Seu perfil</b></span>

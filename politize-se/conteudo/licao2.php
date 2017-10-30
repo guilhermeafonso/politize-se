@@ -58,6 +58,15 @@
 						<span><b>Lição 4</b></span>
 					</div>
 					<div class="step">
+						<span><b>Lição 5</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 6</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 7</b></span>
+					</div>
+					<div class="step">
 						<span><b>Seu perfil</b></span>
 					</div>
 					<div class="step">
@@ -74,10 +83,10 @@
 						<form name="Licao2" action="licao3.php" method="POST">
 							<input type="hidden" name="id" value="<?php echo $id ?>">
 							<div class="col-md-6">
-								<button class="botao2" type="submit" name="licao2" value="Esquerda" data-hover="Esquerda"><div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div></button>
+								<button class="botao3" type="submit" name="licao2" value="Esquerda" data-hover="Esquerda"><div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div></button>
 							</div>
 							<div class="col-md-6">
-								<button class="botao2" type="submit" name="licao2" value="Direita" data-hover="Direita"><div>Sou conservador em relação aos costumes (que pode ser popularmente expressado com a frase: “retorno à maneira como as coisas eram"), prezo os “valores familiares” ou “valores atemporais”, me identifico e promovo conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</div></button>
+								<button class="botao3" type="submit" name="licao2" value="Direita" data-hover="Direita"><div>Sou conservador em relação aos costumes (que pode ser popularmente expressado com a frase: “retorno à maneira como as coisas eram"), prezo os “valores familiares” ou “valores atemporais”, me identifico e promovo conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</div></button>
 							</div>
 						</form>
 					</div>

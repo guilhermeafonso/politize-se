@@ -58,6 +58,15 @@
 						<span><b>Lição 4</b></span>
 					</div>
 					<div class="step">
+						<span><b>Lição 5</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 6</b></span>
+					</div>
+					<div class="step">
+						<span><b>Lição 7</b></span>
+					</div>
+					<div class="step">
 						<span><b>Seu perfil</b></span>
 					</div>
 					<div class="step">
@@ -70,7 +79,7 @@
 				<div class="col-md-12">
 					<div class="tema"><b>Capitalismo e socialismo.</b></div>
 					<div class="row">
-						<form name="Licao4" action="perfil.php" method="POST">
+						<form name="Licao4" action="Licao5.php" method="POST">
 							<div class="col-md-12">	
 								<input type="hidden" name="id" value="<?php echo $id ?>">
 								<button class="botao2" type="submit" name="licao4" value="Capitalismo" data-hover="Capitalismo"><div>Pode ser definido simplesmente por uma técnica, mas que não determina as finalidades de seu uso. O capitalismo pode ser usado para libertar a todos ou escravizar a todos. Não é uma cultura, talvez definido como uma subcultura por se desenvolver dentro de uma cultura já existente, podendo se adaptar a mesma, mas o que realmente o define são as relações econômicas existente em seu uso. O capitalismo também pode ser definido por duas ideias e "meia", essas que são essenciais para que o modelo econômico seja utilizado. Em primeiro lugar, é necessário propriedades privadas onde bens são acumulados, em segundo temos o sistema de troca entre essas propriedades, sendo a troca de bens que estiverem em excesso, e em terceiro, temos a "meia" ideia, que nada mais é que a moeda de troca, um facilitador para as negociações que eventualmente ficariam desregulares sem o uso da mesma. No capitalismo, é defendido o livre comércio entre as propriedades privadas sem o excesso da taxação tributária, ou seja, a mínima intervenção estatal na economia, pois, quanto maior o estado, menor é a liberdade de seu povo.</div></button>
