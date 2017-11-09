@@ -1,9 +1,9 @@
-body{
+body {
     background-color: #7FD7A2;
     background-size: 100%;  
     font-family: arial;
 }
-.titulo1{
+.titulo1 {
     font-family: courier;
     text-align: center;
     margin: 50px;
@@ -11,7 +11,7 @@ body{
     line-height: 110%;
     padding: 0 1em;
 }
-.titulo1{
+.titulo1 {
     background: #6CA6CD;
     background: linear-gradient(to bottom, #6CA6CD 0%, #6CA6CD 33%, #fff 33%, #fff 66%, #FEDA59 66%, #FEDA59 100%);
     background-repeat: repeat;
@@ -21,14 +21,14 @@ body{
     background-clip: text;
     animation: rotateRWB 200s linear 1s 1000;
 }
-.caixainicio{
+.caixainicio {
     margin: 50px;
     margin-top: 150px;
     font-size: 1.3em;
     text-align: center;
     color: #363636;
 }
-.titulo2{
+.titulo2 {
     text-align: center;
     font-family: courier;
     margin: 50px;
@@ -36,7 +36,7 @@ body{
     line-height: 110%;
     padding: 0 1em;
 }
-.titulo2{
+.titulo2 {
     background: #6CA6CD;
     background: linear-gradient(to bottom, #6CA6CD 0%, #6CA6CD 33%, #fff 33%, #fff 66%, #FEDA59 66%, #FEDA59 100%);
     background-repeat: repeat;
@@ -46,24 +46,24 @@ body{
     background-clip: text;
     animation: rotateRWB 200s linear 1s 1000;
 }
-.caixa2{
+.caixa2 {
     margin: 50px;
     margin-top: 160px;
     font-size: 1.2em;
     text-align: center;
     color: #363636;
 }
-.caixa3{
+.caixa3 {
     text-align: center;
     font-size: 1.2em;
     margin-bottom: 50px;
 }
-.campocadastro{
+.campocadastro {
     border-radius: 5px;
     padding: 5px 5px;
     color: #363636;
 }
-.botao1{
+.botao1 {
     margin: auto;
     margin-bottom: 40px;
     display: block;
@@ -79,14 +79,14 @@ body{
     color: #363636;
     background-color: #6CA6CD;
 }
-.botao1:hover{
+.botao1:hover {
     text-decoration:none;
 }
-input{
+input {
     border:none;
     font-weight:bold;
 }
-.rodape{
+.rodape {
     position:fixed;
     bottom:0;
     width:100%;
@@ -95,31 +95,31 @@ input{
     text-align: center;
     font-size: 1em;
 }
-.tema{
+.tema {
     font-size: 1.4em;
     text-align: center;
     color: #ffffff;
 }
-.descricao{
+.descricao {
     font-size: 1.2em;
     color: #363636;
 }
-.descricao2{
+.descricao2 {
     text-align: center;
     font-size: 1.2em;
     color: white;
 }
-.descricao3{
+.descricao3 {
     text-align: justify;
     font-size: 1.1em;
     color: #363636;
 }
-.perfil1{
+.perfil1 {
     font-size: 1.4em;
     text-align: center;
     color: red;
 }
-.botao2:hover{cursor: pointer}
+.botao2:hover {cursor: pointer;}
 .botao2 {
     margin-top: 30px;
     position: relative;
@@ -129,7 +129,7 @@ input{
     overflow: hidden;
     box-shadow: 7px 7px 3px #00688B;
 }
-.botao2:hover:before{opacity: 1; transform: translate(0,0);}
+.botao2:hover:before {opacity: 1; transform: translate(0,0);}
 .botao2:before{
     font-family:courier;
     content: attr(data-hover);
@@ -145,8 +145,8 @@ input{
     transform: translate(-100%,0);
     transition: all .3s ease-in-out;
 }
-.botao2:hover div{opacity: 0; transform: translate(100%,0)}
-.botao2 div{
+.botao2:hover div {opacity: 0; transform: translate(100%,0)}
+.botao2 div {
     width: 100%;
     height: 100%;
     padding: 15px 25px;
@@ -156,7 +156,7 @@ input{
     background-color: #6CA6CD;
     transition: all .4s ease-in-out;
 }
-.botao3:hover{cursor: pointer}
+.botao3:hover {cursor: pointer;}
 .botao3 {
     margin-top: 30px;
     margin-bottom: 40px;
@@ -167,8 +167,8 @@ input{
     overflow: hidden;
     box-shadow: 7px 7px 3px #00688B;
 }
-.botao3:hover:before{opacity: 1; transform: translate(0,0);}
-.botao3:before{
+.botao3:hover:before {opacity: 1; transform: translate(0,0);}
+.botao3:before {
     font-family:courier;
     content: attr(data-hover);
     position: absolute;
@@ -183,8 +183,8 @@ input{
     transform: translate(-100%,0);
     transition: all .3s ease-in-out;
 }
-.botao3:hover div{opacity: 0; transform: translate(100%,0)}
-.botao3 div{
+.botao3:hover div {opacity: 0; transform: translate(100%,0)}
+.botao3 div {
     width: 100%;
     height: 100%;
     padding: 15px 25px;
@@ -194,7 +194,7 @@ input{
     background-color: #6CA6CD;
     transition: all .4s ease-in-out;
 }
-.botao4{
+.botao4 {
     margin: auto;
     margin-bottom: 40px;
     display: block;
@@ -210,7 +210,113 @@ input{
     color: #363636;
     background-color: #FEDA59;
 }
-.espacamento{
+.link {
+    color: #363636;
+}
+.link:hover {
+    text-decoration:none;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: -1;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay .light {
+    background: rgba(255, 255, 255, 0.5);
+}
+.overlay .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    border-radius: 15px;
+    margin: 268px auto;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #666;
+    width: 600px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.light .popup {
+    border-color: #aaa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.popup .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 50px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+}
+.popup .close:hover {
+    opacity: 1;
+}
+.popup .content {
+    max-height: 800px;
+    overflow: auto;
+}
+.popup p {
+    color:#ffffff;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 40px;
+}
+.popup p:last-child {
+    margin: 0;
+}
+.botao5 {
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: courier;
+    width: 50%;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px #CFB53B;
+    padding: 15px 25px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #363636;
+    background-color: #FEDA59;
+}
+.caixa4 {
+    margin: auto;
+    margin-bottom: 40px;
+    display: block;
+    margin-top: 20px;
+    font-family: courier;
+    width: 100%;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px #7F9B85;
+    padding: 15px 25px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #363636;
+    background-color: #B5C594;
+}
+.espacamento {
     margin-top: 230px;
 }
 .horizontal.timeline {

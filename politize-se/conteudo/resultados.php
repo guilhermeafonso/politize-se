@@ -28,20 +28,26 @@
 					$user = "root";
 					$pass = "";
 					$db = "politizese";
+					$x = 0;
 					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 					@mysql_select_db($db) or die(mysql_error());
 
 
 					$query = "SELECT Licao1, COUNT(*) as number FROM bd GROUP BY Licao1;";  
  					$result = mysql_query($query);  
-					//da maneira que esta aqui vai aparecer na tela como: [Direta, 3],[Esquerda, 3], 
-					//o problema esta na na ultima virgula, que no google charts não pode ter, então precisamos de um código que coloque as virgulas no final de todas as linhas MENOS na ultima.
 					if (mysql_num_rows($result) > 0) {
-					while($row = mysql_fetch_assoc($result)) {
-					echo '['.$row["Licao1"].', '.$row["number"].'],';}}
+						while($row = mysql_fetch_assoc($result)) {
+							$x = $x +1;
+							echo "['".$row['Licao1']."', ".$row['number']."]";
+							if ($x < mysql_num_rows($result)){
+								echo ',';
+							}
+
+						}
+					}
+
 				?>
 			]);  
-
 			var options = {
 				title: 'Lição 1',
 				titleTextStyle: {

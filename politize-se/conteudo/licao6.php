@@ -67,6 +67,9 @@
 						<span><b>Lição 7</b></span>
 					</div>
 					<div class="step">
+						<span><b>Eleições</b></span>
+					</div>
+					<div class="step">
 						<span><b>Seu perfil</b></span>
 					</div>
 					<div class="step">
@@ -82,16 +85,21 @@
 						<form name="Licao6" action="licao7.php" method="POST">
 							<div class="col-md-12">	
 								<input type="hidden" name="id" value="<?php echo $id ?>">
-								<button class="botao2" type="submit" name="licao6" value="Distrital" data-hover="Distrital"><div>O sistema eleitoral marjoritário é responsável por eleger os cargos de presidente da república, governador de estado e do distrito federal, senador e prefeito.Nesse sistema é eleito o candidato que obter a maior quantidade de votos. Esse sistema pode ser dividido em de duas maneiras, sendo o sistema simples ou relativo, onde é eleito aquele que obtiver o maior número dos votos apurados; ou o sistema absoluto, onde é eleito aquele que obtiver mais da metade dos votos apurados, excluídos os votos em branco e os nulos. No qual, caso o candidato com maior número de votos não obtenha a maioria absoluta, deverá ser realizado segundo turno entre os dois candidatos mais votados.</div></button>
+								<button class="botao2" type="submit" name="licao6" value="Distrital" data-hover="Distrital">
+									<div>O sistema eleitoral marjoritário é responsável por eleger os cargos de presidente da república, governador de estado e do distrito federal, senador e prefeito.Nesse sistema é eleito o candidato que obter a maior quantidade de votos. Esse sistema pode ser dividido em de duas maneiras, sendo o sistema simples ou relativo, onde é eleito aquele que obtiver o maior número dos votos apurados; ou o sistema absoluto, onde é eleito aquele que obtiver mais da metade dos votos apurados, excluídos os votos em branco e os nulos. No qual, caso o candidato com maior número de votos não obtenha a maioria absoluta, deverá ser realizado segundo turno entre os dois candidatos mais votados.</div>
+								</button>
 							</div>
 							<div class="col-md-12">
-								<button class="botao2" type="submit" name="licao6" value="Proporcional" data-hover="Proporcional"><div>O sistema eleitoral proporcional é responsável por eleger os cargos de deputado federal, deputado estadual, deputado distrital e vereador. Esse sistema tem como objetivo garantir a representação de minorias. O artigo 5º da lei 9.504 da Constituição Federal fala que nas eleições proporcionais são válidos aqueles votos direcionados ao candidato ou a legenda, ou seja, ao partido.Nesse sistema é utilizado o cálculo do quociente eleitoral, que é obtido pela divisão da quantidade de votos válidos pelo número de vagas a serem preenchidas.<br><br></div></button>
+								<button class="botao2" type="submit" name="licao6" value="Proporcional" data-hover="Proporcional">
+									<div>O sistema eleitoral proporcional é responsável por eleger os cargos de deputado federal, deputado estadual, deputado distrital e vereador. Esse sistema tem como objetivo garantir a representação de minorias. O artigo 5º da lei 9.504 da Constituição Federal fala que nas eleições proporcionais são válidos aqueles votos direcionados ao candidato ou a legenda, ou seja, ao partido.Nesse sistema é utilizado o cálculo do quociente eleitoral, que é obtido pela divisão da quantidade de votos válidos pelo número de vagas a serem preenchidas.<br><br></div>
+								</button>
 							</div>
 							<div class="col-md-12">
-								<button class="botao3" type="submit" name="licao6" value="Misto" data-hover="Misto"><div>O Sistema Eleitoral Misto combina regras de votos do sistema majoritário e do voto proporcional. O objetivo de um sistema misto é garantir que haja uma boa relação entre eleitor e eleito, o vinculo que é maior no sistema majoritário, mas ao mesmo tempo assegurar a representatividade de minorias politicas e pequenos partidos uma característica de um sistema proporcional. O eleitor vota duas vezes. Uma para candidatos no distrito e outra para a lista dos partidos (legenda). A metade das vagas vai para os candidatos eleitos por maioria simples. A outra metade é preenchida conforme o quociente eleitoral pelos candidatos da lista.<</div></button>
+								<button class="botao3" type="submit" name="licao6" value="Misto" data-hover="Misto">
+									<div>O Sistema Eleitoral Misto combina regras de votos do sistema majoritário e do voto proporcional. O objetivo de um sistema misto é garantir que haja uma boa relação entre eleitor e eleito, o vinculo que é maior no sistema majoritário, mas ao mesmo tempo assegurar a representatividade de minorias politicas e pequenos partidos uma característica de um sistema proporcional. O eleitor vota duas vezes. Uma para candidatos no distrito e outra para a lista dos partidos (legenda). A metade das vagas vai para os candidatos eleitos por maioria simples. A outra metade é preenchida conforme o quociente eleitoral pelos candidatos da lista.</div>
+								</button>
 							</div>
 						</form>
-						<br><br><br><br>
 					</div>
 				</div>
 			</div>

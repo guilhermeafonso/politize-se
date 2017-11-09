@@ -67,6 +67,9 @@
 						<span><b>Lição 7</b></span>
 					</div>
 					<div class="step">
+						<span><b>Eleições</b></span>
+					</div>
+					<div class="step">
 						<span><b>Seu perfil</b></span>
 					</div>
 					<div class="step">
@@ -80,16 +83,53 @@
 					<div class="tema"><b>Esquerda e direita.</b></div>
 					<div class="descricao"><b><i>Espectro social:</i></b></div>
 					<div class="row">
-						<form name="Licao2" action="licao3.php" method="POST">
-							<input type="hidden" name="id" value="<?php echo $id ?>">
-							<div class="col-md-6">
-								<button class="botao3" type="submit" name="licao2" value="Esquerda" data-hover="Esquerda"><div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div></button>
-							</div>
-							<div class="col-md-6">
-								<button class="botao3" type="submit" name="licao2" value="Direita" data-hover="Direita"><div>Sou conservador em relação aos costumes (que pode ser popularmente expressado com a frase: “retorno à maneira como as coisas eram"), prezo os “valores familiares” ou “valores atemporais”, me identifico e promovo conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</div></button>
-							</div>
-						</form>
+						<div class="col-md-6">
+							<a class="link"  href="#popup1">
+								<button class="botao3" data-hover="Esquerda">
+									<div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div>
+								</button>
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a class="link"  href="#popup2">
+								<button class="botao3" data-hover="Direita">
+									<div>Sou conservador em relação aos costumes (que pode ser popularmente expressado com a frase: “retorno à maneira como as coisas eram"), prezo os “valores familiares” ou “valores atemporais”, me identifico e promovo conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</div>
+								</button>
+							</a>
+						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<a class="close" href="#">Voltar</a>
+				<div class="content">
+					<form name="Licao2" action="licao3.php" method="POST">
+						<input type="hidden" name="id" value="<?php echo $id ?>">
+						<button class="botao5" type="submit" name="licao2" value="Esquerda">
+							<div><b>Concordo totalmente</b></div>
+						</button>
+						<button class="botao5" type="submit" name="licao2" value="Centro-esquerda">
+							<div><b>Concordo em alguns aspectos</b></div>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="popup2" class="overlay">
+			<div class="popup">
+				<a class="close" href="#">Voltar</a>
+				<div class="content">
+					<form name="Licao2" action="licao3.php" method="POST">
+						<input type="hidden" name="id" value="<?php echo $id ?>">
+						<button class="botao5" type="submit" name="licao2" value="Direrta">
+							<div><b>Concordo totalmente</b></div>
+						</button>
+						<button class="botao5" type="submit" name="licao2" value="Centro-direita">
+							<div><b>Concordo em alguns aspectos</b></div>
+						</button>
+					</form>
 				</div>
 			</div>
 		</div>

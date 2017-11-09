@@ -67,6 +67,9 @@
 						<span><b>Lição 7</b></span>
 					</div>
 					<div class="step">
+						<span><b>Eleições</b></span>
+					</div>
+					<div class="step">
 						<span><b>Seu perfil</b></span>
 					</div>
 					<div class="step">
@@ -79,7 +82,7 @@
 				<div class="col-md-12">
 					<div class="tema"><b>Voto eleitoral.</b></div>
 					<div class="row">
-						<form name="Licao7" action="perfil.php" method="POST">
+						<form name="Licao7" action="eleicoes1.php" method="POST">
 							<input type="hidden" name="id" value="<?php echo $id ?>">
 							<div class="col-md-6">
 								<button class="botao3" type="submit" name="licao7" value="Obrigatorio" data-hover="Voto obrigatório"><div>O voto é um dever meu. Assim eu, e todos os outros eleitores participam e estão representados na política nacional. O resultado a longo prazo seria a formação de uma sociedade com uma cultura política forte, em que o hábito de votar e se informar sobre política é comum à maior parte da população. O ponto que se contrapõe seria a grande parte da população que vive em estado de pobreza e baixo nível de escolaridade, sendo facilmente influenciados ou alienados, elegendo candidatos que não os represente ou que lhes oferecesse algum benefício.</div></button>
