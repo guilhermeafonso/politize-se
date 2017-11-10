@@ -86,7 +86,7 @@
 						<div class="col-md-6">
 							<a class="link"  href="#popup1">
 								<button class="botao3" data-hover="Esquerda">
-									<div>Sou liberal em relação aos costumes e defensor dos direitos humanos e das liberdades civis, me identifico ou aprovo causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.<br><br></div>
+									<div>Sou liberal em relação aos costumes e defensor das liberdades civis, coloco o ideal igualitário acima da ordem moral, cultural, patriótica ou religiosa. Me identifico ou aprovo a movimentos sociais ambientalistas e pacifistas, e a algumas causas como: regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</div>
 								</button>
 							</a>
 						</div>

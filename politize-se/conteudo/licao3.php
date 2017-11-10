@@ -86,17 +86,17 @@
 							<div class="col-md-12">	
 								<input type="hidden" name="id" value="<?php echo $id ?>">
 								<button class="botao2" type="submit" name="licao3" value="Democracia" data-hover="Democracia">
-									<div>Sou responsável por decidir os governantes por meio do voto eleitoral, todas as importantes decisões políticas estão com a sociedade. Acredito e defendo direitos humanos fundamentais como: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na minha participação na vida política, econômica e cultural da sociedade. Esse modelo costuma contar com os poderes Executivo, Legislativo e Judiciário, normalmente sob o comando do ou da Presidente da República o maior representante do povo.<br><br></div>
+									<div>Sou responsável por decidir os governantes por meio do voto eleitoral, todas as importantes decisões políticas estão com a sociedade. Acredito e defendo direitos humanos fundamentais como: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na minha participação na vida política, econômica e cultural da sociedade. Esse modelo costuma contar com os poderes executivo, legislativo e judiciário, normalmente sob o comando do ou da presidente da república, o maior representante do povo.</div>
 								</button>
 							</div>
 							<div class="col-md-12">
 								<button class="botao2" type="submit" name="licao3" value="Monarquia" data-hover="Monarquia">
-									<div>O poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.<br><br></div>
+									<div>O poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. O governo é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária. Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro.</div>
 								</button>
 							</div>
 							<div class="col-md-12">
 								<button class="botao3" type="submit" name="licao3" value="Ditadura" data-hover="Ditadura">
-									<div>Devo abrir mão dos meus direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas (geralmente militares), com tirania ou violência a opositores. É um regime antidemocrático onde não existe a participação da população, o governante deve atuar de acordo com suas próprias vontades, sem que respeite meus direitos humanos fundamentais ou os da população e a divisão de poderes. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra.<br><br></div>
+									<div>Devo abrir mão dos meus direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. O ditador não admite oposição a seus atos e ideias, e tem grande parte do poder de decisão, portanto é um regime onde a sociedade exerce pouca participação na politica, o governante atua de acordo com suas próprias vontades. Governos ditatoriais geralmente assumem o poder através de golpes de estado ou situações de guerra.</div>
 								</button>
 							</div>
 						</form>
