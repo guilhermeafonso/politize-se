@@ -97,8 +97,8 @@
 						</form>
 							<div class="col-md-12">
 								<a class="link"  href="#popup0">
-									<button class="botao3" data-hover="Centro">
-										<div>Busco um equilíbrio para a desigualdade econômica usando caracteristicas de ambas. Sou contra todos os extremos e não me considero de esquerda nem direita. O centro pode ser dividido também em centro-esquerda: Acredito nos ideais de esquerda, mas sou mais favorel a uma economia de mercado sem interferencias do governo, sendo complacente ao aspectos de direita. E centro-direita: Surgem de uma ideologia moderada. Tem os mesmos ideais da direita, mas são mais complacentes em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades.</div>
+									<button class="botao2" data-hover="Centro">
+										<div>Busco um equilíbrio para a desigualdade econômica usando caracteristicas de ambas. Sou contra todos os extremos e não me considero de esquerda nem direita. <i>O centro pode ser dividido também em centro-esquerda:</i> Acredito nos ideais de esquerda, mas sou mais favorel a uma economia de mercado sem interferencias do governo, sendo complacente ao aspectos de direita. <i>E centro-direita:</i> Tenho uma ideologia moderada, com os mesmos ideais da direita, mas sou mais complacentes em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades.</div>
 									</button>
 								</a>
 							</div>

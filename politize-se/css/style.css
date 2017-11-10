@@ -114,6 +114,12 @@ input {
     font-size: 1.1em;
     color: #363636;
 }
+.descricao6 {
+    font-family: arial;
+    text-align: center;
+    font-size: 1.2em;
+    color: #00688B;
+}
 .perfil1 {
     font-size: 1.4em;
     text-align: center;
@@ -248,7 +254,7 @@ input {
     border-radius: 15px;
     margin: 268px auto;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     border: 1px solid #666;
     width: 600px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
@@ -402,6 +408,22 @@ input {
     color: #363636;
     background-color: #ffffff;
 }
+.caixa7 {
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 20px;
+    font-family: courier;
+    width: 100%;
+    border: 10px solid #829F88;
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px #5AC98A;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #363636;
+    background-color: #ffffff;
+}
 .rede1 > a{
     color: #858585;
     text-decoration:none;
@@ -416,6 +438,12 @@ input {
     margin: auto;
     display: block;
     height: 100px;
+    margin-bottom: 15px;
+}
+.candidato{
+    margin: auto;
+    display: block;
+    height: 170px;
     margin-bottom: 15px;
 }
 .popup2 {

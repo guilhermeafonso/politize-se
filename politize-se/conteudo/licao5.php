@@ -93,7 +93,7 @@
 					<div class="row">
 						<div class="col-md-12">	
 							<br>
-							<div class="descricao3"><b>Em épocas passadas a Igreja Católica exercia forte poder em decisões políticas, agora os evangélicos são a força da vez. Justificada pelo crescimento das frentes mais conservadoras, o pensamento e ideologia religiosa têm se mostrado cada vez mais fortes no âmbito político. Apesar de não serem maioria, são grupos que possuem grande influência na tomada de decisões, onde temas são aprovados ou não (como: descriminalização do aborto, casamento homoafetivo, adoção por casais homossexuais, legalização da maconha) com base no que diz a bíblia.</b></div><br>
+							<div class="descricao3">Em épocas passadas a Igreja Católica exercia forte poder em decisões políticas, agora os evangélicos são a força da vez. Justificada pelo crescimento das frentes mais conservadoras, o pensamento e ideologia religiosa têm se mostrado cada vez mais fortes no âmbito político. Apesar de não serem maioria, são grupos que possuem grande influência na tomada de decisões, onde temas são aprovados ou não (como: descriminalização do aborto, casamento homoafetivo, adoção por casais homossexuais, legalização da maconha) com base no que diz a bíblia.</div><br>
 							<div class="descricao2"><b><i>Na sua opinião o Brasil, um país laico (quando é imparcial em relação às questões gerais, não apoiando nem se opondo a nenhuma religião) ocorre esse tipo de influência religiosa na política?</i></b></div>
 							<a class="link" href="#popup3">
 								<button class="botao1" type="button">

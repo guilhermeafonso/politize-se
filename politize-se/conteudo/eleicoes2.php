@@ -81,9 +81,149 @@
 			<div class="row">
 				<div class="col-md-12">	
 					<div class="tema"><b>Possíveis candidatos a presidência.</b></div><br>
-				</div>
-			</div>
-		</div>
+					<div class="descricao"><i>* Com base no partido selecionado alguns candidatos podem estar em destaque.</i></div><br>
+					<?php
+				    	$host = "localhost";
+				        $user = "root";
+				        $pass = "";
+				        $db = "politizese";
+				        $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+				        @mysql_select_db($db) or die(mysql_error());
+				        
+				        $result = mysql_query("SELECT * FROM `bd` WHERE Partido = 'PSDB' and id = '$id'");
+
+				        if (mysql_num_rows($result) > 0) {
+            			while($row = mysql_fetch_assoc($result)) {
+           					echo "
+           					<div class=\"row\">
+	       						<div class=\"col-md-6\">
+	       							<div class=\"caixa7\">
+		       							<div class=\"row\">
+			       							<div class=\"col-md-6\">
+			       								<div class=\"rede1\">
+													<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+												</div>
+												<div class=\"rede2\">
+													<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a></a>
+												</div>
+												<img class=\"candidato\" src=\"../imagens/candidato1.png\">
+												<form name=\"Candidato\" action=\"simulacao.php\" method=\"POST\">
+													<input type=\"hidden\" name=\"id\" value=".$id.">
+													<button class=\"botao7\" type=\"submit\" name=\"Candidato\" value=\"joaoDoria\">
+														<div><b>Meu voto!</b></div>
+													</button>
+												</form>
+											</div>
+	       									<div class=\"col-md-6\"><br>
+	       										<div class=\"descricao6\"><b>João Doria</b></div>
+	       											<a class=\"link\" href=\"#popup18\">
+	       												<button class=\"botao6\" type=\"button\">
+	       													<b>Perfil</b>
+														</button>
+	       											</a>
+	       											<a class=\"link\" href=\"#popup19\">
+	       												<button class=\"botao6\" type=\"button\">
+	       													<b>Reputação</b>
+														</button>
+	       											</a>
+	       											<a class=\"link\" href=\"#popup20\">
+	       												<button class=\"botao6\" type=\"button\">
+	       													<b>Propostas</b>
+														</button>
+	       											</a>
+												</div>
+											</div>
+	       								</div>
+	       							</div>
+		       						<div class=\"col-md-6\">
+		       							<div class=\"caixa7\">
+			       							<div class=\"row\">
+				       							<div class=\"col-md-6\">
+				       								<div class=\"rede1\">
+														<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+													</div>
+													<div class=\"rede2\">
+														<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a></a>
+													</div>
+													<img class=\"candidato\" src=\"../imagens/candidato2.png\">
+													<form name=\"Candidato\" action=\"simulacao.php\" method=\"POST\">
+														<input type=\"hidden\" name=\"id\" value=".$id.">
+														<button class=\"botao7\" type=\"submit\" name=\"Candidato\" value=\"PSC\">
+															<div><b>Meu voto!</b></div>
+														</button>
+													</form>
+												</div>
+		       									<div class=\"col-md-6\"><br>
+		       										<div class=\"descricao6\"><b>Geraldo Alckmin</b></div>
+		       											<a class=\"link\" href=\"#popup21\">
+		       												<button class=\"botao6\" type=\"button\">
+		       													<b>Perfil</b>
+															</button>
+		       											</a>
+		       											<a class=\"link\" href=\"#popup22\">
+		       												<button class=\"botao6\" type=\"button\">
+		       													<b>Reputação</b>
+															</button>
+		       											</a>
+		       											<a class=\"link\" href=\"#popup23\">
+		       												<button class=\"botao6\" type=\"button\">
+		       													<b>Propostas</b>
+															</button>
+		       											</a>
+													</div>
+												</div>
+		       								</div>
+		       							</div>
+		       						</div>
+	       						</div>
+	       					</div>
+						</div>
+					</div>
+					<div id=\"popup17\" class=\"overlay\">
+										<div class=\"popup\">
+											<a class=\"close\" href=\"#\">Voltar</a>
+											<div class=\"content\">
+												<br><div class=\"descricao5\"><b>Ajuda:</b></div>
+												<p>Para saber mais sobre o candidato clique em \"Perfil\"<br>
+												Para conhecer a ficha criminal/declarações polêmicas clique em \"Reputação\"<br>
+												Para ter acesso as propostas de canpanha do candidato clique em \"Propostas\"<br>
+												Para sequir em diante clique em \"Meu voto!\"</p><br>
+											</div>
+										</div>
+									</div>
+					<div id=\"popup18\" class=\"overlay\">
+						<div class=\"popup2\">
+							<a class=\"close\" href=\"#\">Voltar</a>
+							<div class=\"content\">
+							</div>
+						</div>
+					</div>
+					<div id=\"popup19\" class=\"overlay\">
+						<div class=\"popup2\">
+							<a class=\"close\" href=\"#\">Voltar</a>
+							<div class=\"content\">
+							</div>
+						</div>
+					</div>
+					<div id=\"popup20\" class=\"overlay\">
+						<div class=\"popup2\">
+							<a class=\"close\" href=\"#\">Voltar</a>
+							<div class=\"content\">
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+           					";}} ?>
+				
 	    <div class="rodape">
 			<div class="green"></div>
 			<div class="blue"></div>
