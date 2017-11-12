@@ -126,7 +126,7 @@
 						<button class="botao5" type="submit" name="licao1" value="Centro">
 							<div><b>Centro</b></div>
 						</button>
-						<button class="botao5" type="submit" name="licao1" value="Centro-direta">
+						<button class="botao5" type="submit" name="licao1" value="Centro-direita">
 							<div><b>Centro-direita</b></div>
 						</button>
 					</form>

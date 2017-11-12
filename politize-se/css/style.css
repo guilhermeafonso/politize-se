@@ -125,7 +125,11 @@ input {
     text-align: center;
     color: red;
 }
-.botao2:hover {cursor: pointer;}
+.botao2:hover {
+    cursor: pointer;
+    text-decoration:none;
+    color: #363636;
+}
 .botao2 {
     margin-top: 30px;
     position: relative;
@@ -146,7 +150,7 @@ input {
     letter-spacing: 3px;
     font-weight: 800;
     font-size: 2em;
-    margin-top: 15px;
+    margin-top: 5px;
     opacity: 0;
     transform: translate(-100%,0);
     transition: all .3s ease-in-out;
@@ -184,7 +188,7 @@ input {
     letter-spacing: 3px;
     font-weight: 800;
     font-size: 2em;
-    margin-top: 15px;
+    margin-top: 5px;
     opacity: 0;
     transform: translate(-100%,0);
     transition: all .3s ease-in-out;
@@ -416,6 +420,22 @@ input {
     font-family: courier;
     width: 100%;
     border: 10px solid #829F88;
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px #5AC98A;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #363636;
+    background-color: #ffffff;
+}
+.caixa8 {
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 20px;
+    font-family: courier;
+    width: 100%;
+    border: 10px solid #CEE9D3;
     border-radius: 15px;
     box-shadow: 7px 7px 3px #5AC98A;
     padding: 5px 10px;

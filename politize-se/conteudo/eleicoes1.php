@@ -90,2450 +90,2450 @@
 			        $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 			        @mysql_select_db($db) or die(mysql_error());
 			        
-			        $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and id = '$id'");
+	      	$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and id = '$id'");
 
-			        if (mysql_num_rows($result) > 0) {
-        			while($row = mysql_fetch_assoc($result)) {
-       					echo "
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido2.png\">
-       								<a class=\"link\" href=\"#popup5\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido5.png\">
-       								<a class=\"link\" href=\"#popup6\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class='botao7' type='submit' name='Partido' value='PDT'>
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido9.png\">
-       								<a class=\"link\" href=\"#popup7\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido10.png\">
-       								<a class=\"link\" href=\"#popup8\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido12.png\">
-       								<a class=\"link\" href=\"#popup9\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-									<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido1.png\">
-       								<a class=\"link\" href=\"#popup10\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido3.png\">
-       								<a class=\"link\" href=\"#popup11\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido6.png\">
-       								<a class=\"link\" href=\"#popup12\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido4.png\">
-       								<a class=\"link\" href=\"#popup13\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa6\">
-       							<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido7.png\">
-       								<a class=\"link\" href=\"#popup14\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa6\">
-       							<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido8.png\">
-       								<a class=\"link\" href=\"#popup15\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido11.png\">
-       								<a class=\"link\" href=\"#popup16\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       				</div>
-       				<div id=\"popup5\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
-								<ul>
-									<li>Número eleitoral: 13</li>
-									<li>Data de criação: 10/02/1980</li>
-									<li>Data do registro definitivo: 11/02/1982</li>
-									<li>Quantidade de afiliados: 1 582 646</li>
-									<li>Espectro político: Esquerda, a centro-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
+	        if (mysql_num_rows($result) > 0) {
+			while($row = mysql_fetch_assoc($result)) {
+					echo "
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido2.png\">
+								<a class=\"link\" href=\"#popup5\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido5.png\">
+								<a class=\"link\" href=\"#popup6\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class='botao7' type='submit' name='Partido' value='PDT'>
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido9.png\">
+								<a class=\"link\" href=\"#popup7\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido10.png\">
+								<a class=\"link\" href=\"#popup8\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup6\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
-								<ul>
-									<li>Número eleitoral: 12</li>
-									<li>Data de criação: 17/06/1979</li>
-									<li>Data do registro definitivo: 10/11/1981</li>
-									<li>Quantidade de afiliados: 1 253 890</li>
-									<li>Espectro político: Centro-esquerda à esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido12.png\">
+								<a class=\"link\" href=\"#popup9\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido1.png\">
+								<a class=\"link\" href=\"#popup10\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido3.png\">
+								<a class=\"link\" href=\"#popup11\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido6.png\">
+								<a class=\"link\" href=\"#popup12\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup7\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
-								<ul>
-									<li>Número eleitoral: 40</li>
-									<li>Data de criação: 02/04/1947</li>
-									<li>Data do registro definitivo: 01/07/1988</li>
-									<li>Quantidade de afiliados: 649 732</li>
-									<li>Espectro político: Centro-esquerda a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido4.png\">
+								<a class=\"link\" href=\"#popup13\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido7.png\">
+								<a class=\"link\" href=\"#popup14\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido8.png\">
+								<a class=\"link\" href=\"#popup15\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido11.png\">
+								<a class=\"link\" href=\"#popup16\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup8\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
-								<ul>
-									<li>Número eleitoral: 23</li>
-									<li>Data de criação: 26/01/1992</li>
-									<li>Data do registro definitivo: 19/03/1992</li>
-									<li>Quantidade de afiliados: 481 457</li>
-									<li>Espectro político: Centro a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
-							</div>
-						</div>
+				</div>
+				<div id=\"popup5\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
+						<ul>
+							<li>Número eleitoral: 13</li>
+							<li>Data de criação: 10/02/1980</li>
+							<li>Data do registro definitivo: 11/02/1982</li>
+							<li>Quantidade de afiliados: 1 582 646</li>
+							<li>Espectro político: Esquerda, a centro-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
 					</div>
-					<div id=\"popup9\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
-								<ul>
-									<li>Número eleitoral: 65</li>
-									<li>Data de criação: 25/03/1922</li>
-									<li>Data do registro definitivo: 23/07/1988</li>
-									<li>Quantidade de afiliados: 393 388</li>
-									<li>Espectro político: Esquerda a extrema-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup6\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
+						<ul>
+							<li>Número eleitoral: 12</li>
+							<li>Data de criação: 17/06/1979</li>
+							<li>Data do registro definitivo: 10/11/1981</li>
+							<li>Quantidade de afiliados: 1 253 890</li>
+							<li>Espectro político: Centro-esquerda à esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
 					</div>
-					<div id=\"popup10\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
-								<ul>
-									<li>Número eleitoral: 15</li>
-									<li>Data de criação: 04/12/1965</li>
-									<li>Data do registro definitivo: 30/06/1981</li>
-									<li>Quantidade de afiliados: 2 400 703</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup7\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
+						<ul>
+							<li>Número eleitoral: 40</li>
+							<li>Data de criação: 02/04/1947</li>
+							<li>Data do registro definitivo: 01/07/1988</li>
+							<li>Quantidade de afiliados: 649 732</li>
+							<li>Espectro político: Centro-esquerda a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
 					</div>
-					<div id=\"popup11\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
-								<ul>
-									<li>Número eleitoral: 45</li>
-									<li>Data de criação: 25/06/1988</li>
-									<li>Data do registro definitivo: 24/08/1988</li>
-									<li>Quantidade de afiliados: 1 450 586</li>
-									<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup8\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
+						<ul>
+							<li>Número eleitoral: 23</li>
+							<li>Data de criação: 26/01/1992</li>
+							<li>Data do registro definitivo: 19/03/1992</li>
+							<li>Quantidade de afiliados: 481 457</li>
+							<li>Espectro político: Centro a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
 					</div>
-					<div id=\"popup12\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
-								<ul>
-									<li>Número eleitoral: 14</li>
-									<li>Data de criação: 15/05/1945</li>
-									<li>Data do registro definitivo: 03/11/1981</li>
-									<li>Quantidade de afiliados: 1 193 404</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup9\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
+						<ul>
+							<li>Número eleitoral: 65</li>
+							<li>Data de criação: 25/03/1922</li>
+							<li>Data do registro definitivo: 23/07/1988</li>
+							<li>Quantidade de afiliados: 393 388</li>
+							<li>Espectro político: Esquerda a extrema-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
 					</div>
-					<div id=\"popup13\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
-								<ul>
-									<li>Número eleitoral: 11</li>
-									<li>Data de criação: 08/08/1995</li>
-									<li>Data do registro definitivo: 16/11/1995</li>
-									<li>Quantidade de afiliados: 1 437 953</li>
-									<li>Espectro político: Centro-direita, direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup10\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
+						<ul>
+							<li>Número eleitoral: 15</li>
+							<li>Data de criação: 04/12/1965</li>
+							<li>Data do registro definitivo: 30/06/1981</li>
+							<li>Quantidade de afiliados: 2 400 703</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
 					</div>
-					<div id=\"popup14\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Democratas DEM</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 25</li>
-									<li>Data de criação: 24/01/1985</li>
-									<li>Data do registro definitivo: 11/09/1986</li>
-									<li>Quantidade de afiliados: 1 094 797</li>
-									<li>Espectro político: Centro a direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup11\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
+						<ul>
+							<li>Número eleitoral: 45</li>
+							<li>Data de criação: 25/06/1988</li>
+							<li>Data do registro definitivo: 24/08/1988</li>
+							<li>Quantidade de afiliados: 1 450 586</li>
+							<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
 					</div>
-					<div id=\"popup15\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da República PR</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 22</li>
-									<li>Data de criação: 26/10/2006</li>
-									<li>Data do registro definitivo: 19/12/2006</li>
-									<li>Quantidade de afiliados: 798 474</li>
-									<li>Espectro político: Centro-Direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup12\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
+						<ul>
+							<li>Número eleitoral: 14</li>
+							<li>Data de criação: 15/05/1945</li>
+							<li>Data do registro definitivo: 03/11/1981</li>
+							<li>Quantidade de afiliados: 1 193 404</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
 					</div>
-					<div id=\"popup16\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
-								<ul>
-									<li>Número eleitoral: 20</li>
-									<li>Data de criação: 15/05/1985</li>
-									<li>Data do registro definitivo: 29/03/1990</li>
-									<li>Quantidade de afiliados: 422 076</li>
-									<li>Espectro político: Centro-direita à direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup13\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
+						<ul>
+							<li>Número eleitoral: 11</li>
+							<li>Data de criação: 08/08/1995</li>
+							<li>Data do registro definitivo: 16/11/1995</li>
+							<li>Quantidade de afiliados: 1 437 953</li>
+							<li>Espectro político: Centro-direita, direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
 					</div>
-					<div id=\"popup17\" class=\"overlay\">
-						<div class=\"popup\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<br><div class=\"descricao5\"><b>Ajuda:</b></div>
-								<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
-								<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
-							</div>
-						</div>
-					</div>";
-      					}
-       				}
-       				$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and id = '$id'");
-
-			        if (mysql_num_rows($result) > 0) {
-        			while($row = mysql_fetch_assoc($result)) {
-       					echo "
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido2.png\">
-       								<a class=\"link\" href=\"#popup5\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido5.png\">
-       								<a class=\"link\" href=\"#popup6\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class='botao7' type='submit' name='Partido' value='PDT'>
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido9.png\">
-       								<a class=\"link\" href=\"#popup7\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido10.png\">
-       								<a class=\"link\" href=\"#popup8\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido12.png\">
-       								<a class=\"link\" href=\"#popup9\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-									<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido1.png\">
-       								<a class=\"link\" href=\"#popup10\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido3.png\">
-       								<a class=\"link\" href=\"#popup11\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido6.png\">
-       								<a class=\"link\" href=\"#popup12\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido4.png\">
-       								<a class=\"link\" href=\"#popup13\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa6\">
-       							<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido7.png\">
-       								<a class=\"link\" href=\"#popup14\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa6\">
-       							<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido8.png\">
-       								<a class=\"link\" href=\"#popup15\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido11.png\">
-       								<a class=\"link\" href=\"#popup16\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       				</div>
-       				<div id=\"popup5\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
-								<ul>
-									<li>Número eleitoral: 13</li>
-									<li>Data de criação: 10/02/1980</li>
-									<li>Data do registro definitivo: 11/02/1982</li>
-									<li>Quantidade de afiliados: 1 582 646</li>
-									<li>Espectro político: Esquerda, a centro-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup14\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Democratas DEM</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 25</li>
+							<li>Data de criação: 24/01/1985</li>
+							<li>Data do registro definitivo: 11/09/1986</li>
+							<li>Quantidade de afiliados: 1 094 797</li>
+							<li>Espectro político: Centro a direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
 					</div>
-					<div id=\"popup6\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
-								<ul>
-									<li>Número eleitoral: 12</li>
-									<li>Data de criação: 17/06/1979</li>
-									<li>Data do registro definitivo: 10/11/1981</li>
-									<li>Quantidade de afiliados: 1 253 890</li>
-									<li>Espectro político: Centro-esquerda à esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup15\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da República PR</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 22</li>
+							<li>Data de criação: 26/10/2006</li>
+							<li>Data do registro definitivo: 19/12/2006</li>
+							<li>Quantidade de afiliados: 798 474</li>
+							<li>Espectro político: Centro-Direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
 					</div>
-					<div id=\"popup7\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
-								<ul>
-									<li>Número eleitoral: 40</li>
-									<li>Data de criação: 02/04/1947</li>
-									<li>Data do registro definitivo: 01/07/1988</li>
-									<li>Quantidade de afiliados: 649 732</li>
-									<li>Espectro político: Centro-esquerda a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup16\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
+						<ul>
+							<li>Número eleitoral: 20</li>
+							<li>Data de criação: 15/05/1985</li>
+							<li>Data do registro definitivo: 29/03/1990</li>
+							<li>Quantidade de afiliados: 422 076</li>
+							<li>Espectro político: Centro-direita à direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
 					</div>
-					<div id=\"popup8\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
-								<ul>
-									<li>Número eleitoral: 23</li>
-									<li>Data de criação: 26/01/1992</li>
-									<li>Data do registro definitivo: 19/03/1992</li>
-									<li>Quantidade de afiliados: 481 457</li>
-									<li>Espectro político: Centro a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
-							</div>
-						</div>
+				</div>
+			</div>
+			<div id=\"popup17\" class=\"overlay\">
+				<div class=\"popup\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<br><div class=\"descricao5\"><b>Ajuda:</b></div>
+						<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
+						<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
 					</div>
-					<div id=\"popup9\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
-								<ul>
-									<li>Número eleitoral: 65</li>
-									<li>Data de criação: 25/03/1922</li>
-									<li>Data do registro definitivo: 23/07/1988</li>
-									<li>Quantidade de afiliados: 393 388</li>
-									<li>Espectro político: Esquerda a extrema-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup10\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
-								<ul>
-									<li>Número eleitoral: 15</li>
-									<li>Data de criação: 04/12/1965</li>
-									<li>Data do registro definitivo: 30/06/1981</li>
-									<li>Quantidade de afiliados: 2 400 703</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup11\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
-								<ul>
-									<li>Número eleitoral: 45</li>
-									<li>Data de criação: 25/06/1988</li>
-									<li>Data do registro definitivo: 24/08/1988</li>
-									<li>Quantidade de afiliados: 1 450 586</li>
-									<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup12\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
-								<ul>
-									<li>Número eleitoral: 14</li>
-									<li>Data de criação: 15/05/1945</li>
-									<li>Data do registro definitivo: 03/11/1981</li>
-									<li>Quantidade de afiliados: 1 193 404</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup13\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
-								<ul>
-									<li>Número eleitoral: 11</li>
-									<li>Data de criação: 08/08/1995</li>
-									<li>Data do registro definitivo: 16/11/1995</li>
-									<li>Quantidade de afiliados: 1 437 953</li>
-									<li>Espectro político: Centro-direita, direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup14\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Democratas DEM</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 25</li>
-									<li>Data de criação: 24/01/1985</li>
-									<li>Data do registro definitivo: 11/09/1986</li>
-									<li>Quantidade de afiliados: 1 094 797</li>
-									<li>Espectro político: Centro a direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup15\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da República PR</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 22</li>
-									<li>Data de criação: 26/10/2006</li>
-									<li>Data do registro definitivo: 19/12/2006</li>
-									<li>Quantidade de afiliados: 798 474</li>
-									<li>Espectro político: Centro-Direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup16\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
-								<ul>
-									<li>Número eleitoral: 20</li>
-									<li>Data de criação: 15/05/1985</li>
-									<li>Data do registro definitivo: 29/03/1990</li>
-									<li>Quantidade de afiliados: 422 076</li>
-									<li>Espectro político: Centro-direita à direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup17\" class=\"overlay\">
-						<div class=\"popup\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<br><div class=\"descricao5\"><b>Ajuda:</b></div>
-								<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
-								<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
-							</div>
-						</div>
-					</div>";
-      					}
-       				}
-       				$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and id = '$id'");
-
-			        if (mysql_num_rows($result) > 0) {
-        			while($row = mysql_fetch_assoc($result)) {
-       					echo "
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-									<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido1.png\">
-       								<a class=\"link\" href=\"#popup10\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido3.png\">
-       								<a class=\"link\" href=\"#popup11\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido6.png\">
-       								<a class=\"link\" href=\"#popup12\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido2.png\">
-       								<a class=\"link\" href=\"#popup5\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido5.png\">
-       								<a class=\"link\" href=\"#popup6\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class='botao7' type='submit' name='Partido' value='PDT'>
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido9.png\">
-       								<a class=\"link\" href=\"#popup7\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido10.png\">
-       								<a class=\"link\" href=\"#popup8\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido12.png\">
-       								<a class=\"link\" href=\"#popup9\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido4.png\">
-       								<a class=\"link\" href=\"#popup13\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       							<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido7.png\">
-       								<a class=\"link\" href=\"#popup14\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       							<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido8.png\">
-       								<a class=\"link\" href=\"#popup15\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-3\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido11.png\">
-       								<a class=\"link\" href=\"#popup16\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       				</div>
-       				<div id=\"popup5\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
-								<ul>
-									<li>Número eleitoral: 13</li>
-									<li>Data de criação: 10/02/1980</li>
-									<li>Data do registro definitivo: 11/02/1982</li>
-									<li>Quantidade de afiliados: 1 582 646</li>
-									<li>Espectro político: Esquerda, a centro-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup6\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
-								<ul>
-									<li>Número eleitoral: 12</li>
-									<li>Data de criação: 17/06/1979</li>
-									<li>Data do registro definitivo: 10/11/1981</li>
-									<li>Quantidade de afiliados: 1 253 890</li>
-									<li>Espectro político: Centro-esquerda à esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup7\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
-								<ul>
-									<li>Número eleitoral: 40</li>
-									<li>Data de criação: 02/04/1947</li>
-									<li>Data do registro definitivo: 01/07/1988</li>
-									<li>Quantidade de afiliados: 649 732</li>
-									<li>Espectro político: Centro-esquerda a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup8\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
-								<ul>
-									<li>Número eleitoral: 23</li>
-									<li>Data de criação: 26/01/1992</li>
-									<li>Data do registro definitivo: 19/03/1992</li>
-									<li>Quantidade de afiliados: 481 457</li>
-									<li>Espectro político: Centro a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup9\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
-								<ul>
-									<li>Número eleitoral: 65</li>
-									<li>Data de criação: 25/03/1922</li>
-									<li>Data do registro definitivo: 23/07/1988</li>
-									<li>Quantidade de afiliados: 393 388</li>
-									<li>Espectro político: Esquerda a extrema-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup10\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
-								<ul>
-									<li>Número eleitoral: 15</li>
-									<li>Data de criação: 04/12/1965</li>
-									<li>Data do registro definitivo: 30/06/1981</li>
-									<li>Quantidade de afiliados: 2 400 703</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup11\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
-								<ul>
-									<li>Número eleitoral: 45</li>
-									<li>Data de criação: 25/06/1988</li>
-									<li>Data do registro definitivo: 24/08/1988</li>
-									<li>Quantidade de afiliados: 1 450 586</li>
-									<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup12\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
-								<ul>
-									<li>Número eleitoral: 14</li>
-									<li>Data de criação: 15/05/1945</li>
-									<li>Data do registro definitivo: 03/11/1981</li>
-									<li>Quantidade de afiliados: 1 193 404</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup13\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
-								<ul>
-									<li>Número eleitoral: 11</li>
-									<li>Data de criação: 08/08/1995</li>
-									<li>Data do registro definitivo: 16/11/1995</li>
-									<li>Quantidade de afiliados: 1 437 953</li>
-									<li>Espectro político: Centro-direita, direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup14\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Democratas DEM</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 25</li>
-									<li>Data de criação: 24/01/1985</li>
-									<li>Data do registro definitivo: 11/09/1986</li>
-									<li>Quantidade de afiliados: 1 094 797</li>
-									<li>Espectro político: Centro a direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup15\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da República PR</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 22</li>
-									<li>Data de criação: 26/10/2006</li>
-									<li>Data do registro definitivo: 19/12/2006</li>
-									<li>Quantidade de afiliados: 798 474</li>
-									<li>Espectro político: Centro-Direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup16\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
-								<ul>
-									<li>Número eleitoral: 20</li>
-									<li>Data de criação: 15/05/1985</li>
-									<li>Data do registro definitivo: 29/03/1990</li>
-									<li>Quantidade de afiliados: 422 076</li>
-									<li>Espectro político: Centro-direita à direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup17\" class=\"overlay\">
-						<div class=\"popup\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<br><div class=\"descricao5\"><b>Ajuda:</b></div>
-								<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
-								<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
-							</div>
-						</div>
-					</div>";
-      					}
-       				}
-       				$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and id = '$id'");
-
-			        if (mysql_num_rows($result) > 0) {
-	    			while($row = mysql_fetch_assoc($result)) {
-	   					echo "
-	   					<div class=\"row\">
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido7.png\">
-       								<div class=\"descricao4\"><b>Democratas <br><br>DEM</b></div>
-       								<a class=\"link\" href=\"#popup14\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido4.png\">
-       								<div class=\"descricao4\"><b>Partido Progressista <br><br>PP</b></div>
-       								<a class=\"link\" href=\"#popup13\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido8.png\">
-       								<div class=\"descricao4\"><b>Partido da República <br><br>PR</b></div>
-       								<a class=\"link\" href=\"#popup15\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido11.png\">
-       								<div class=\"descricao4\"><b>Partido Social Cristão <br><br>PSC</b></div>
-       								<a class=\"link\" href=\"#popup16\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido1.png\">
-       								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro <br>PMDB</b></div>
-       								<a class=\"link\" href=\"#popup10\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido3.png\">
-       								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira <br>PSDB</b></div>
-       								<a class=\"link\" href=\"#popup11\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido6.png\">
-       								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro <br>PTB</b></div>
-       								<a class=\"link\" href=\"#popup12\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido2.png\">
-       								<div class=\"descricao4\"><b>Partido dos Trabalhadores <br><br>PT</b></div>
-       								<a class=\"link\" href=\"#popup5\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido5.png\">
-       								<div class=\"descricao4\"><b>Partido Democrático Trabalhista <br>PDT</b></div>
-       								<a class=\"link\" href=\"#popup6\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PDT\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido9.png\">
-       								<div class=\"descricao4\"><b>Partido Socialista Brasileiro <br>PSB</b></div>
-       								<a class=\"link\" href=\"#popup7\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido10.png\">
-       								<div class=\"descricao4\"><b>Partido Popular Socialista <br><br>PPS</b></div>
-       								<a class=\"link\" href=\"#popup8\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido12.png\">
-       								<div class=\"descricao4\"><b>Partido Comunista do Brasil <br><br>PCdoB</b></div>
-       								<a class=\"link\" href=\"#popup9\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       				</div>
-					<div id=\"popup5\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
-								<ul>
-									<li>Número eleitoral: 13</li>
-									<li>Data de criação: 10/02/1980</li>
-									<li>Data do registro definitivo: 11/02/1982</li>
-									<li>Quantidade de afiliados: 1 582 646</li>
-									<li>Espectro político: Esquerda, a centro-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup6\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
-								<ul>
-									<li>Número eleitoral: 12</li>
-									<li>Data de criação: 17/06/1979</li>
-									<li>Data do registro definitivo: 10/11/1981</li>
-									<li>Quantidade de afiliados: 1 253 890</li>
-									<li>Espectro político: Centro-esquerda à esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup7\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
-								<ul>
-									<li>Número eleitoral: 40</li>
-									<li>Data de criação: 02/04/1947</li>
-									<li>Data do registro definitivo: 01/07/1988</li>
-									<li>Quantidade de afiliados: 649 732</li>
-									<li>Espectro político: Centro-esquerda a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup8\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
-								<ul>
-									<li>Número eleitoral: 23</li>
-									<li>Data de criação: 26/01/1992</li>
-									<li>Data do registro definitivo: 19/03/1992</li>
-									<li>Quantidade de afiliados: 481 457</li>
-									<li>Espectro político: Centro a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup9\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
-								<ul>
-									<li>Número eleitoral: 65</li>
-									<li>Data de criação: 25/03/1922</li>
-									<li>Data do registro definitivo: 23/07/1988</li>
-									<li>Quantidade de afiliados: 393 388</li>
-									<li>Espectro político: Esquerda a extrema-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup10\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
-								<ul>
-									<li>Número eleitoral: 15</li>
-									<li>Data de criação: 04/12/1965</li>
-									<li>Data do registro definitivo: 30/06/1981</li>
-									<li>Quantidade de afiliados: 2 400 703</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup11\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
-								<ul>
-									<li>Número eleitoral: 45</li>
-									<li>Data de criação: 25/06/1988</li>
-									<li>Data do registro definitivo: 24/08/1988</li>
-									<li>Quantidade de afiliados: 1 450 586</li>
-									<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup12\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
-								<ul>
-									<li>Número eleitoral: 14</li>
-									<li>Data de criação: 15/05/1945</li>
-									<li>Data do registro definitivo: 03/11/1981</li>
-									<li>Quantidade de afiliados: 1 193 404</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup13\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
-								<ul>
-									<li>Número eleitoral: 11</li>
-									<li>Data de criação: 08/08/1995</li>
-									<li>Data do registro definitivo: 16/11/1995</li>
-									<li>Quantidade de afiliados: 1 437 953</li>
-									<li>Espectro político: Centro-direita, direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup14\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Democratas DEM</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 25</li>
-									<li>Data de criação: 24/01/1985</li>
-									<li>Data do registro definitivo: 11/09/1986</li>
-									<li>Quantidade de afiliados: 1 094 797</li>
-									<li>Espectro político: Centro a direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup15\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da República PR</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 22</li>
-									<li>Data de criação: 26/10/2006</li>
-									<li>Data do registro definitivo: 19/12/2006</li>
-									<li>Quantidade de afiliados: 798 474</li>
-									<li>Espectro político: Centro-Direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup16\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
-								<ul>
-									<li>Número eleitoral: 20</li>
-									<li>Data de criação: 15/05/1985</li>
-									<li>Data do registro definitivo: 29/03/1990</li>
-									<li>Quantidade de afiliados: 422 076</li>
-									<li>Espectro político: Centro-direita à direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
-							</div>
-						</div>
-					</div>
-					<div id=\"popup17\" class=\"overlay\">
-						<div class=\"popup\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<br><div class=\"descricao5\"><b>Ajuda:</b></div>
-								<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
-								<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
-							</div>
-						</div>
-					</div>";
-						}
+				</div>
+			</div>";
 					}
-	   				$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and id = '$id'");
+				}
+				$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and id = '$id'");
 
-			        if (mysql_num_rows($result) > 0) {
-	    			while($row = mysql_fetch_assoc($result)) {
-	   					echo "
-	   					<div class=\"row\">
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido7.png\">
-       								<div class=\"descricao4\"><b>Democratas <br><br>DEM</b></div>
-       								<a class=\"link\" href=\"#popup14\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido4.png\">
-       								<div class=\"descricao4\"><b>Partido Progressista <br><br>PP</b></div>
-       								<a class=\"link\" href=\"#popup13\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido8.png\">
-       								<div class=\"descricao4\"><b>Partido da República <br><br>PR</b></div>
-       								<a class=\"link\" href=\"#popup15\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa4\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-									<div class=\"rede2\">
-										</a>
-										<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
-										</a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido11.png\">
-       								<div class=\"descricao4\"><b>Partido Social Cristão <br><br>PSC</b></div>
-       								<a class=\"link\" href=\"#popup16\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido1.png\">
-       								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro <br>PMDB</b></div>
-       								<a class=\"link\" href=\"#popup10\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido3.png\">
-       								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira <br>PSDB</b></div>
-       								<a class=\"link\" href=\"#popup11\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa5\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido6.png\">
-       								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro <br>PTB</b></div>
-       								<a class=\"link\" href=\"#popup12\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido2.png\">
-       								<div class=\"descricao4\"><b>Partido dos Trabalhadores <br><br>PT</b></div>
-       								<a class=\"link\" href=\"#popup5\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido5.png\">
-       								<div class=\"descricao4\"><b>Partido Democrático Trabalhista <br>PDT</b></div>
-       								<a class=\"link\" href=\"#popup6\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PDT\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       					<div class=\"row\">
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido9.png\">
-       								<div class=\"descricao4\"><b>Partido Socialista Brasileiro <br>PSB</b></div>
-       								<a class=\"link\" href=\"#popup7\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido10.png\">
-       								<div class=\"descricao4\"><b>Partido Popular Socialista <br><br>PPS</b></div>
-       								<a class=\"link\" href=\"#popup8\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       						<div class=\"col-md-4\">
-       							<div class=\"caixa6\">
-       								<div class=\"rede1\">
-										<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
-									</div>
-       								<img class=\"partidos\" src=\"../imagens/partido12.png\">
-       								<div class=\"descricao4\"><b>Partido Comunista do Brasil <br><br>PCdoB</b></div>
-       								<a class=\"link\" href=\"#popup9\">
-       									<button class=\"botao6\" type=\"button\">
-       										<b>Conheça +</b>
-										</button>
-       								</a>
-       								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
-										<input type=\"hidden\" name=\"id\" value=".$id.">
-										<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
-											<div><b>Meu partido!</b></div>
-										</button>
-									</form>
-       							</div>
-       						</div>
-       					</div>
-       				</div>
-					<div id=\"popup5\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
-								<ul>
-									<li>Número eleitoral: 13</li>
-									<li>Data de criação: 10/02/1980</li>
-									<li>Data do registro definitivo: 11/02/1982</li>
-									<li>Quantidade de afiliados: 1 582 646</li>
-									<li>Espectro político: Esquerda, a centro-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
+	        if (mysql_num_rows($result) > 0) {
+			while($row = mysql_fetch_assoc($result)) {
+					echo "
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido2.png\">
+								<a class=\"link\" href=\"#popup5\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido5.png\">
+								<a class=\"link\" href=\"#popup6\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class='botao7' type='submit' name='Partido' value='PDT'>
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido9.png\">
+								<a class=\"link\" href=\"#popup7\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido10.png\">
+								<a class=\"link\" href=\"#popup8\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup6\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
-								<ul>
-									<li>Número eleitoral: 12</li>
-									<li>Data de criação: 17/06/1979</li>
-									<li>Data do registro definitivo: 10/11/1981</li>
-									<li>Quantidade de afiliados: 1 253 890</li>
-									<li>Espectro político: Centro-esquerda à esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido12.png\">
+								<a class=\"link\" href=\"#popup9\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido1.png\">
+								<a class=\"link\" href=\"#popup10\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido3.png\">
+								<a class=\"link\" href=\"#popup11\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido6.png\">
+								<a class=\"link\" href=\"#popup12\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup7\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
-								<ul>
-									<li>Número eleitoral: 40</li>
-									<li>Data de criação: 02/04/1947</li>
-									<li>Data do registro definitivo: 01/07/1988</li>
-									<li>Quantidade de afiliados: 649 732</li>
-									<li>Espectro político: Centro-esquerda a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido4.png\">
+								<a class=\"link\" href=\"#popup13\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido7.png\">
+								<a class=\"link\" href=\"#popup14\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido8.png\">
+								<a class=\"link\" href=\"#popup15\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido11.png\">
+								<a class=\"link\" href=\"#popup16\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup8\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
-								<ul>
-									<li>Número eleitoral: 23</li>
-									<li>Data de criação: 26/01/1992</li>
-									<li>Data do registro definitivo: 19/03/1992</li>
-									<li>Quantidade de afiliados: 481 457</li>
-									<li>Espectro político: Centro a esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
+				</div>
+				<div id=\"popup5\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
+						<ul>
+							<li>Número eleitoral: 13</li>
+							<li>Data de criação: 10/02/1980</li>
+							<li>Data do registro definitivo: 11/02/1982</li>
+							<li>Quantidade de afiliados: 1 582 646</li>
+							<li>Espectro político: Esquerda, a centro-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup6\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
+						<ul>
+							<li>Número eleitoral: 12</li>
+							<li>Data de criação: 17/06/1979</li>
+							<li>Data do registro definitivo: 10/11/1981</li>
+							<li>Quantidade de afiliados: 1 253 890</li>
+							<li>Espectro político: Centro-esquerda à esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup7\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
+						<ul>
+							<li>Número eleitoral: 40</li>
+							<li>Data de criação: 02/04/1947</li>
+							<li>Data do registro definitivo: 01/07/1988</li>
+							<li>Quantidade de afiliados: 649 732</li>
+							<li>Espectro político: Centro-esquerda a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup8\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
+						<ul>
+							<li>Número eleitoral: 23</li>
+							<li>Data de criação: 26/01/1992</li>
+							<li>Data do registro definitivo: 19/03/1992</li>
+							<li>Quantidade de afiliados: 481 457</li>
+							<li>Espectro político: Centro a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup9\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
+						<ul>
+							<li>Número eleitoral: 65</li>
+							<li>Data de criação: 25/03/1922</li>
+							<li>Data do registro definitivo: 23/07/1988</li>
+							<li>Quantidade de afiliados: 393 388</li>
+							<li>Espectro político: Esquerda a extrema-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup10\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
+						<ul>
+							<li>Número eleitoral: 15</li>
+							<li>Data de criação: 04/12/1965</li>
+							<li>Data do registro definitivo: 30/06/1981</li>
+							<li>Quantidade de afiliados: 2 400 703</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup11\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
+						<ul>
+							<li>Número eleitoral: 45</li>
+							<li>Data de criação: 25/06/1988</li>
+							<li>Data do registro definitivo: 24/08/1988</li>
+							<li>Quantidade de afiliados: 1 450 586</li>
+							<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup12\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
+						<ul>
+							<li>Número eleitoral: 14</li>
+							<li>Data de criação: 15/05/1945</li>
+							<li>Data do registro definitivo: 03/11/1981</li>
+							<li>Quantidade de afiliados: 1 193 404</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup13\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
+						<ul>
+							<li>Número eleitoral: 11</li>
+							<li>Data de criação: 08/08/1995</li>
+							<li>Data do registro definitivo: 16/11/1995</li>
+							<li>Quantidade de afiliados: 1 437 953</li>
+							<li>Espectro político: Centro-direita, direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup14\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Democratas DEM</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 25</li>
+							<li>Data de criação: 24/01/1985</li>
+							<li>Data do registro definitivo: 11/09/1986</li>
+							<li>Quantidade de afiliados: 1 094 797</li>
+							<li>Espectro político: Centro a direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup15\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da República PR</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 22</li>
+							<li>Data de criação: 26/10/2006</li>
+							<li>Data do registro definitivo: 19/12/2006</li>
+							<li>Quantidade de afiliados: 798 474</li>
+							<li>Espectro político: Centro-Direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup16\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
+						<ul>
+							<li>Número eleitoral: 20</li>
+							<li>Data de criação: 15/05/1985</li>
+							<li>Data do registro definitivo: 29/03/1990</li>
+							<li>Quantidade de afiliados: 422 076</li>
+							<li>Espectro político: Centro-direita à direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup17\" class=\"overlay\">
+				<div class=\"popup\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<br><div class=\"descricao5\"><b>Ajuda:</b></div>
+						<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
+						<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
+					</div>
+				</div>
+			</div>";
+					}
+				}
+				$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and id = '$id'");
+
+	        if (mysql_num_rows($result) > 0) {
+			while($row = mysql_fetch_assoc($result)) {
+					echo "
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido1.png\">
+								<a class=\"link\" href=\"#popup10\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido3.png\">
+								<a class=\"link\" href=\"#popup11\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido6.png\">
+								<a class=\"link\" href=\"#popup12\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido2.png\">
+								<a class=\"link\" href=\"#popup5\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup9\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
-								<ul>
-									<li>Número eleitoral: 65</li>
-									<li>Data de criação: 25/03/1922</li>
-									<li>Data do registro definitivo: 23/07/1988</li>
-									<li>Quantidade de afiliados: 393 388</li>
-									<li>Espectro político: Esquerda a extrema-esquerda</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido5.png\">
+								<a class=\"link\" href=\"#popup6\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class='botao7' type='submit' name='Partido' value='PDT'>
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido9.png\">
+								<a class=\"link\" href=\"#popup7\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido10.png\">
+								<a class=\"link\" href=\"#popup8\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido12.png\">
+								<a class=\"link\" href=\"#popup9\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup10\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
-								<ul>
-									<li>Número eleitoral: 15</li>
-									<li>Data de criação: 04/12/1965</li>
-									<li>Data do registro definitivo: 30/06/1981</li>
-									<li>Quantidade de afiliados: 2 400 703</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido4.png\">
+								<a class=\"link\" href=\"#popup13\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido7.png\">
+								<a class=\"link\" href=\"#popup14\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+							<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido8.png\">
+								<a class=\"link\" href=\"#popup15\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido11.png\">
+								<a class=\"link\" href=\"#popup16\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup11\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
-								<ul>
-									<li>Número eleitoral: 45</li>
-									<li>Data de criação: 25/06/1988</li>
-									<li>Data do registro definitivo: 24/08/1988</li>
-									<li>Quantidade de afiliados: 1 450 586</li>
-									<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
+				</div>
+				<div id=\"popup5\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
+						<ul>
+							<li>Número eleitoral: 13</li>
+							<li>Data de criação: 10/02/1980</li>
+							<li>Data do registro definitivo: 11/02/1982</li>
+							<li>Quantidade de afiliados: 1 582 646</li>
+							<li>Espectro político: Esquerda, a centro-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup6\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
+						<ul>
+							<li>Número eleitoral: 12</li>
+							<li>Data de criação: 17/06/1979</li>
+							<li>Data do registro definitivo: 10/11/1981</li>
+							<li>Quantidade de afiliados: 1 253 890</li>
+							<li>Espectro político: Centro-esquerda à esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup7\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
+						<ul>
+							<li>Número eleitoral: 40</li>
+							<li>Data de criação: 02/04/1947</li>
+							<li>Data do registro definitivo: 01/07/1988</li>
+							<li>Quantidade de afiliados: 649 732</li>
+							<li>Espectro político: Centro-esquerda a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup8\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
+						<ul>
+							<li>Número eleitoral: 23</li>
+							<li>Data de criação: 26/01/1992</li>
+							<li>Data do registro definitivo: 19/03/1992</li>
+							<li>Quantidade de afiliados: 481 457</li>
+							<li>Espectro político: Centro a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup9\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
+						<ul>
+							<li>Número eleitoral: 65</li>
+							<li>Data de criação: 25/03/1922</li>
+							<li>Data do registro definitivo: 23/07/1988</li>
+							<li>Quantidade de afiliados: 393 388</li>
+							<li>Espectro político: Esquerda a extrema-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup10\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
+						<ul>
+							<li>Número eleitoral: 15</li>
+							<li>Data de criação: 04/12/1965</li>
+							<li>Data do registro definitivo: 30/06/1981</li>
+							<li>Quantidade de afiliados: 2 400 703</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup11\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
+						<ul>
+							<li>Número eleitoral: 45</li>
+							<li>Data de criação: 25/06/1988</li>
+							<li>Data do registro definitivo: 24/08/1988</li>
+							<li>Quantidade de afiliados: 1 450 586</li>
+							<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup12\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
+						<ul>
+							<li>Número eleitoral: 14</li>
+							<li>Data de criação: 15/05/1945</li>
+							<li>Data do registro definitivo: 03/11/1981</li>
+							<li>Quantidade de afiliados: 1 193 404</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup13\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
+						<ul>
+							<li>Número eleitoral: 11</li>
+							<li>Data de criação: 08/08/1995</li>
+							<li>Data do registro definitivo: 16/11/1995</li>
+							<li>Quantidade de afiliados: 1 437 953</li>
+							<li>Espectro político: Centro-direita, direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup14\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Democratas DEM</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 25</li>
+							<li>Data de criação: 24/01/1985</li>
+							<li>Data do registro definitivo: 11/09/1986</li>
+							<li>Quantidade de afiliados: 1 094 797</li>
+							<li>Espectro político: Centro a direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup15\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da República PR</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 22</li>
+							<li>Data de criação: 26/10/2006</li>
+							<li>Data do registro definitivo: 19/12/2006</li>
+							<li>Quantidade de afiliados: 798 474</li>
+							<li>Espectro político: Centro-Direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup16\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
+						<ul>
+							<li>Número eleitoral: 20</li>
+							<li>Data de criação: 15/05/1985</li>
+							<li>Data do registro definitivo: 29/03/1990</li>
+							<li>Quantidade de afiliados: 422 076</li>
+							<li>Espectro político: Centro-direita à direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup17\" class=\"overlay\">
+				<div class=\"popup\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<br><div class=\"descricao5\"><b>Ajuda:</b></div>
+						<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
+						<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
+					</div>
+				</div>
+			</div>";
+					}
+				}
+				$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and id = '$id'");
+
+	        if (mysql_num_rows($result) > 0) {
+			while($row = mysql_fetch_assoc($result)) {
+					echo "
+					<div class=\"row\">
+						<div class=\"col-md-4\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido7.png\">
+								<div class=\"descricao4\"><b>Democratas <br><br>DEM</b></div>
+								<a class=\"link\" href=\"#popup14\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido4.png\">
+								<div class=\"descricao4\"><b>Partido Progressista <br><br>PP</b></div>
+								<a class=\"link\" href=\"#popup13\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido8.png\">
+								<div class=\"descricao4\"><b>Partido da República <br><br>PR</b></div>
+								<a class=\"link\" href=\"#popup15\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup12\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
-								<ul>
-									<li>Número eleitoral: 14</li>
-									<li>Data de criação: 15/05/1945</li>
-									<li>Data do registro definitivo: 03/11/1981</li>
-									<li>Quantidade de afiliados: 1 193 404</li>
-									<li>Espectro político: Centro</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-4\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido11.png\">
+								<div class=\"descricao4\"><b>Partido Social Cristão <br><br>PSC</b></div>
+								<a class=\"link\" href=\"#popup16\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido1.png\">
+								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro <br>PMDB</b></div>
+								<a class=\"link\" href=\"#popup10\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido3.png\">
+								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira <br>PSDB</b></div>
+								<a class=\"link\" href=\"#popup11\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup13\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
-								<ul>
-									<li>Número eleitoral: 11</li>
-									<li>Data de criação: 08/08/1995</li>
-									<li>Data do registro definitivo: 16/11/1995</li>
-									<li>Quantidade de afiliados: 1 437 953</li>
-									<li>Espectro político: Centro-direita, direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-4\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido6.png\">
+								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro <br>PTB</b></div>
+								<a class=\"link\" href=\"#popup12\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido2.png\">
+								<div class=\"descricao4\"><b>Partido dos Trabalhadores <br><br>PT</b></div>
+								<a class=\"link\" href=\"#popup5\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido5.png\">
+								<div class=\"descricao4\"><b>Partido Democrático Trabalhista <br>PDT</b></div>
+								<a class=\"link\" href=\"#popup6\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PDT\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup14\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Democratas DEM</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 25</li>
-									<li>Data de criação: 24/01/1985</li>
-									<li>Data do registro definitivo: 11/09/1986</li>
-									<li>Quantidade de afiliados: 1 094 797</li>
-									<li>Espectro político: Centro a direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido9.png\">
+								<div class=\"descricao4\"><b>Partido Socialista Brasileiro <br>PSB</b></div>
+								<a class=\"link\" href=\"#popup7\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido10.png\">
+								<div class=\"descricao4\"><b>Partido Popular Socialista <br><br>PPS</b></div>
+								<a class=\"link\" href=\"#popup8\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido12.png\">
+								<div class=\"descricao4\"><b>Partido Comunista do Brasil <br><br>PCdoB</b></div>
+								<a class=\"link\" href=\"#popup9\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup15\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido da República PR</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
-								<ul>
-									<li>Número eleitoral: 22</li>
-									<li>Data de criação: 26/10/2006</li>
-									<li>Data do registro definitivo: 19/12/2006</li>
-									<li>Quantidade de afiliados: 798 474</li>
-									<li>Espectro político: Centro-Direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
+				</div>
+			<div id=\"popup5\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
+						<ul>
+							<li>Número eleitoral: 13</li>
+							<li>Data de criação: 10/02/1980</li>
+							<li>Data do registro definitivo: 11/02/1982</li>
+							<li>Quantidade de afiliados: 1 582 646</li>
+							<li>Espectro político: Esquerda, a centro-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup6\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
+						<ul>
+							<li>Número eleitoral: 12</li>
+							<li>Data de criação: 17/06/1979</li>
+							<li>Data do registro definitivo: 10/11/1981</li>
+							<li>Quantidade de afiliados: 1 253 890</li>
+							<li>Espectro político: Centro-esquerda à esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup7\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
+						<ul>
+							<li>Número eleitoral: 40</li>
+							<li>Data de criação: 02/04/1947</li>
+							<li>Data do registro definitivo: 01/07/1988</li>
+							<li>Quantidade de afiliados: 649 732</li>
+							<li>Espectro político: Centro-esquerda a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup8\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
+						<ul>
+							<li>Número eleitoral: 23</li>
+							<li>Data de criação: 26/01/1992</li>
+							<li>Data do registro definitivo: 19/03/1992</li>
+							<li>Quantidade de afiliados: 481 457</li>
+							<li>Espectro político: Centro a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup9\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
+						<ul>
+							<li>Número eleitoral: 65</li>
+							<li>Data de criação: 25/03/1922</li>
+							<li>Data do registro definitivo: 23/07/1988</li>
+							<li>Quantidade de afiliados: 393 388</li>
+							<li>Espectro político: Esquerda a extrema-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup10\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
+						<ul>
+							<li>Número eleitoral: 15</li>
+							<li>Data de criação: 04/12/1965</li>
+							<li>Data do registro definitivo: 30/06/1981</li>
+							<li>Quantidade de afiliados: 2 400 703</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup11\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
+						<ul>
+							<li>Número eleitoral: 45</li>
+							<li>Data de criação: 25/06/1988</li>
+							<li>Data do registro definitivo: 24/08/1988</li>
+							<li>Quantidade de afiliados: 1 450 586</li>
+							<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup12\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
+						<ul>
+							<li>Número eleitoral: 14</li>
+							<li>Data de criação: 15/05/1945</li>
+							<li>Data do registro definitivo: 03/11/1981</li>
+							<li>Quantidade de afiliados: 1 193 404</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup13\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
+						<ul>
+							<li>Número eleitoral: 11</li>
+							<li>Data de criação: 08/08/1995</li>
+							<li>Data do registro definitivo: 16/11/1995</li>
+							<li>Quantidade de afiliados: 1 437 953</li>
+							<li>Espectro político: Centro-direita, direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup14\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Democratas DEM</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 25</li>
+							<li>Data de criação: 24/01/1985</li>
+							<li>Data do registro definitivo: 11/09/1986</li>
+							<li>Quantidade de afiliados: 1 094 797</li>
+							<li>Espectro político: Centro a direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup15\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da República PR</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 22</li>
+							<li>Data de criação: 26/10/2006</li>
+							<li>Data do registro definitivo: 19/12/2006</li>
+							<li>Quantidade de afiliados: 798 474</li>
+							<li>Espectro político: Centro-Direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup16\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
+						<ul>
+							<li>Número eleitoral: 20</li>
+							<li>Data de criação: 15/05/1985</li>
+							<li>Data do registro definitivo: 29/03/1990</li>
+							<li>Quantidade de afiliados: 422 076</li>
+							<li>Espectro político: Centro-direita à direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup17\" class=\"overlay\">
+				<div class=\"popup\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<br><div class=\"descricao5\"><b>Ajuda:</b></div>
+						<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
+						<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
+					</div>
+				</div>
+			</div>";
+				}
+			}
+				$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and id = '$id'");
+
+	        if (mysql_num_rows($result) > 0) {
+			while($row = mysql_fetch_assoc($result)) {
+					echo "
+					<div class=\"row\">
+						<div class=\"col-md-4\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido7.png\">
+								<div class=\"descricao4\"><b>Democratas <br><br>DEM</b></div>
+								<a class=\"link\" href=\"#popup14\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido4.png\">
+								<div class=\"descricao4\"><b>Partido Progressista <br><br>PP</b></div>
+								<a class=\"link\" href=\"#popup13\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido8.png\">
+								<div class=\"descricao4\"><b>Partido da República <br><br>PR</b></div>
+								<a class=\"link\" href=\"#popup15\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup16\" class=\"overlay\">
-						<div class=\"popup2\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
-								<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
-								<ul>
-									<li>Número eleitoral: 20</li>
-									<li>Data de criação: 15/05/1985</li>
-									<li>Data do registro definitivo: 29/03/1990</li>
-									<li>Quantidade de afiliados: 422 076</li>
-									<li>Espectro político: Centro-direita à direita</li>
-								</ul>
-								<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
+					<div class=\"row\">
+						<div class=\"col-md-4\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido11.png\">
+								<div class=\"descricao4\"><b>Partido Social Cristão <br><br>PSC</b></div>
+								<a class=\"link\" href=\"#popup16\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido1.png\">
+								<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro <br>PMDB</b></div>
+								<a class=\"link\" href=\"#popup10\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido3.png\">
+								<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira <br>PSDB</b></div>
+								<a class=\"link\" href=\"#popup11\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup17\" class=\"overlay\">
-						<div class=\"popup\">
-							<a class=\"close\" href=\"#\">Voltar</a>
-							<div class=\"content\">
-								<br><div class=\"descricao5\"><b>Ajuda:</b></div>
-								<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
-								<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
+					<div class=\"row\">
+						<div class=\"col-md-4\">
+							<div class=\"caixa5\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido6.png\">
+								<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro <br>PTB</b></div>
+								<a class=\"link\" href=\"#popup12\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
 							</div>
 						</div>
-					</div>";
-      					}
-       				}
-       			?>
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido2.png\">
+								<div class=\"descricao4\"><b>Partido dos Trabalhadores <br><br>PT</b></div>
+								<a class=\"link\" href=\"#popup5\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido5.png\">
+								<div class=\"descricao4\"><b>Partido Democrático Trabalhista <br>PDT</b></div>
+								<a class=\"link\" href=\"#popup6\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PDT\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+					</div>
+					<div class=\"row\">
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido9.png\">
+								<div class=\"descricao4\"><b>Partido Socialista Brasileiro <br>PSB</b></div>
+								<a class=\"link\" href=\"#popup7\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido10.png\">
+								<div class=\"descricao4\"><b>Partido Popular Socialista <br><br>PPS</b></div>
+								<a class=\"link\" href=\"#popup8\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-4\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido12.png\">
+								<div class=\"descricao4\"><b>Partido Comunista do Brasil <br><br>PCdoB</b></div>
+								<a class=\"link\" href=\"#popup9\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div id=\"popup5\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido dos Trabalhadores surgiu no início da década de 80 junto com as greves e os movimentos sindicais como uma grande força de oposição, representando os trabalhadores e as classes populares. É de base socialista e tem como principal representante o ex-presidente Lula e defende a reforma agrária e a justiça social.</p>
+						<ul>
+							<li>Número eleitoral: 13</li>
+							<li>Data de criação: 10/02/1980</li>
+							<li>Data do registro definitivo: 11/02/1982</li>
+							<li>Quantidade de afiliados: 1 582 646</li>
+							<li>Espectro político: Esquerda, a centro-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Luiz Inácio Lula da Silva, Dilma Rousseff, Gleisi Hoffmann, José Dirceu, Fernando Haddad, José Genoino, Eduardo Suplicy, Maria do Rosário, Fernando Pimentel.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup6\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Democrático Trabalhista foi criado em 1981 resgatando as principais ideias defendidas por Getúlia Vargas, seu principal representante foi Leonel Brizola. De base nacionalista e social-democrata, O PDT é contra as privatizações, defendendo o investimento na indústria nacional.</p>
+						<ul>
+							<li>Número eleitoral: 12</li>
+							<li>Data de criação: 17/06/1979</li>
+							<li>Data do registro definitivo: 10/11/1981</li>
+							<li>Quantidade de afiliados: 1 253 890</li>
+							<li>Espectro político: Centro-esquerda à esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Ciro Gomes, Cidinha Campos, Juarez Soares.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup7\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Socialista Brasileiro foi criado em 1947, tendo como principal representante Miguel Arraes e defende ideias do socialismo com transformações na sociedade que representem a melhoria da qualidade de vida dos cidadãos brasileiros.</p>
+						<ul>
+							<li>Número eleitoral: 40</li>
+							<li>Data de criação: 02/04/1947</li>
+							<li>Data do registro definitivo: 01/07/1988</li>
+							<li>Quantidade de afiliados: 649 732</li>
+							<li>Espectro político: Centro-esquerda a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Adilton Sachetti, Átila Lira, Bebeto Galvão, César Messias. <br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup8\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O  Partido Popular Socialista foi fundado em 1992 em dissidência do PCB. Seus principais aspectos programáticos são a \"radicalidade democrática\", uma nova definição do socialismo, pautado no humanismo e no internacionalismo, o que o classifica para alguns como partido defensor da social-democracia.</p>
+						<ul>
+							<li>Número eleitoral: 23</li>
+							<li>Data de criação: 26/01/1992</li>
+							<li>Data do registro definitivo: 19/03/1992</li>
+							<li>Quantidade de afiliados: 481 457</li>
+							<li>Espectro político: Centro a esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Freire, Rubens Bueno, Arnaldo Jordy, Cristovam Buarque.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup9\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Comunista do Brasil foi fundado em 1922 e é o partido mais antigo do país. Viveu 60 anos na clandestinidade. Em 1962, rechaçou o oportunismo de direita, reorganizou-se, adotando a sigla PcdoB. O PCdoB guia-se pela teoria científica de Marx, Engels e Lênin e procura aplicá-la a realidade do Brasil, tendo como princípio básico de organização o centralismo democrático.</p>
+						<ul>
+							<li>Número eleitoral: 65</li>
+							<li>Data de criação: 25/03/1922</li>
+							<li>Data do registro definitivo: 23/07/1988</li>
+							<li>Quantidade de afiliados: 393 388</li>
+							<li>Espectro político: Esquerda a extrema-esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Manuela d'Ávila, Carina Vitral,Renildo Calheiros,Jô Moraes.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup10\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido do Movimento Democrático Brasileiro foi fundado em 1980, reunindo um grande número de representantes do antigo MDB, como José Sarney e Ulysses Guimarães. Defendia a redemocratização do país.</p>
+						<ul>
+							<li>Número eleitoral: 15</li>
+							<li>Data de criação: 04/12/1965</li>
+							<li>Data do registro definitivo: 30/06/1981</li>
+							<li>Quantidade de afiliados: 2 400 703</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Michel Temer, Renan Calheiros, Eduardo Cunha, José Sarney.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup11\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da Social-Democracia Brasileira surgiu em 1988 em discidência do PMDB e teve como principais representantes Mario Covas, FHC e José Serra. De base social-democrata, defende o desenvolvimento do país com justiça social. É a principal força de oposição do PT.</p>
+						<ul>
+							<li>Número eleitoral: 45</li>
+							<li>Data de criação: 25/06/1988</li>
+							<li>Data do registro definitivo: 24/08/1988</li>
+							<li>Quantidade de afiliados: 1 450 586</li>
+							<li>Espectro político: Centro, centro-esquerda e centro-direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Aécio Neves, Geraldo Alckmin, João Dória, José Cerra, Fernando Henrique Cardoso. <br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup12\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Trabalhista Brasileiro surgiu em 1979 tendo como um de seus fundadores a filha de Getúlio Vargas, Ivete Vargas. Defende ideias referentes ao liberalismo.</p>
+						<ul>
+							<li>Número eleitoral: 14</li>
+							<li>Data de criação: 15/05/1945</li>
+							<li>Data do registro definitivo: 03/11/1981</li>
+							<li>Quantidade de afiliados: 1 193 404</li>
+							<li>Espectro político: Centro</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Roberto Jefferson, Sérgio Moraes, Nelson Marquezelli, Ronaldo Nogueira.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup13\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Progressista, antigo PPB, surgiu em 1995 da fusão do PPR, PP e PRP e defende príncipios totalmente baseados no capitalismo e na economia de mercado. Tem como principal representante Paulo Maluf.</p>
+						<ul>
+							<li>Número eleitoral: 11</li>
+							<li>Data de criação: 08/08/1995</li>
+							<li>Data do registro definitivo: 16/11/1995</li>
+							<li>Quantidade de afiliados: 1 437 953</li>
+							<li>Espectro político: Centro-direita, direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Afonso Hamm, Luiz Fernando Faria, Dilceu Sperafico, João Pizzolatti.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup14\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Democratas DEM</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Democratas, antigo PFL (Partido da Frente Liberal) que foi fundado em 1984, faz oposição ao governo do PT e defende uma economia livre de barreiras e a redução das taxas e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 25</li>
+							<li>Data de criação: 24/01/1985</li>
+							<li>Data do registro definitivo: 11/09/1986</li>
+							<li>Quantidade de afiliados: 1 094 797</li>
+							<li>Espectro político: Centro a direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Onyx Lorenzoni, Maria do Carmo Alves, José Agripino Maia, Rodrigo Maia, José Mendonça Filho.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup15\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido da República PR</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido da República surgiu em 2006 por meio da fusão do PL e do PRONA. Defende o liberalismo econômico e a redução das taxas de juros e impostos.</p>
+						<ul>
+							<li>Número eleitoral: 22</li>
+							<li>Data de criação: 26/10/2006</li>
+							<li>Data do registro definitivo: 19/12/2006</li>
+							<li>Quantidade de afiliados: 798 474</li>
+							<li>Espectro político: Centro-Direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Magno Malta, Alfredo Nascimento, César Borges.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup16\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O Partido Social Cristão obteve seu registro definitivo em 1990 e é  sustentado na Doutrina Social Cristã, inspirado nos valores e propósitos do Cristianismo, em busca de uma sociedade justa, solidária e fraterna.</p>
+						<ul>
+							<li>Número eleitoral: 20</li>
+							<li>Data de criação: 15/05/1985</li>
+							<li>Data do registro definitivo: 29/03/1990</li>
+							<li>Quantidade de afiliados: 422 076</li>
+							<li>Espectro político: Centro-direita à direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup17\" class=\"overlay\">
+				<div class=\"popup\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<br><div class=\"descricao5\"><b>Ajuda:</b></div>
+						<p>Para saber mais sobre esse partido clique em \"Conheça mais +\"</p>
+						<p>Para sequir em diante clique em \"Meu partido!\"</p><br>
+					</div>
+				</div>
+			</div>";
+				}
+			}
+		?>
 	    <div class="rodape">
 			<div class="green"></div>
 			<div class="blue"></div>
