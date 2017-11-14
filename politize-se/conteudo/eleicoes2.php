@@ -510,83 +510,151 @@
 										</div>
 									</div>
 					<div id=\"popup18\" class=\"overlay\">
-						<div class=\"popup2\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>João Doria</b></div>
+								<ul>
+									<li>Nascimento: 16 de dezembro de 1957</li>
+									<li>Nacionalidade: Brasileira</li>
+									<li>Formação: Jornalismo e publicidade</li>
+									<li>Partido: PSDB</li>
+									<li>Site Oficial: www.grupodoria.com.br</li>
+								</ul>
+								<p>&nbsp;&nbsp;&nbsp;João Agripino da Costa Doria Junior é filiado ao Partido da Social Democracia Brasileira (PSDB), partido fundado em 1988 e com o qual afirma sempre ter tido identificação ideológica e política. É o atual prefeito da cidade de São Paulo. Em 2012, foi eleito uma das 100 pessoas mais influentes do Brasil. João Doria se graduou em comunicação social, fazendo diversos trabalhos atuando em sua área profissional. É criador e presidente licenciado do Grupo Doria, que reúne seis organizações empresariais. </p>
 							</div>
 						</div>
 					</div>
 					<div id=\"popup19\" class=\"overlay\">
-						<div class=\"popup2\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>Processos:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Doria responde a 5 ações na Justiça Eleitoral; 3 delas pedem inelegibilidade. Uma das ações, além de acusar Doria, também acusa o governador Geraldo Alckmin (PSDB) de ter usado a máquina estadual a favor de Doria, seu afilhado político. Em outra ação, Doria omitiu e subvalorizou diversos bens em sua declaração à Receita Federal que chegou assim a “apenas” R$ 179,6 milhões. Doria recebeu cheque de R$ 20 mil de empresa investigada na Lava Jato.</p>
+								<div class=\"descricao7\"><b>Polêmicas:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Doria começou o seu governo numa guerra contra grafites e pintou muros da cidade. Em uma ação desastrosa, que incluiu a demolição de um prédio com pessoas dentro, Doria afirmou que \"a cracolândia acabou\". Campeão de viagens, Doria disse que consegue administrar a cidade pela internet. No lançamento do programa Alimentos Para Todos, João Doria anunciou a farinata, feita a partir de alimentos próximos da data de vencimento, como um \"alimento completo\" para famílias carentes. O produto ganhou o apelido de \"ração humana\", e o governo voltou atrás dizendo que se tratava de um suplemento alimentar.<br></p>
+								<div class=\"descricao6\"><b>Status Ficha Limpa: Pendente.</b></div>
 							</div>
 						</div>
 					</div>
 					<div id=\"popup20\" class=\"overlay\">
-						<div class=\"popup2\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+							<div class=\"descricao7\"><b>Ideologias:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Tem política intensiva de privatizações e parcerias público-privadas. Apoia a união de pessoas do mesmo sexo, a reforma tributária, liberação do Uber, doação de empresas para campanhas eleitorais, redução da maioridade penal e desarmamento e se mantendo contra o aborto, IPTU Progressivo, pedágio urbano, ideologia de gênero e a liberação das drogas. Se diz contra qualquer proposta de anistia de caixa 2 praticado em campanhas eleitorais.</p>
+								<div class=\"descricao7\"><b>Propostas de Campanha:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Se destaca em áreas como Educação, Saúde, Mobilidade Urbana e Finanças.</p>
 							</div>
 						</div>
 					</div>
 					<div id=\"popup21\" class=\"overlay\">
-						<div class=\"popup2\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>Geraldo Alckmin</b></div>
+								<ul>
+									<li>Nascimento: 7 de novembro de 1952</li>
+									<li>Nacionalidade: Brasileira</li>
+									<li>Formação: Medicina</li>
+									<li>Partido: PSDB</li>
+									<li>Site Oficial: www.aecioneves.com.br</li>
+								</ul>
+								<p>&nbsp;&nbsp;&nbsp;É um médico e político brasileiro, filiado ao Partido da Social Democracia Brasileira (PSDB). Formado em medicina pela Universidade de Taubaté. Segundo a revista Época, Geraldo recebia formação cristã da prelazia católica Opus Dei. Alckmin foi governador de São Paulo por dois mandatos. Em março de 2006, renunciou ao governo paulista para concorrer à presidência na eleição do mesmo ano.  Foi considerado o segundo melhor governador do país, tendo recebido nota 7,1 (numa escala de 0 a 10).</p>
 							</div>
 						</div>
 					</div>
 					<div id=\"popup22\" class=\"overlay\">
-						<div class=\"popup2\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>Processos:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Suas contas já foram rejeitadas pela comissão de fiscalização e controle da Assembleia legislativa paulista em 2004. Entre outros, os principais motivos encontrados estão um saldo acumulado de R$ 209 mi dos recursos do FUNDEF que jamais foram investidos na educação e cujo destino se desconhece. O governador de São Paulo, Geraldo Alckmin do PSDB, foi citado em delação premiada por executivos do grupo Odebrecht, segundo os delatores, Alckmin recebeu mais de R$ 10 milhões de reais da empreiteira via caixa dois, para as suas campanhas ao Governo do Estado de 2010 e 2014, segundo a delação homologada pelo Supremo Tribunal Federal.</p>
+								<div class=\"descricao7\"><b>Polêmicas:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Geraldo Alckmin foi a público dizer que várias empresas e autarquias estaduais sustentavam sigilos de informações, embora sejam assegurados pela Lei de Acesso à Informação. Em entrevista, Geraldo Alckmin declarou que os R$43 milhões gastos com publicidade sem amparo legal seria um \"erro formal\". \"Investigações do Ministério Público apontaram ilegalidade na intermediação de verbas de publicidade da instituição para favorecer aliados do governo\" (de Geraldo Alckmin). Tentou fazer uma reforma do sistema educacional sem nenhum diálogo com a sociedade, o que terminou com escolas ocupadas e alunos agredidos por policiais militares. <br></p>
+								<div class=\"descricao6\"><b>Status Ficha Limpa: Pendente.</b></div>
 							</div>
 						</div>
 					</div>
 					<div id=\"popup23\" class=\"overlay\">
-						<div class=\"popup2\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>Ideologias:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Apoia as reformas econômicas, reforma da previdência e a união civil homossexual. É contra ideologia de gênero, a redução da maioridade penal, a legalização das drogas e o aborto. Se diz contra aumento de impostos.</p>
+								<div class=\"descricao7\"><b>Propostas de Campanha:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Educação: ampliar a formação continuada de professores do Ensino Fundamental e Médio, ampliar as escolas em tempo integral. Saúde: expandir a rede de Ambulatórios de Especialidades Médicas, ampliar o programa de reforma e modernização da rede de hospitais estaduais, criar novas Unidades para Tratamento de Dependentes de Álcool e Drogas. Segurança Pública: reforçar e ampliar o contingente policial, dar sequência à desativação das carceragens, transferindo presos para unidades prisionais. Pretende reforçar a defesa do ajuste fiscal, que considera essencial para conquistar o apoio do mercado financeiro. Gerar mais empregos e aumentar a renda.</p>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup24\" class=\"overlay\">
-						<div class=\"popup2\">
+					<div id=\"popup42\" class=\"overlay\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>Aécio Neves</b></div>
+								<ul>
+									<li>Nascimento: 10 de março de 1960</li>
+									<li>Nacionalidade: Brasileira</li>
+									<li>Formação: Economia</li>
+									<li>Partido: PSDB</li>
+									<li>Site Oficial: www.aecioneves.com.br</li>
+								</ul>
+								<p>&nbsp;&nbsp;&nbsp;Aécio Neves da Cunha é um economista e político brasileiro, filiado ao Partido da Social Democracia Brasileira (PSDB). Aécio é graduado em economia pela Pontifícia Universidade Católica de Minas Gerais (PUC Minas). Em 2014, foi candidato à Presidência da República por seu partido, no segundo turno, conseguiu 48,36% dos votos,  perdendo para Dilma Rousseff. Antes disso Aécio foi eleito Deputado Federal por quatro mandatos, Presidente da Câmara dos Deputados, Governador de Minas Gerais e Senador. Em 18 de maio de 2017, com o afastamento de Aécio Neves, o deputado federal Carlos Sampaio assumiu a presidência interinamente.</p>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup25\" class=\"overlay\">
-						<div class=\"popup2\">
+					<div id=\"popup43\" class=\"overlay\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>Processos:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Em 2 de junho de 2017, o Procurador-Geral da República, Rodrigo Janot, denunciou Aécio Neves ao Supremo Tribunal Federal pelos crimes de corrupção passiva e obstrução da Justiça. Na denúncia, o Procurador-Geral da República pede que Aécio e sua irmã Andrea sejam condenados a pagar R$ 6 milhões a título de reparação por danos morais decorrentes de corrupção (R$ 4 milhões) e reparação por danos morais (R$2 milhões) causados por suas condutas. A denúncia é baseada nas investigações da operação Patmos. Eles foram citados nas delações premiadas de executivos da JBS.</p>
+								<div class=\"descricao7\"><b>Polêmicas:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Em 2011, durante seu primeiro ano como senador, Aécio Neves teve a carteira de habilitação apreendida por estar com o documento vencido e por se recusar a fazer o teste do bafômetro numa blitz no Leblon, na Zona Sul do Rio de Janeiro. Em 2015, uma reportagem da Folha de S. Paulo apontou que aeronaves de Minas Gerais foram utilizadas em deslocamentos de políticos, famosos, empresários e outras pessoas de fora da administração pública a pedido de Aécio Neves, que governou o estado entre 2003 e 2010. Ao todo, foram 198 viagens durante os mandatos do político mineiro. Em 2014, durante uma entrevista ao programa Roda Viva, da TV Cultura, Aécio Neves negou ser usuário de cocaína, boato que o acompanha há anos. De acordo com o senador afastado, seus opositores espalharam essa informação na internet no intuito de atingi-lo.<br></p>
+								<div class=\"descricao6\"><b>Status Ficha Limpa: Pendente.</b></div>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup26\" class=\"overlay\">
-						<div class=\"popup2\">
+					<div id=\"popup44\" class=\"overlay\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>Ideologias:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Defende a democracia, a universalização da educação básica, dos 4 aos 17 anos, a vinculação das remunerações de professores à melhoria da aprendizagem dos alunos, com salário inicial atrativo e uma política nacional de formação de professores, cotas raciais para afro-brasileiros em instituições de ensino, união de pessoas do mesmo sexo, criminalização da homofobia, reforma tributária, reforma da previdência e redução da maioridade penal. E sendo contra aborto, intervenções militares e a legalização de drogas.</p>
+								<div class=\"descricao7\"><b>Propostas de Campanha:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Em seu programa de governo, Aécio propõe aprimorar a legislação para combater os crimes de colarinho branco. Para reprimir a corrupção, o candidato propõe fazer a capacitação de agentes públicos. O programa de governo do candidato defende o retorno do chamado tripé macroeconômico: inflação no centro da meta, superávit primário e câmbio flutuante. Conduzir a política externa com base nos princípios da moderação e da independência e prevalência dos interesses brasileiros, uma reforma da segurança pública em parceria com estados e municípios e a revisão da legislação penal.</p>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup27\" class=\"overlay\">
-						<div class=\"popup2\">
+					<div id=\"popup45\" class=\"overlay\">
+						<div class=\"popup3\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+							<div class=\"descricao7\"><b>Lula</b></div>
+								<ul>
+									<li>Nascimento: 27 de outubro de 1945</li>
+									<li>Nacionalidade: Brasileira</li>
+									<li>Formação: Torneiro Mecânico</li>
+									<li>Partido: PT</li>
+									<li>Site Oficial: www.institutolula.org</li>
+								</ul>
+								<p>&nbsp;&nbsp;&nbsp;Luiz Inácio Lula da Silva, mais conhecido como Lula, Filiado ao Partido dos Trabalhadores. Em 1990, foi um dos fundadores e organizadores, junto com Fidel Castro, do Foro de São Paulo, que congrega parte dos movimentos políticos de esquerda da América Latina e do Caribe. foi o 35.º presidente do Brasil, entre 2003 e 2010. Programas sociais como o Bolsa Família e Fome Zero são marcas de seu governo. Em 16 de março de 2016, pouco mais de cinco anos depois de ter deixado a presidência da República, foi nomeado ministro-chefe da Casa Civil, no segundo mandato de sua sucessora Dilma Rousseff.</p>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup28\" class=\"overlay\">
+					<div id=\"popup46\" class=\"overlay\">
 						<div class=\"popup2\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
+								<div class=\"descricao7\"><b>Processos:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;É réu em cinco ações penais, Três das quais estão no âmbito da Operação Lava Jato. Ele é o principal suspeito do maior roubo cometido no país: Lula foi considerado culpado de corrupção passiva e lavagem de dinheiro. Condenado a nove anos e seis meses de prisão. A admirável trajetória do sindicalista nordestino eleito presidente e líder da esquerda latino-americana ganha um novo e simbólico capítulo: a de primeiro ex-presidente condenado por corrupção.</p>
+								<div class=\"descricao7\"><b>Polêmicas:</b></div>
+								<p>&nbsp;&nbsp;&nbsp;Segundo a investigação a construtora OAS, investigada na Operação Lava Jato, teria reservado para a família do petista um apartamento triplex no Guarujá, e pagado, ainda segundo a investigação, por uma reforma estrutural no imóvel no valor de 777 mil reais. Os promotores apuram também se a construtora usou outros apartamentos no mesmo prédio para lavar dinheiro ou beneficiar outras pessoas indevidamente. Em fevereiro do mesmo ano Sérgio Moro, juiz federal que conduz os processos da Operação Lava Jato, autorizou a abertura de inquérito para que a Polícia Federal investigue o Sítio Santa Bárbara, em Atibaia, usado pelo ex-presidente. A família de Lula usa frequentemente o sítio, que foi reformado em 2011. O MPF suspeita que as empreiteiras OAS e Odebrecht tenham realizado obras na propriedade rural como compensação por contratos com o governo. Segundo a investigação, a reforma teria custado aproximadamente 500 mil reais. De acordo com O Estado de S. Paulo, a empreiteira OAS pagou em dinheiro vivo os móveis e eletrodomésticos da cozinha e da área de serviço do sítio, e ainda segundo o jornal o total comprado para o sítio foi de 180 mil reais. Sobre o sítio em Atibaia, o Instituto Lula afirmou, em nota, que o ex-presidente Lula nunca escondeu que frequenta em dias de descanso o sítio Santa Bárbara, que pertence a amigos dele e de sua família. O instituto afirma que não há nada ilegal nestes fatos, que só eles não servem para vincular Lula a qualquer espécie de suspeita ou investigação.<br></p>
+								<div class=\"descricao6\"><b>Status Ficha Limpa: Pendente.</b></div>
 							</div>
 						</div>
 					</div>
-					<div id=\"popup29\" class=\"overlay\">
+					<div id=\"popup47\" class=\"overlay\">
 						<div class=\"popup2\">
 							<a class=\"close\" href=\"#\">Voltar</a>
 							<div class=\"content\">
@@ -2590,7 +2658,7 @@
 					</div>";
 				}
 			}
-			$result = mysql_query("SELECT * FROM `bd` WHERE id = '$id'");
+			$result = mysql_query("SELECT * FROM `bd` WHERE Partido = 'PPP' and id = '$id'");
 
 		        if (mysql_num_rows($result) > 0) {
     			while($row = mysql_fetch_assoc($result)) {
