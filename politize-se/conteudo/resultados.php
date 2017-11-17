@@ -32,8 +32,8 @@
 					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 					@mysql_select_db($db) or die(mysql_error());
 
+					$query = "SELECT Licao1, COUNT(*) as number FROM bd GROUP BY Licao1;";
 
-					$query = "SELECT Licao1, COUNT(*) as number FROM bd GROUP BY Licao1;";  
  					$result = mysql_query($query);  
 					if (mysql_num_rows($result) > 0) {
 						while($row = mysql_fetch_assoc($result)) {
@@ -42,30 +42,30 @@
 							if ($x < mysql_num_rows($result)){
 								echo ',';
 							}
-
 						}
 					}
-
+				
 				?>
 			]);  
 			var options = {
-				title: 'Lição 1',
+				title: 'Lição 1: Espectro econômico',
 				titleTextStyle: {
-					color: 'white',
-					fontSize: 30,
+					color: '#363636',
+					fontSize: 20,
 					fontName: 'courier',
 					bold: true,
 					italic: false
 				},
 				pieHole: 0.4,
+				pieSliceBorderColor: '#363636',
+				pieSliceTextStyle: {color: '#363636'},
 				backgroundColor: '#7FD7A2',
-				colors: ['#F0E68C', '#FFD700']
+				colors: ['#FFFFCC', '#FFFF99', '#FFFF66','#FFFF33','#FFFF00','#CCCC00']
 			};
 			var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
 			chart.draw(data, options);
 		}
     	</script>
-    	
     	<script type="text/javascript">
 			google.charts.load('current', {'packages':['corechart']});
 			google.charts.setOnLoadCallback(drawChart);
@@ -74,28 +74,48 @@
 
 			var data = google.visualization.arrayToDataTable([
 			['Task', 'Licao2'],
-			['Esquerda',     5], 
-			['Direita',     20]
-			]);  
+			
+				 <?php
+					$host = "localhost";
+					$user = "root";
+					$pass = "";
+					$db = "politizese";
+					$x = 0;
+					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+					@mysql_select_db($db) or die(mysql_error());
 
+					$query = "SELECT Licao2, COUNT(*) as number FROM bd GROUP BY Licao2;";  
+ 					$result = mysql_query($query);  
+					if (mysql_num_rows($result) > 0) {
+						while($row = mysql_fetch_assoc($result)) {
+							$x = $x +1;
+							echo "['".$row['Licao2']."', ".$row['number']."]";
+							if ($x < mysql_num_rows($result)){
+								echo ',';
+							}
+						}
+					}
+				?>
+			]);  
 			var options = {
-				title: 'Lição 2',
+				title: 'Lição 2: Espectro social',
 				titleTextStyle: {
-					color: 'white',
-					fontSize: 30,
+					color: '#363636',
+					fontSize: 20,
 					fontName: 'courier',
 					bold: true,
 					italic: false
 				},
 				pieHole: 0.4,
+				pieSliceBorderColor: '#363636',
+				pieSliceTextStyle: {color: '#363636'},
 				backgroundColor: '#7FD7A2',
-				colors: ['#1E90FF', '#0000FF']
+				colors: ['#B0E0E6', '#00BFFF','#4682B4','#E6E6FA']
 			};
 			var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
 			chart.draw(data, options);
 		}
     	</script>
-
     	<script type="text/javascript">
 			google.charts.load('current', {'packages':['corechart']});
 			google.charts.setOnLoadCallback(drawChart);
@@ -104,29 +124,48 @@
 
 			var data = google.visualization.arrayToDataTable([
 			['Task', 'Licao3'],
-			['Democracia',     50], 
-			['Monarquia',     7],
-			['Ditadura',     3]
-			]);  
+			
+				 <?php
+					$host = "localhost";
+					$user = "root";
+					$pass = "";
+					$db = "politizese";
+					$x = 0;
+					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+					@mysql_select_db($db) or die(mysql_error());
 
+					$query = "SELECT Licao3, COUNT(*) as number FROM bd GROUP BY Licao3;";  
+ 					$result = mysql_query($query);  
+					if (mysql_num_rows($result) > 0) {
+						while($row = mysql_fetch_assoc($result)) {
+							$x = $x +1;
+							echo "['".$row['Licao3']."', ".$row['number']."]";
+							if ($x < mysql_num_rows($result)){
+								echo ',';
+							}
+						}
+					}
+				?>
+			]);  
 			var options = {
-				title: 'Lição 3',
+				title: 'Lição 3: Modelos de governo',
 				titleTextStyle: {
-					color: 'white',
-					fontSize: 30,
+					color: '#363636',
+					fontSize: 20,
 					fontName: 'courier',
 					bold: true,
 					italic: false
 				},
 				pieHole: 0.4,
+				pieSliceBorderColor: '#363636',
+				pieSliceTextStyle: {color: '#363636'},
 				backgroundColor: '#7FD7A2',
-				colors: ['#3CB371', '#32CD32', '#006400']
+				colors: ['#BC8F8F', '#DB7093','#D8BFD8']
 			};
 			var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
 			chart.draw(data, options);
 		}
     	</script>
-
     	<script type="text/javascript">
 			google.charts.load('current', {'packages':['corechart']});
 			google.charts.setOnLoadCallback(drawChart);
@@ -134,13 +173,182 @@
 			function drawChart() {
 
 			var data = google.visualization.arrayToDataTable([
-			['Task', 'Licao1'],
-			['Capitalismo',     40], 
-			['Socialismo',     10]
-			]);  
+			['Task', 'Licao4'],
+			
+				 <?php
+					$host = "localhost";
+					$user = "root";
+					$pass = "";
+					$db = "politizese";
+					$x = 0;
+					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+					@mysql_select_db($db) or die(mysql_error());
 
+					$query = "SELECT Licao4, COUNT(*) as number FROM bd GROUP BY Licao4;";  
+ 					$result = mysql_query($query);  
+					if (mysql_num_rows($result) > 0) {
+						while($row = mysql_fetch_assoc($result)) {
+							$x = $x +1;
+							echo "['".$row['Licao4']."', ".$row['number']."]";
+							if ($x < mysql_num_rows($result)){
+								echo ',';
+							}
+						}
+					}
+				?>
+			]);  
 			var options = {
-				title: 'Lição 4',
+				title: 'Lição 4: Sistemas político-econômicos',
+				titleTextStyle: {
+					color: '#363636',
+					fontSize: 20,
+					fontName: 'courier',
+					bold: true,
+					italic: false
+				},
+				pieHole: 0.4,
+				pieSliceBorderColor: '#363636',
+				pieSliceTextStyle: {color: '#363636'},
+				backgroundColor: '#7FD7A2',
+				colors: ['#D8BFD8', '#9932CC']
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('piechart4'));
+			chart.draw(data, options);
+		}
+    	</script>
+    	<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+			function drawChart() {
+
+			var data = google.visualization.arrayToDataTable([
+			['Task', 'Licao5'],
+			
+				 <?php
+					$host = "localhost";
+					$user = "root";
+					$pass = "";
+					$db = "politizese";
+					$x = 0;
+					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+					@mysql_select_db($db) or die(mysql_error());
+
+					$query = "SELECT Licao5, COUNT(*) as number FROM bd GROUP BY Licao5;";  
+ 					$result = mysql_query($query);  
+					if (mysql_num_rows($result) > 0) {
+						while($row = mysql_fetch_assoc($result)) {
+							$x = $x +1;
+							echo "['".$row['Licao5']."', ".$row['number']."]";
+							if ($x < mysql_num_rows($result)){
+								echo ',';
+							}
+						}
+					}
+				?>
+			]);  
+			var options = {
+				title: 'Lição 5: Religião e política',
+				titleTextStyle: {
+					color: '#363636',
+					fontSize: 20,
+					fontName: 'courier',
+					bold: true,
+					italic: false
+				},
+				pieHole: 0.4,
+				pieSliceBorderColor: '#363636',
+				pieSliceTextStyle: {color: '#363636'},
+				backgroundColor: '#7FD7A2',
+				colors: ['#FFA07A', '#FFDAB9','#FF7F50','#E9967A']
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('piechart5'));
+			chart.draw(data, options);
+		}
+    	</script>
+    	<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+			function drawChart() {
+
+			var data = google.visualization.arrayToDataTable([
+			['Task', 'Licao6'],
+			
+				 <?php
+					$host = "localhost";
+					$user = "root";
+					$pass = "";
+					$db = "politizese";
+					$x = 0;
+					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+					@mysql_select_db($db) or die(mysql_error());
+
+					$query = "SELECT Licao6, COUNT(*) as number FROM bd GROUP BY Licao6;";  
+ 					$result = mysql_query($query);  
+					if (mysql_num_rows($result) > 0) {
+						while($row = mysql_fetch_assoc($result)) {
+							$x = $x +1;
+							echo "['".$row['Licao6']."', ".$row['number']."]";
+							if ($x < mysql_num_rows($result)){
+								echo ',';
+							}
+						}
+					}
+				?>
+			]);  
+			var options = {
+				title: 'Lição 6: Voto eleitoral',
+				titleTextStyle: {
+					color: '#363636',
+					fontSize: 20,
+					fontName: 'courier',
+					bold: true,
+					italic: false
+				},
+				pieHole: 0.4,
+				pieSliceBorderColor: '#363636',
+				pieSliceTextStyle: {color: '#363636'},
+				backgroundColor: '#7FD7A2',
+				colors: ['#808080','#DCDCDC']
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('piechart6'));
+			chart.draw(data, options);
+		}
+    	</script>
+    	<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+			function drawChart() {
+
+			var data = google.visualization.arrayToDataTable([
+			['Task', 'Candidato'],
+			
+				 <?php
+					$host = "localhost";
+					$user = "root";
+					$pass = "";
+					$db = "politizese";
+					$x = 0;
+					$conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
+					@mysql_select_db($db) or die(mysql_error());
+
+					$query = "SELECT Candidato, COUNT(*) as number FROM bd GROUP BY Candidato;";  
+ 					$result = mysql_query($query);  
+					if (mysql_num_rows($result) > 0) {
+						while($row = mysql_fetch_assoc($result)) {
+							$x = $x +1;
+							echo "['".$row['Candidato']."', ".$row['number']."]";
+							if ($x < mysql_num_rows($result)){
+								echo ',';
+							}
+						}
+					}
+				?>
+			]);  
+			var options = {
+				title: 'Candidatos a presidência:',
 				titleTextStyle: {
 					color: 'white',
 					fontSize: 30,
@@ -149,10 +357,12 @@
 					italic: false
 				},
 				pieHole: 0.4,
+				pieSliceBorderColor: '#363636',
+				pieSliceTextStyle: {color: '#363636'},
 				backgroundColor: '#7FD7A2',
-				colors: ['#696969', '#D3D3D3']
+				colors: ['#2E8B57','#45AC72','#71C495','#8ED7AE','#63E1B7','#55907C','#53BAA9','#89D7CA','#82E896','#56F575','#ACF0BA','#639B6E']
 			};
-			var chart = new google.visualization.PieChart(document.getElementById('piechart4'));
+			var chart = new google.visualization.PieChart(document.getElementById('piechart7'));
 			chart.draw(data, options);
 		}
     	</script>
@@ -207,22 +417,21 @@
 				</div>
 				<div class="line"></div>
 			</div>
+			<div class="tema"><b>Graficos de resultados</b></div><br>
 			<div class="row">
 				<div class="col-md-6">
-					<div id="piechart1" style="width: 450px; height: 250px; margin: auto; display: block"></div>
+					<div id="piechart1" style="width: 600px; height: 300px; margin: auto; display: block"></div>
+					<div id="piechart2" style="width: 600px; height: 300px; margin: auto; display: block"></div>
+					<div id="piechart3" style="width: 600px; height: 300px; margin: auto; display: block"></div>	
 				</div>
 				<div class="col-md-6">
-					<div id="piechart2" style="width: 450px; height: 250px; margin: auto; display: block"></div>
+					<div id="piechart4" style="width: 600px; height: 300px; margin: auto; display: block"></div>
+					<div id="piechart5" style="width: 600px; height: 300px; margin: auto; display: block"></div>
+					<div id="piechart6" style="width: 600px; height: 300px; margin: auto; display: block"></div>
 				</div>
 			</div>
-  			<div class="row">
-				<div class="col-md-6">
-					<div id="piechart3" style="width: 450px; height: 250px; margin: auto; display: block"></div>
-				</div>
-				<div class="col-md-6">
-					<div id="piechart4" style="width: 450px; height: 250px; margin: auto; display: block"></div>
-				</div>
-			</div>
+			<div id="piechart7" style="width: 1000px; height: 500px; margin: auto; display: block"></div>
+		</div>		
 			<a href="../index.php" class="botao1" role="button"><b>Finalizar!</b></a>
 		</div>
 	    <div class="rodape">

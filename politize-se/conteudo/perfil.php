@@ -24,11 +24,11 @@
 		    $user = "root";
 		    $pass = "";
 		    $db = "politizese";
-		    $licao7 = $_POST['licao7'];
+		    $Candidato = $_POST['Candidato'];
 		    $id = $_POST['id'];
 		    $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 		    @mysql_select_db($db) or die(mysql_error());  
-		    $sqrl = mysql_query("UPDATE bd set Licao7 ='$licao7' WHERE id = '$id'");
+		    $sqrl = mysql_query("UPDATE bd set Candidato ='$Candidato' WHERE id = '$id'");
 		?>
 		<div class="container">
 			<div class='Cube panelLoad'>

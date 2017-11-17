@@ -50,7 +50,7 @@
 	<div class="container">
 		<div class="titulo2"><b>politize-se!</b></div>
 		<div class="caixa2">
-			<p><b>Serão 7 lições!</b> É bem simples, você seleciona o que melhor representa ou o que mais se identifica. A cada lição será apresentado um tema e suas variações, dentro de cada variação: descrição (e/ou) significado (e/ou) exemplificação, terminado as lições você fará a <b>simulação de voto eleitoral para presidente 2018</b>. Com apenas alguns cliques será construído seu perfil e poderá acompanhar gráficos de resultados de outros usuários.</p>
+			<p><b>Serão 6 lições!</b> É bem simples, você seleciona o que melhor representa ou o que mais se identifica. A cada lição será apresentado um tema e suas variações, dentro de cada variação: descrição (e/ou) significado (e/ou) exemplificação, terminado as lições você fará a <b>simulação de voto eleitoral para presidente 2018</b>. Com apenas alguns cliques será construído seu perfil e poderá acompanhar gráficos de resultados de outros usuários.</p>
 		</div>
 		<div class="caixa3">
 			<form name="Cadastro" action="licao1.php" method="POST" onsubmit="return validaCampo(); return false;">

@@ -30,7 +30,7 @@
 				$Nome = $_POST['Nome']; 
 				$Sexo = $_POST['Sexo'];
 				$Idade = $_POST['Idade'];
-				$sql = mysql_query("INSERT INTO bd(Nome,Sexo,Idade,Licao1,Licao2,Licao3,Licao4,Licao5,Licao6,Licao7,Partido,Candidato) VALUES ('$Nome','$Sexo','$Idade','','','','','','','','','')");
+				$sql = mysql_query("INSERT INTO bd(Nome,Sexo,Idade,Licao1,Licao2,Licao3,Licao4,Licao5,Licao6,Partido,Candidato) VALUES ('$Nome','$Sexo','$Idade','','','','','','','','')");
 				$id = mysql_insert_id();
 			}
 		?>
@@ -68,9 +68,6 @@
 						<span><b>Lição 6</b></span>
 					</div>
 					<div class="step">
-						<span><b>Lição 7</b></span>
-					</div>
-					<div class="step">
 						<span><b>Eleições</b></span>
 					</div>
 					<div class="step">
@@ -98,7 +95,7 @@
 							<div class="col-md-12">
 								<a class="link"  href="#popup0">
 									<button class="botao2" data-hover="Centro">
-										<div>Busco um equilíbrio para a desigualdade econômica usando caracteristicas de ambas. Sou contra todos os extremos e não me considero de esquerda nem direita. <i>O centro pode ser dividido também em centro-esquerda:</i> Acredito nos ideais de esquerda, mas sou mais favorel a uma economia de mercado sem interferencias do governo, sendo complacente ao aspectos de direita. <i>E centro-direita:</i> Tenho uma ideologia moderada, com os mesmos ideais da direita, mas sou mais complacentes em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades.</div>
+										<div>Busco um equilíbrio para a desigualdade econômica usando características de ambas. Sou contra todos os extremos e não me considero de esquerda nem direita. <i>O centro pode ser dividido também em centro-esquerda:</i> Acredito nos ideais de esquerda, mas sou mais favorável a uma economia de mercado sem interferências do governo, sendo complacente ao aspectos de direita. <i>E centro-direita:</i> Tenho uma ideologia moderada, com os mesmos ideais da direita, mas sou mais complacentes em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades.</div>
 									</button>
 								</a>
 							</div>
@@ -115,7 +112,7 @@
 			</div>
 		</div>
 		<div id="popup0" class="overlay">
-			<div class="popup">
+			<div class="popup3">
 				<a class="close" href="#">Voltar</a>
 				<div class="content">
 					<form name="Licao1" action="licao2.php" method="POST">

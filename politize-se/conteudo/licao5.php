@@ -73,9 +73,6 @@
 						<span><b>Lição 6</b></span>
 					</div>
 					<div class="step">
-						<span><b>Lição 7</b></span>
-					</div>
-					<div class="step">
 						<span><b>Eleições</b></span>
 					</div>
 					<div class="step">
@@ -110,16 +107,16 @@
 				</div>
 			</div>
 			<div id="popup3" class="overlay">
-				<div class="popup">
+				<div class="popup3">
 					<a class="close" href="#">Voltar</a>
 					<div class="content">
 						<p>Você concorda na interferência de grupos religiosos em temas sociais de interesse público da sociedade?</p>
 						<form name="Licao5" action="licao6.php" method="POST">
 							<input type="hidden" name="id" value="<?php echo $id ?>">
-							<button class="botao5" type="submit" name="licao5" value="simConcordo">
+							<button class="botao5" type="submit" name="licao5" value="Há interferência, concordo que tenha que haver">
 								<div><b>Concordo</b></div>
 							</button>
-							<button class="botao5" type="submit" name="licao5" value="simDiscordo">
+							<button class="botao5" type="submit" name="licao5" value="Há interferência, discordo que tenha que haver">
 								<div><b>Discordo</b></div>
 							</button>
 						</form>
@@ -127,16 +124,16 @@
 				</div>
 			</div>
 			<div id="popup4" class="overlay">
-				<div class="popup">
+				<div class="popup3">
 					<a class="close" href="#">Voltar</a>
 					<div class="content">
 						<p>Grupos religiosos deviam ter mais influência na tomada de decisões de interesse público?</p>
 						<form name="Licao5" action="licao6.php" method="POST">
 							<input type="hidden" name="id" value="<?php echo $id ?>">
-							<button class="botao5" type="submit" name="licao5" value="naoConcordo">
+							<button class="botao5" type="submit" name="licao5" value="Não há interferência, concordo que tenha que haver">
 								<div><b>Concordo</b></div>
 							</button>
-							<button class="botao5" type="submit" name="licao5" value="naoDiscordo">
+							<button class="botao5" type="submit" name="licao5" value="Não há interferência, discordo que tenha que haver">
 								<div><b>Discordo</b></div>
 							</button>
 						</form>

@@ -64,9 +64,6 @@
 						<span><b>Lição 6</b></span>
 					</div>
 					<div class="step">
-						<span><b>Lição 7</b></span>
-					</div>
-					<div class="step">
 						<span><b>Eleições</b></span>
 					</div>
 					<div class="step">
@@ -102,7 +99,7 @@
 			</div>
 		</div>
 		<div id="popup1" class="overlay">
-			<div class="popup">
+			<div class="popup3">
 				<a class="close" href="#">Voltar</a>
 				<div class="content">
 					<form name="Licao2" action="licao3.php" method="POST">
@@ -118,7 +115,7 @@
 			</div>
 		</div>
 		<div id="popup2" class="overlay">
-			<div class="popup">
+			<div class="popup3">
 				<a class="close" href="#">Voltar</a>
 				<div class="content">
 					<form name="Licao2" action="licao3.php" method="POST">

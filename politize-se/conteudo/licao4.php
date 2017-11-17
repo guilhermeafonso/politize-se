@@ -64,9 +64,6 @@
 						<span><b>Lição 6</b></span>
 					</div>
 					<div class="step">
-						<span><b>Lição 7</b></span>
-					</div>
-					<div class="step">
 						<span><b>Eleições</b></span>
 					</div>
 					<div class="step">
@@ -91,7 +88,7 @@
 							</div>
 							<div class="col-md-12">
 								<button class="botao3" type="submit" name="licao4" value="Socialismo" data-hover="Socialismo">
-									<div>É definido pela eliminiação das diferenças de poder econômico por meio do poder político. O socialismo seria alcançado pela luta de classes entre proletário e burguesia, para que não houvesse classes sociais e propriedades privadas. Todos os bens e propriedades particulares seriam de todas as pessoas e haveria repartição, eliminando as diferenças econômicas entre os indivíduos. Mas aquele que arbitra as diferenças entre o mais poderoso e o menos poderoso já está sendo mais poderoso que ambos: nesse caso, o estado. Não é possível nivelar as diferenças de poder econômico sem criar desníveis cada vez maiores. O poder político não é auto sustentável, ele custa dinheiro, e subjugar certa classe econômica para o sustentar é a maior escravidão que um povo poderia receber. No Socialismo, diferente do que se passa no capitalismo, não há diferenças entre o poder político e o domínio sobre as riquezas: quanto mais alta a posição de um indivíduo ou de um grupo político, mais riqueza estará à sua mercê, ou seja, os governantes se tornariam a classe mais rica, contraditoriamente a quem eles se opuseram no início.</div>
+									<div>É definido pela eliminação das diferenças de poder econômico por meio do poder político. O socialismo seria alcançado pela luta de classes entre proletariado e burguesia, para que não houvesse classes sociais e propriedades privadas. Todos os bens e propriedades particulares seriam de todas as pessoas e haveria repartição, eliminando as diferenças econômicas entre os indivíduos. Mas aquele que arbitra as diferenças entre o mais poderoso e o menos poderoso já está sendo mais poderoso que ambos: nesse caso, o estado. Não é possível nivelar as diferenças de poder econômico sem criar desníveis cada vez maiores. O poder político não é auto sustentável, ele custa dinheiro, e subjugar certa classe econômica para o sustentar é a maior escravidão que um povo poderia receber. No Socialismo, diferente do que se passa no capitalismo, não há diferenças entre o poder político e o domínio sobre as riquezas: quanto mais alta a posição de um indivíduo ou de um grupo político, mais riqueza estará à sua mercê, ou seja, os governantes se tornariam a classe mais rica, contraditoriamente a quem eles se opuseram no início.</div>
 								</button>
 							</div>
 						</form>

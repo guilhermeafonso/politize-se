@@ -24,11 +24,11 @@
 		    $user = "root";
 		    $pass = "";
 		    $db = "politizese";
-		    $licao7 = $_POST['licao7'];
+		    $licao6 = $_POST['licao6'];
 		    $id = $_POST['id'];
 		    $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 		    @mysql_select_db($db) or die(mysql_error());  
-		    $sqrl = mysql_query("UPDATE bd set Licao7 ='$licao7' WHERE id = '$id'");
+		    $sqrl = mysql_query("UPDATE bd set Licao6 ='$licao6' WHERE id = '$id'");
 		?>
 		<div class="container">
 			<div class='Cube panelLoad'>
@@ -62,9 +62,6 @@
 					</div>
 					<div class="step">
 						<span><b>Lição 6</b></span>
-					</div>
-					<div class="step">
-						<span><b>Lição 7</b></span>
 					</div>
 					<div class="step current">
 						<span><b>Eleições</b></span>
@@ -114,7 +111,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"2\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -138,7 +135,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class='botao7' type='submit' name='Partido' value='PDT'>
+								<button class='botao7' type='submit' name='Partido' value=\"4\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -162,7 +159,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"5\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -186,7 +183,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"6\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -212,7 +209,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"7\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -231,7 +228,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"11\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -250,7 +247,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"1\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -269,7 +266,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"9\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -290,7 +287,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"8\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -309,7 +306,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"12\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -328,7 +325,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"10\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -347,7 +344,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"3\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -356,7 +353,7 @@
 					</div>
 				</div>
 				<div id=\"popup5\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
@@ -373,7 +370,7 @@
 				</div>
 			</div>
 			<div id=\"popup6\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
@@ -390,7 +387,7 @@
 				</div>
 			</div>
 			<div id=\"popup7\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
@@ -407,7 +404,7 @@
 				</div>
 			</div>
 			<div id=\"popup8\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
@@ -424,7 +421,7 @@
 				</div>
 			</div>
 			<div id=\"popup9\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
@@ -441,7 +438,7 @@
 				</div>
 			</div>
 			<div id=\"popup10\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
@@ -458,7 +455,7 @@
 				</div>
 			</div>
 			<div id=\"popup11\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
@@ -475,7 +472,7 @@
 				</div>
 			</div>
 			<div id=\"popup12\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
@@ -492,7 +489,7 @@
 				</div>
 			</div>
 			<div id=\"popup13\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
@@ -509,7 +506,7 @@
 				</div>
 			</div>
 			<div id=\"popup14\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Democratas DEM</b></div>
@@ -526,7 +523,7 @@
 				</div>
 			</div>
 			<div id=\"popup15\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da República PR</b></div>
@@ -543,7 +540,7 @@
 				</div>
 			</div>
 			<div id=\"popup16\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
@@ -595,7 +592,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"2\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -619,7 +616,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class='botao7' type='submit' name='Partido' value='PDT'>
+								<button class='botao7' type='submit' name='Partido' value=\"4\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -643,7 +640,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"5\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -667,7 +664,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"6\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -693,7 +690,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"7\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -717,7 +714,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"11\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -741,7 +738,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"1\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -765,7 +762,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"9\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -786,7 +783,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"8\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -805,7 +802,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"12\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -824,7 +821,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"10\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -843,7 +840,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"3\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -852,7 +849,7 @@
 					</div>
 				</div>
 				<div id=\"popup5\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
@@ -869,7 +866,7 @@
 				</div>
 			</div>
 			<div id=\"popup6\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
@@ -886,7 +883,7 @@
 				</div>
 			</div>
 			<div id=\"popup7\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
@@ -903,7 +900,7 @@
 				</div>
 			</div>
 			<div id=\"popup8\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
@@ -920,7 +917,7 @@
 				</div>
 			</div>
 			<div id=\"popup9\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
@@ -937,7 +934,7 @@
 				</div>
 			</div>
 			<div id=\"popup10\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
@@ -954,7 +951,7 @@
 				</div>
 			</div>
 			<div id=\"popup11\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
@@ -971,7 +968,7 @@
 				</div>
 			</div>
 			<div id=\"popup12\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
@@ -988,7 +985,7 @@
 				</div>
 			</div>
 			<div id=\"popup13\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
@@ -1005,7 +1002,7 @@
 				</div>
 			</div>
 			<div id=\"popup14\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Democratas DEM</b></div>
@@ -1022,7 +1019,7 @@
 				</div>
 			</div>
 			<div id=\"popup15\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da República PR</b></div>
@@ -1039,7 +1036,7 @@
 				</div>
 			</div>
 			<div id=\"popup16\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
@@ -1091,7 +1088,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"11\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1115,7 +1112,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"1\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1139,7 +1136,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"9\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1158,7 +1155,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"2\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1179,7 +1176,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class='botao7' type='submit' name='Partido' value='PDT'>
+								<button class='botao7' type='submit' name='Partido' value=\"4\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1198,7 +1195,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"5\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1217,7 +1214,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"6\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1236,7 +1233,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"7\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1257,7 +1254,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"8\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1276,7 +1273,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"12\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1295,7 +1292,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"10\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1314,7 +1311,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"3\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1323,7 +1320,7 @@
 					</div>
 				</div>
 				<div id=\"popup5\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
@@ -1340,7 +1337,7 @@
 				</div>
 			</div>
 			<div id=\"popup6\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
@@ -1357,7 +1354,7 @@
 				</div>
 			</div>
 			<div id=\"popup7\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
@@ -1374,7 +1371,7 @@
 				</div>
 			</div>
 			<div id=\"popup8\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
@@ -1391,7 +1388,7 @@
 				</div>
 			</div>
 			<div id=\"popup9\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
@@ -1408,7 +1405,7 @@
 				</div>
 			</div>
 			<div id=\"popup10\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
@@ -1425,7 +1422,7 @@
 				</div>
 			</div>
 			<div id=\"popup11\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
@@ -1442,7 +1439,7 @@
 				</div>
 			</div>
 			<div id=\"popup12\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
@@ -1459,7 +1456,7 @@
 				</div>
 			</div>
 			<div id=\"popup13\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
@@ -1476,7 +1473,7 @@
 				</div>
 			</div>
 			<div id=\"popup14\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Democratas DEM</b></div>
@@ -1493,7 +1490,7 @@
 				</div>
 			</div>
 			<div id=\"popup15\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da República PR</b></div>
@@ -1510,7 +1507,7 @@
 				</div>
 			</div>
 			<div id=\"popup16\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
@@ -1563,7 +1560,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"12\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1588,7 +1585,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"8\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1613,7 +1610,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"10\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1640,7 +1637,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"3\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1665,7 +1662,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"11\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1690,7 +1687,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"1\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1717,7 +1714,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"9\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1737,7 +1734,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"2\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1757,7 +1754,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PDT\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"4\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1779,7 +1776,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"5\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1799,7 +1796,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"6\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1819,7 +1816,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"7\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -1828,7 +1825,7 @@
 					</div>
 				</div>
 			<div id=\"popup5\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
@@ -1845,7 +1842,7 @@
 				</div>
 			</div>
 			<div id=\"popup6\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
@@ -1862,7 +1859,7 @@
 				</div>
 			</div>
 			<div id=\"popup7\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
@@ -1879,7 +1876,7 @@
 				</div>
 			</div>
 			<div id=\"popup8\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
@@ -1896,7 +1893,7 @@
 				</div>
 			</div>
 			<div id=\"popup9\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
@@ -1913,7 +1910,7 @@
 				</div>
 			</div>
 			<div id=\"popup10\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
@@ -1930,7 +1927,7 @@
 				</div>
 			</div>
 			<div id=\"popup11\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
@@ -1947,7 +1944,7 @@
 				</div>
 			</div>
 			<div id=\"popup12\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
@@ -1964,7 +1961,7 @@
 				</div>
 			</div>
 			<div id=\"popup13\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
@@ -1981,7 +1978,7 @@
 				</div>
 			</div>
 			<div id=\"popup14\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Democratas DEM</b></div>
@@ -1998,7 +1995,7 @@
 				</div>
 			</div>
 			<div id=\"popup15\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da República PR</b></div>
@@ -2015,7 +2012,7 @@
 				</div>
 			</div>
 			<div id=\"popup16\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
@@ -2068,7 +2065,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"12\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2093,7 +2090,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"8\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2118,7 +2115,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"10\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2145,7 +2142,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"3\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2165,7 +2162,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"11\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2185,7 +2182,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"1\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2207,7 +2204,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"9\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2227,7 +2224,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"2\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2247,7 +2244,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PDT\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"4\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2269,7 +2266,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"5\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2289,7 +2286,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"6\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2309,7 +2306,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"7\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -2318,7 +2315,7 @@
 					</div>
 				</div>
 			<div id=\"popup5\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido dos Trabalhadores PT</b></div>
@@ -2335,7 +2332,7 @@
 				</div>
 			</div>
 			<div id=\"popup6\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Democrático Trabalhista PDT</b></div>
@@ -2352,7 +2349,7 @@
 				</div>
 			</div>
 			<div id=\"popup7\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Socialista Brasileiro PSB</b></div>
@@ -2369,7 +2366,7 @@
 				</div>
 			</div>
 			<div id=\"popup8\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Popular Socialista PPS</b></div>
@@ -2386,7 +2383,7 @@
 				</div>
 			</div>
 			<div id=\"popup9\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
@@ -2403,7 +2400,7 @@
 				</div>
 			</div>
 			<div id=\"popup10\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
@@ -2420,7 +2417,7 @@
 				</div>
 			</div>
 			<div id=\"popup11\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
@@ -2437,7 +2434,7 @@
 				</div>
 			</div>
 			<div id=\"popup12\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
@@ -2454,7 +2451,7 @@
 				</div>
 			</div>
 			<div id=\"popup13\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
@@ -2471,7 +2468,7 @@
 				</div>
 			</div>
 			<div id=\"popup14\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Democratas DEM</b></div>
@@ -2488,7 +2485,7 @@
 				</div>
 			</div>
 			<div id=\"popup15\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da República PR</b></div>
@@ -2505,7 +2502,7 @@
 				</div>
 			</div>
 			<div id=\"popup16\" class=\"overlay\">
-				<div class=\"popup2\">
+				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
