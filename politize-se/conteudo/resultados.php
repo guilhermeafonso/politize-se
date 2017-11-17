@@ -51,7 +51,7 @@
 				title: 'Lição 1: Espectro econômico',
 				titleTextStyle: {
 					color: '#363636',
-					fontSize: 20,
+					fontSize: 17,
 					fontName: 'courier',
 					bold: true,
 					italic: false
@@ -101,7 +101,7 @@
 				title: 'Lição 2: Espectro social',
 				titleTextStyle: {
 					color: '#363636',
-					fontSize: 20,
+					fontSize: 17,
 					fontName: 'courier',
 					bold: true,
 					italic: false
@@ -151,7 +151,7 @@
 				title: 'Lição 3: Modelos de governo',
 				titleTextStyle: {
 					color: '#363636',
-					fontSize: 20,
+					fontSize: 17,
 					fontName: 'courier',
 					bold: true,
 					italic: false
@@ -201,7 +201,7 @@
 				title: 'Lição 4: Sistemas político-econômicos',
 				titleTextStyle: {
 					color: '#363636',
-					fontSize: 20,
+					fontSize: 17,
 					fontName: 'courier',
 					bold: true,
 					italic: false
@@ -251,7 +251,7 @@
 				title: 'Lição 5: Religião e política',
 				titleTextStyle: {
 					color: '#363636',
-					fontSize: 20,
+					fontSize: 17,
 					fontName: 'courier',
 					bold: true,
 					italic: false
@@ -301,7 +301,7 @@
 				title: 'Lição 6: Voto eleitoral',
 				titleTextStyle: {
 					color: '#363636',
-					fontSize: 20,
+					fontSize: 17,
 					fontName: 'courier',
 					bold: true,
 					italic: false
@@ -422,17 +422,17 @@
 				<div class="col-md-6">
 					<div id="piechart1" style="width: 600px; height: 300px; margin: auto; display: block"></div>
 					<div id="piechart2" style="width: 600px; height: 300px; margin: auto; display: block"></div>
-					<div id="piechart3" style="width: 600px; height: 300px; margin: auto; display: block"></div>	
+					<div id="piechart3" style="width: 600px; height: 300px; margin: auto; display: block"></div>
+					<div id="piechart7" style="width: 800px; height: 400px;"></div>	
 				</div>
 				<div class="col-md-6">
 					<div id="piechart4" style="width: 600px; height: 300px; margin: auto; display: block"></div>
 					<div id="piechart5" style="width: 600px; height: 300px; margin: auto; display: block"></div>
 					<div id="piechart6" style="width: 600px; height: 300px; margin: auto; display: block"></div>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<a href="../index.php" class="botao9" role="button"><b>Finalizar!</b></a>
 				</div>
 			</div>
-			<div id="piechart7" style="width: 1000px; height: 500px; margin: auto; display: block"></div>
-		</div>		
-			<a href="../index.php" class="botao1" role="button"><b>Finalizar!</b></a>
 		</div>
 	    <div class="rodape">
 			<div class="green"></div>

@@ -384,29 +384,13 @@ input {
     color: #363636;
     background-color: #ffffff;
 }
-.caixa7 {
-    margin: auto;
-    margin-bottom: 20px;
-    display: block;
-    margin-top: 20px;
-    font-family: courier;
-    width: 100%;
-    border: 10px solid #829F88;
-    border-radius: 15px;
-    box-shadow: 7px 7px 3px #5AC98A;
-    padding: 5px 10px;
-    font-size: 1.2em;
-    text-align: center;
-    color: #363636;
-    background-color: #ffffff;
-}
 .caixa8 {
     margin: auto;
     margin-bottom: 20px;
     display: block;
     margin-top: 20px;
     font-family: courier;
-    width: 100%;
+    width: 90%;
     border: 10px solid #CEE9D3;
     border-radius: 15px;
     box-shadow: 7px 7px 3px #5AC98A;
@@ -583,11 +567,12 @@ input {
     color: white;
     margin-top: 40px;
 }
-
-
-
-
-
+.popup3 .descricao4 {
+    font-family: courier;
+    text-align: center;
+    font-size: 1.2em;
+    color: #00688B;
+}
 .popup4 {
     border-radius: 15px;
     margin: 0px auto;
