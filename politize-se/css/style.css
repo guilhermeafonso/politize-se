@@ -437,7 +437,6 @@ input {
     visibility: visible;
     opacity: 1;
 }
-
 .popup {
     border-radius: 15px;
     margin: 230px auto;
@@ -605,6 +604,25 @@ input {
     font-size: 1.1em;
     color: white;
     margin-top: 40px;
+}
+table {
+    font-size: 1.1em;
+  margin-top: 40px;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+th, td {
+    border: 1px solid #ffffff;
+    font-family: arial;
+    padding: 3px;
+
+}
+tr:nth-child(even){background-color: #7FD7A2;text-align: center;}
+tr:nth-child(odd){background-color: #7FD7A2;text-align: center;font-weight: bolder;color:#00688B;}
+th {
+    background-color:#ffffff;
+    color:#FF8016;
 }
 .espacamento {
     margin-top: 230px;

@@ -93,7 +93,7 @@
 								</div>
 								<img class="candidato" src="../imagens/candidato3.png">
 								<form name="Candidato" action="perfil.php" method="POST">
-									<input type="hidden" name="id" value=".$id.">
+									<input type="hidden" name="id" value="<?php echo $id ?>">
 									<button class="botao7" type="submit" name="Candidato" value="Aécio Neves">
 										<div><b>Meu voto!</b></div>
 									</button>
@@ -129,7 +129,7 @@
 									</div>
 									<img class="candidato" src="../imagens/candidato9.png">
 									<form name="Candidato" action="perfil.php" method="POST">
-										<input type="hidden" name="id" value=".$id.">
+										<input type="hidden" name="id" value="<?php echo $id ?>">
 										<button class="botao7" type="submit" name="Candidato" value="Alvaro Dias">
 											<div><b>Meu voto!</b></div>
 										</button>
@@ -171,7 +171,7 @@
 								</div>
 								<img class="candidato" src="../imagens/candidato8.png">
 								<form name="Candidato" action="perfil.php" method="POST">
-									<input type="hidden" name="id" value=".$id.">
+									<input type="hidden" name="id" value="<?php echo $id ?>">
 									<button class="botao7" type="submit" name="Candidato" value="Ciro Gomes">
 										<div><b>Meu voto!</b></div>
 									</button>
@@ -207,7 +207,7 @@
 									</div>
 									<img class="candidato" src="../imagens/candidato5.gif">
 									<form name="Candidato" action="perfil.php" method="POST">
-										<input type="hidden" name="id" value=".$id.">
+										<input type="hidden" name="id" value="<?php echo $id ?>">
 										<button class="botao7" type="submit" name="Candidato" value="Fernando Haddad">
 											<div><b>Meu voto!</b></div>
 										</button>
@@ -249,7 +249,7 @@
 								</div>
 								<img class="candidato" src="../imagens/candidato2.png">
 								<form name="Candidato" action="perfil.php" method="POST">
-									<input type="hidden" name="id" value=".$id.">
+									<input type="hidden" name="id" value="<?php echo $id ?>">
 									<button class="botao7" type="submit" name="Candidato" value="Geraldo Alckmin">
 										<div><b>Meu voto!</b></div>
 									</button>
@@ -285,7 +285,7 @@
 									</div>
 									<img class="candidato" src="../imagens/candidato7.png">
 									<form name="Candidato" action="perfil.php" method="POST">
-										<input type="hidden" name="id" value=".$id.">
+										<input type="hidden" name="id" value="<?php echo $id ?>">
 										<button class="botao7" type="submit" name="Candidato" value="Jair Bolsonaro">
 											<div><b>Meu voto!</b></div>
 										</button>
@@ -327,7 +327,7 @@
 								</div>
 								<img class="candidato" src="../imagens/candidato10.png">
 								<form name="Candidato" action="perfil.php" method="POST">
-									<input type="hidden" name="id" value=".$id.">
+									<input type="hidden" name="id" value="<?php echo $id ?>">
 									<button class="botao7" type="submit" name="Candidato" value="Joaquim Barbosa">
 										<div><b>Meu voto!</b></div>
 									</button>
@@ -363,7 +363,7 @@
 									</div>
 									<img class="candidato" src="../imagens/candidato1.png">
 									<form name="Candidato" action="perfil.php" method="POST">
-										<input type="hidden" name="id" value=".$id.">
+										<input type="hidden" name="id" value="<?php echo $id ?>">
 										<button class="botao7" type="submit" name="Candidato" value="João Doria">
 											<div><b>Meu voto!</b></div>
 										</button>
@@ -406,7 +406,7 @@
 								</div>
 								<img class="candidato" src="../imagens/candidato4.png">
 									<form name="Candidato" action="perfil.php" method="POST">
-										<input type="hidden" name="id" value=".$id.">
+										<input type="hidden" name="id" value="<?php echo $id ?>">
 										<button class="botao7" type="submit" name="Candidato" value="Lula">
 											<div><b>Meu voto!</b></div>
 										</button>
@@ -445,7 +445,7 @@
 									</div>
 									<img class="candidato" src="../imagens/candidato6.png">
 									<form name="Candidato" action="perfil.php" method="POST">
-										<input type="hidden" name="id" value=".$id.">
+										<input type="hidden" name="id" value="<?php echo $id ?>">
 										<button class="botao7" type="submit" name="Candidato" value="Marina Silva">
 											<div><b>Meu voto!</b></div>
 										</button>

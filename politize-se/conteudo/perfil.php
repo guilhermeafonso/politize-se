@@ -75,8 +75,7 @@
 				</div>
 				<div class="line"></div>
 			</div>
-			<div class="row">
-				<div class="col-md-12">	
+		</div>
 					<input type="hidden" name="id" value="<?php echo $id ?>">
 					<?php
 				    	$host = "localhost";
@@ -86,269 +85,1948 @@
 				        $conexao = @mysql_connect($host, $user, $pass) or die(mysql_error());
 				        @mysql_select_db($db) or die(mysql_error());
 				        
-				        $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
+						if (mysql_num_rows($result) > 0) {
             			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-        				}
+           					echo '<div class="container"><div class="row"><div class="col-md-8"><h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2><p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de esquerda, adotando uma postura liberal em relação aos costumes, onde se declara defensor das liberdades civis, coloca o ideal igualitário acima da ordem moral, cultural, patriótica ou religiosa. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural. O sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.Você acredita na influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os outros eleitores participam e estão representados na política nacional.</p></div><div class="row"><div class="col-md-4"><table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr></table></div></div></div>';
+                		}
 
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
+							}
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+					 	if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+						if (mysql_num_rows($result) > 0) {
+							while($row = mysql_fetch_assoc($result)) {
+								echo '';
+							}
+						}
+
+
+
+
+
+						$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                        while($row = mysql_fetch_assoc($result)) {
+                            echo '';}
+
+                            }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			   
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			    
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			 
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de direita, adotando também uma postura conservadora, desta vez em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			   
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			    
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p></p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			 
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica com a ideologia de esquerda, adotando também uma postura liberal, desta vez em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			   
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			    
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			 
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, que pode ser popularmente chamado de conservador, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de esquerda, porém adotando agora uma postura contrária a conservadora, sendo liberal em relação aos costumes, onde se declara defensor dos direitos humanos e das liberdades civis, se identifica ou aprova causas como: redução da pobreza e desigualdades sociais, regulamentação da união civil-homossexual, a descriminalização do aborto, a legalização das drogas e outros temas controversos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral e defende a: igualdade perante a lei, liberdade de expressão, liberdade religiosa, proteção legal e na participação da sociedade na vida política, econômica e cultural.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			   
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			    
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. Direitos humanos fundamentais devem ser definidos pelo governo que é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
-            			 
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o capitalismo, caracterizado por uma divisão social na produção em que os trabalhadores que dispõem apenas de sua força de trabalho a vendem em troca de um pagamento (salário); e os capitalistas proprietários dos meios de produção contratam os trabalhadores para produzir mercadorias, que são vendidas para a obtenção do lucro.</p>';}
-                        }
-            			
-    					$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and id = '$id'");
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
 
-				        if (mysql_num_rows($result) > 0) {
-            			while($row = mysql_fetch_assoc($result)) {
-           					echo '<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, que pode ser popularmente chamado de liberal, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio, promover meios de produção sob o comando privado (privatizações), acordos individuais entre empregadores e empregados e impostos mais baixos.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;No espectro social se identifica também com a ideologia de direita, porém adotando agora uma postura contrária a liberal, sendo conservador em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por uma pessoa ou por um grupo de pessoas, com tirania ou violência a opositores. Governos ditatoriais geralmente assumem o poder através de Golpes de Estado ou situações de guerra, o governante atua de acordo com suas próprias vontades, sem que respeite a divisão de poderes, direitos humanos fundamentais pessoais ou da população.</p>
-                    <p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;O  sistema político-econômico que se identifica é o socialismo, que propõe a extinção da propriedade privada dos meios de produção, acúmulo de capital, tomada do poder por parte do proletariado e divisão igualitária da renda diminuindo a distância entre ricos e pobres.</p>';}
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
                         }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+
+
+
+
+
+                        $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                        while($row = mysql_fetch_assoc($result)) {
+                            echo '';}
+
+                            }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+
+
+
+
+
+
+                        $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                        while($row = mysql_fetch_assoc($result)) {
+                            echo '';}
+
+                            }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+
+
+
+
+
+
+                        $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                        while($row = mysql_fetch_assoc($result)) {
+                            echo '';}
+
+                            }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
+                    $result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Esquerda' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+                        if (mysql_num_rows($result) > 0) {
+                            while($row = mysql_fetch_assoc($result)) {
+                                echo '';
+                            }
+                        }
+
 
 				    ?>
                     <a href="../conteudo/resultados.php" class="botao1" role="button"><b>Resultados</b></a>
