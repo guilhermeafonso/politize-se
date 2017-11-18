@@ -10591,6 +10591,5259 @@
     			}
 			}
 
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a esquerda quanto ao espectro econômico do país, acredita que o governo deve interferir/controlar o mercado financeiro e participar ativamente na economia, apoia  medidas sociais e propostas que visam financiar serviços públicos amplos e para uma distribuição mais igualitária de renda. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+			
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-esquerda' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para os ideais de esquerda quanto ao espectro econômico do país, porém é mais favorável a uma economia de mercado sem interferências do governo. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país você busca um equilíbrio para a desigualdade econômica usando características de esquerda e direita, tendo assim uma ideologia voltada para centro. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+        
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Centro-direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Quanto ao espectro econômico do país, você tem uma ideologia moderada, com os mesmos ideais da direita, porém mais complacente em questões relacionadas aos direitos trabalhistas e a igualdade de oportunidades. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Democracia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a democracia, onde você assume a responsabilidade de decidir os governantes por meio do voto eleitoral, normalmente sob o comando do ou da presidente da república, o maior representante do povo. É um regime político em que a soberania é exercida pelo povo. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Monarquia' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a monarquia, onde o poder deve estar nas mãos do monarca (rei, príncipe, imperador). Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Capitalismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o capitalismo, onde: sociedade, divisão de classes (donos de meio de produção e assalariados). Economia de mercado comandada por empresas particulares (privatização da economia). E propriedade, ênfase na propriedade privada dos meios de produção (indústrias, terras, etc.). Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Obrigatório' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um dever, assim todos os eleitores participam e estão representados na política nacional.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, concordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você não acredita que há influência de grupos religiosos na política do nosso país, e concorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
+		$result = mysql_query("SELECT * FROM `bd` WHERE Licao1 = 'Direita' and Licao2 = 'Direita' and Licao3 = 'Ditadura' and Licao4 = 'Socialismo' and Licao5 = 'Não há interferência, discordo que tenha que haver' and Licao6 = 'Facultativo' and id = '$id'");
+
+			if (mysql_num_rows($result) > 0) {
+				while($row = mysql_fetch_assoc($result)) {
+					echo '
+					<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<h2 style="font-family:courier;color:white;"><b>'.$row['Nome'].',</b></h2>
+									<p style="font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;Você tem uma ideologia voltada para a direta quanto ao espectro econômico do país, você acredita que o governo deve cuidar apenas do essencial (segurança, justiça, educação), ter pouca influência sobre a economia, favorecer o livre comércio e promover meios de produção sob o comando privado. No espectro social se identifica com a ideologia de direita, adotando uma postura conservadora em relação aos costumes, você preza os “valores familiares” ou “valores atemporais”, se identifica e/ou promove conceitos passados de geração em geração ao lado de instituições como a igreja, a família, o Estado e a vida da comunidade. A forma de governo que melhor o representa é a ditadura, onde você deve abrir mão de direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. Governos ditatoriais normalmente assumem o poder através de Golpes de Estado ou situações de guerra. O sistema político-econômico que te identifica é o socialismo, onde: a sociedade, é igualitária, sem divisão de classe e dominada pelos altos funcionários do governo. Economia de mercado planificada e centralizada, dominada por empresas públicas (estatização da economia). E propriedade, com ênfase na coletividade dos meios de produção. Você acredita que não há influência de grupos religiosos na política do nosso país, e discorda que essa interferência deva existir e apoia que o voto é um direito e não dever, resultando assim à praticamente sinônimo de voto consciente, pois tenderiam a votar apenas aqueles que realmente se interessam por política.
+									</p>
+								</div>
+								<div class="col-md-4">
+									<table border="1" class="demo-table"><tr><td>Lição 1, Espectro econômico: </td></tr><tr><td>'.$row['Licao1'].'</td></tr><tr><td>Lição 2, Espectro social: </td></tr><tr><td> '.$row['Licao2'].'</td></tr><tr><td>Lição 3, Modelo de governo: </td></tr><tr><td> '.$row['Licao3'].'</td></tr><tr><td>Lição 4, Sistema político-econômico: </td></tr><tr><td> '.$row['Licao4'].'</td></tr><tr><td>Lição 5, Religião e política: </td></tr><tr><td> '.$row['Licao5'].'</td></tr><tr><td>Lição 6, Voto eleitoral: </td></tr><tr><td> '.$row['Licao6'].'</td></tr><tr><td>Meu candidato a presidência: </td></tr><tr><td> '.$row['Candidato'].'</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>'
+					;
+    			}
+			}
+
 
 				    ?>
                     <a href="../conteudo/resultados.php" class="botao1" role="button"><b>Resultados</b></a>
