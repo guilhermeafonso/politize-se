@@ -93,7 +93,7 @@
 							</div>
 							<div class="col-md-12">
 								<button class="botao3" type="submit" name="licao3" value="Ditadura" data-hover="Ditadura">
-									<div>Devo abrir mão dos meus direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. O ditador não admite oposição a seus atos e ideias, e tem grande parte do poder de decisão, portanto é um regime onde a sociedade exerce pouca participação na politica, o governante atua de acordo com suas próprias vontades. Governos ditatoriais geralmente assumem o poder através de golpes de estado ou situações de guerra.</div>
+									<div>Devo abrir mão dos meus direitos civis para que todos os poderes do Estado sejam governados por um indivíduo, um grupo ou um partido, geralmente com tirania ou violência a opositores. O ditador não admite oposição a seus atos e ideias, e tem grande parte do poder de decisão, portanto é um regime onde a sociedade exerce pouca participação na política, o governante atua de acordo com suas próprias vontades. Governos ditatoriais normalmente assumem o poder através de golpes de estado ou situações de guerra.</div>
 								</button>
 							</div>
 						</form>
