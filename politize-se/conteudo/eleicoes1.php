@@ -111,7 +111,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"2\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PT\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -135,7 +135,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class='botao7' type='submit' name='Partido' value=\"4\">
+								<button class='botao7' type='submit' name='Partido' value=\"PDT\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -159,7 +159,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"5\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSB\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -183,7 +183,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"6\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PPS\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -209,7 +209,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"7\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PCdoB\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -228,7 +228,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"11\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PMDB\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -247,7 +247,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"1\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSDB\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -266,7 +266,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"9\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PTB\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -287,7 +287,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"8\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PP\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -306,7 +306,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"12\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"DEM\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -325,7 +325,7 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"10\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PR\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
@@ -344,14 +344,59 @@
 								</a>
 								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
 								<input type=\"hidden\" name=\"id\" value=".$id.">
-								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"3\">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"PSC\">
 									<div><b>Meu partido!</b></div>
 								</button>
 							</form>
 							</div>
 						</div>
 					</div>
-				</div>
+				<div class=\"row\">
+						<div class=\"col-md-3\">
+							<div class=\"caixa6\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido13.png\">
+								<a class=\"link\" href=\"#popup18\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method=\"POST\">
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class=\"botao7\" type=\"submit\" name=\"Partido\" value=\"NOVO\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+						<div class=\"col-md-3\">
+							<div class=\"caixa4\">
+								<div class=\"rede1\">
+								<a href=\"#popup17\" title=\"Ajuda\" class=\"fa fa-question fa-2x\" aria-hidden=\"true\"></a>
+							</div>
+							<div class=\"rede2\">
+								</a>
+								<a title=\"Sinalizado como preferido\" class=\"fa fa-bookmark fa-2x\" aria-hidden=\"true\"></a>
+								</a>
+							</div>
+								<img class=\"partidos\" src=\"../imagens/partido14.png\">
+								<a class=\"link\" href=\"#popup19\">
+									<button class=\"botao6\" type=\"button\">
+										<b>Conheça +</b>
+								</button>
+								</a>
+								<form name=\"Partido\" action=\"eleicoes2.php\" method='POST'>
+								<input type=\"hidden\" name=\"id\" value=".$id.">
+								<button class='botao7' type='submit' name='Partido' value=\"4\">
+									<div><b>Meu partido!</b></div>
+								</button>
+							</form>
+							</div>
+						</div>
+					</div>
+					</div>
 				<div id=\"popup5\" class=\"overlay\">
 				<div class=\"popup\">
 					<a class=\"close\" href=\"#\">Voltar</a>
@@ -421,7 +466,7 @@
 				</div>
 			</div>
 			<div id=\"popup9\" class=\"overlay\">
-				<div class=\"popup\">
+				<div class=\"popup2\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Comunista do Brasil PCdoB</b></div>
@@ -438,7 +483,7 @@
 				</div>
 			</div>
 			<div id=\"popup10\" class=\"overlay\">
-				<div class=\"popup\">
+				<div class=\"popup2\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido do Movimento Democrático Brasileiro PMDB</b></div>
@@ -455,7 +500,7 @@
 				</div>
 			</div>
 			<div id=\"popup11\" class=\"overlay\">
-				<div class=\"popup\">
+				<div class=\"popup2\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da Social-Democracia Brasileira PSDB</b></div>
@@ -472,7 +517,7 @@
 				</div>
 			</div>
 			<div id=\"popup12\" class=\"overlay\">
-				<div class=\"popup\">
+				<div class=\"popup2\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Trabalhista Brasileiro PTB</b></div>
@@ -489,7 +534,7 @@
 				</div>
 			</div>
 			<div id=\"popup13\" class=\"overlay\">
-				<div class=\"popup\">
+				<div class=\"popup2\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Progressista PP</b></div>
@@ -506,7 +551,7 @@
 				</div>
 			</div>
 			<div id=\"popup14\" class=\"overlay\">
-				<div class=\"popup\">
+				<div class=\"popup2\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Democratas DEM</b></div>
@@ -523,7 +568,7 @@
 				</div>
 			</div>
 			<div id=\"popup15\" class=\"overlay\">
-				<div class=\"popup\">
+				<div class=\"popup2\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido da República PR</b></div>
@@ -540,7 +585,7 @@
 				</div>
 			</div>
 			<div id=\"popup16\" class=\"overlay\">
-				<div class=\"popup\">
+				<div class=\"popup2\">
 					<a class=\"close\" href=\"#\">Voltar</a>
 					<div class=\"content\">
 						<div class=\"descricao4\"><b>Partido Social Cristão <br>PSC</b></div>
@@ -553,6 +598,40 @@
 							<li>Espectro político: Centro-direita à direita</li>
 						</ul>
 						<p>&nbsp;&nbsp;&nbsp;Políticos conhecidos: Jair Bolsonaro, Eduardo Bolsonaro, Marco Feliciano, Pastor Everaldo.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup18\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Partido Novo<br>NOVO</b></div>
+						<p>&nbsp;&nbsp;&nbsp;O NOVO é um movimento que foi iniciado por cidadãos insatisfeitos com o montante de impostos pagos e a qualidade dos serviços públicos recebidos. Este grupo de pessoas nunca havia se candidatado a nenhum cargo eletivo, mas concluiu que um partido político seria a ferramenta democrática adequada para realizar as mudanças desejadas e necessárias.</p>
+						<ul>
+							<li>Número eleitoral: 30</li>
+							<li>Data de criação: 12/02/2011</li>
+							<li>Data do registro definitivo: 15/09/2015</li>
+							<li>Quantidade de filiados: 9.652</li>
+							<li>Espectro político: Direita à Centro-direita</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Moisés Jardim, Ricardo Taboaço, João Dionísio Amoêdo.<br><br></p>
+					</div>
+				</div>
+			</div>
+			<div id=\"popup19\" class=\"overlay\">
+				<div class=\"popup2\">
+					<a class=\"close\" href=\"#\">Voltar</a>
+					<div class=\"content\">
+						<div class=\"descricao4\"><b>Rede Sustentabilidade<br>REDE</b></div>
+						<p>&nbsp;&nbsp;&nbsp;A REDE é fruto de um movimento aberto, autônomo e suprapartidário liderado pela política Marina Silva, que oferece propostas voltadas a social-democracia e ao ecologismo com o intuito de aprofundar a democracia no Brasil e superar o monopólio partidário da representação política institucional.</p>
+						<ul>
+							<li>Número eleitoral: 18</li>
+							<li>Data de criação: </li>
+							<li>Data do registro definitivo: 22/09/2015</li>
+							<li>Quantidade de filiados: 25.600</li>
+							<li>Espectro político: Centro-esquerda à Esquerda</li>
+						</ul>
+						<p>&nbsp;&nbsp;&nbsp;Marina Silva, João Derly, José Gustavo, Miro Teixeira.<br><br></p>
 					</div>
 				</div>
 			</div>
