@@ -113,10 +113,10 @@
 						<p>Você concorda na interferência de grupos religiosos em temas sociais de interesse público da sociedade?</p>
 						<form name="Licao5" action="licao6.php" method="POST">
 							<input type="hidden" name="id" value="<?php echo $id ?>">
-							<button class="botao5" type="submit" name="licao5" value="Há interferência, concordo que tenha que haver">
+							<button class="botao5" type="submit" name="licao5" value="Há interferência, concordo que tenha que haver;">
 								<div><b>Concordo</b></div>
 							</button>
-							<button class="botao5" type="submit" name="licao5" value="Há interferência, discordo que tenha que haver">
+							<button class="botao5" type="submit" name="licao5" value="Há interferência, discordo que tenha que haver;">
 								<div><b>Discordo</b></div>
 							</button>
 						</form>
@@ -130,10 +130,10 @@
 						<p>Grupos religiosos deviam ter mais influência na tomada de decisões de interesse público?</p>
 						<form name="Licao5" action="licao6.php" method="POST">
 							<input type="hidden" name="id" value="<?php echo $id ?>">
-							<button class="botao5" type="submit" name="licao5" value="Não há interferência, concordo que tenha que haver">
+							<button class="botao5" type="submit" name="licao5" value="Não há interferência, concordo que tenha que haver;">
 								<div><b>Concordo</b></div>
 							</button>
-							<button class="botao5" type="submit" name="licao5" value="Não há interferência, discordo que tenha que haver">
+							<button class="botao5" type="submit" name="licao5" value="Não há interferência, discordo que tenha que haver;">
 								<div><b>Discordo</b></div>
 							</button>
 						</form>

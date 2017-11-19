@@ -80,6 +80,7 @@ body {
     background-color: #6CA6CD;
 }
 .botao1:hover {
+    color: #363636;
     text-decoration:none;
 }
 input {
@@ -293,6 +294,25 @@ input {
     background-color: #6CA6CD;
 }
 .botao9:hover {
+    text-decoration:none;
+    color: #363636;
+}
+.botao10 {
+    margin: auto;
+    display: block;
+    margin-top: 100px;
+    font-family: courier;
+    width: 70%;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px #00688B;
+    padding: 15px 25px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #363636;
+    background-color: #6CA6CD;
+}
+.botao10:hover {
     text-decoration:none;
     color: #363636;
 }
@@ -607,16 +627,14 @@ input {
 }
 table {
     font-size: 1.1em;
-  margin-top: 40px;
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ffffff;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ffffff;
 }
 th, td {
     border: 1px solid #ffffff;
     font-family: arial;
     padding: 3px;
-
 }
 tr:nth-child(even){background-color: #7FD7A2;text-align: center;}
 tr:nth-child(odd){background-color: #7FD7A2;text-align: center;font-weight: bolder;color:#00688B;}
