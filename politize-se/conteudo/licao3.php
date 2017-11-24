@@ -88,7 +88,7 @@
 							</div>
 							<div class="col-md-12">
 								<button class="botao2" type="submit" name="licao3" value="Monarquia" data-hover="Monarquia">
-									<div>O poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte. O governo é chefiado pela Família Real, que tem uma linha de sucessão e a prerrogativa de se manter no poder, normalmente de maneira hereditária. Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país. Neste modelo, o líder é o Primeiro Ministro.</div>
+									<div>O poder deve estar nas mãos do monarca (rei, príncipe, imperador) geralmente de forma vitalícia, ou seja ocupa o cargo até a morte, portanto ele naturamente não é refém da vontade político-partidária. Hoje em dia a maior parte dos regimes é parlamentarista. Ou seja, o Rei desempenha um papel relativamente figurativo, enquanto os congressistas são os responsáveis pela administração do país e uma classe política responsável para com os seus eleitores e responsabilizada pelos mesmos. Neste modelo, o líder é o Primeiro Ministro.</div>
 								</button>
 							</div>
 							<div class="col-md-12">

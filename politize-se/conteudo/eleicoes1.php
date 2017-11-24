@@ -78,7 +78,7 @@
 			<div class="row">
 				<div class="col-md-12">	
 				<div class="tema"><b>Partidos políticos.</b></div><br>
-				<div class="descricao"><i>* Selecionamos os 12 principais partidos. Com base em lições anteriores os que estão marcados são os que você pode mais se identificar.</i></div><br>
+				<div class="descricao"><i>* Selecionamos os 14 principais partidos. Com base em lições anteriores os que estão marcados são os que você pode mais se identificar.</i></div><br>
 				<?php
 			    	$host = "localhost";
 			        $user = "root";
